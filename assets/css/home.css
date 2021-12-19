@@ -106,10 +106,6 @@
     margin: 0 10px -4px 0
 }
 
-.margin h1 {
-    margin-left: 10px
-}
-
 @-webkit-keyframes bgAnimation {
     50% {
         background-position: center
