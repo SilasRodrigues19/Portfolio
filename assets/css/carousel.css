@@ -1,0 +1,62 @@
+.lb-details {
+    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif
+}
+
+.lb-number {
+    margin-top: 5px
+}
+
+.carousel i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, .6);
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    background: rgba(0, 0, 0, .6);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: all .3s 0s cubic-bezier(.6, -.28, .735, .045);
+    transition: all .3s 0s cubic-bezier(.6, -.28, .735, .045)
+}
+
+.carousel:hover img {
+    opacity: .3;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%)
+}
+
+.carousel:hover i {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: all .3s .1s cubic-bezier(.175, .885, .32, 1.275);
+    transition: all .3s .1s cubic-bezier(.175, .885, .32, 1.275)
+}
+
+.carousel-info {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-animation: fadeInLeft 2s;
+    animation: fadeInLeft 2s
+}
+
+.carousel-info h2 {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    width: 60rem;
+    border-radius: 25px;
+    padding: 10px 0;
+    font-size: 20px
+}
