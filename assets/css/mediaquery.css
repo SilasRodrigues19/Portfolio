@@ -112,7 +112,6 @@
     }
     .nav-list ul a::before {
         position: absolute;
-        left: 80px
     }
     .nav-list ul a:hover::before {
         opacity: 0
@@ -124,7 +123,8 @@
         filter: invert(1);
         background-size: cover;
         width: 25px;
-        height: 25px
+        height: 25px;
+        left: -25px;
     }
     .nav-list ul li:nth-child(1) a::before {
         background: url(https://api.iconify.design/fluent:window-dev-tools-24-regular.svg) no-repeat center center/contain
@@ -134,6 +134,7 @@
     }
     .nav-list ul li:nth-child(3) a::before {
         background: url(https://api.iconify.design/clarity:certificate-solid.svg) no-repeat center center/contain;
+        left: -35px;
     }
     .nav-list ul li:nth-child(4) a::before {
         background: url(https://api.iconify.design/ri:mail-send-line.svg) no-repeat center center/contain
