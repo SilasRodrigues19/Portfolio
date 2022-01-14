@@ -60,10 +60,10 @@ function displayContent() {
         lightBoxPrev = document.querySelector('.lb-prev'),
         lightBoxNext = document.querySelector('.lb-next'),
         lightBoxClose = document.querySelector('.lb-close');
-    setAttributes(lightBoxCancel, { 'rel': 'noopener', 'href': '#' });
-    setAttributes(lightBoxPrev, { 'rel': 'noopener', 'href': '#' });
-    setAttributes(lightBoxNext, { 'rel': 'noopener', 'href': '#' });
-    setAttributes(lightBoxClose, { 'rel': 'noopener', 'href': '#' });
+    setAttributes(lightBoxCancel, { 'rel': 'nofollow', 'href': '#' });
+    setAttributes(lightBoxPrev, { 'rel': 'nofollow', 'href': '#' });
+    setAttributes(lightBoxNext, { 'rel': 'nofollow', 'href': '#' });
+    setAttributes(lightBoxClose, { 'rel': 'nofollow', 'href': '#' });
 }
 
 /* Add warning when the user tries to access mail.php by URL */
