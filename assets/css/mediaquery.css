@@ -102,10 +102,6 @@
     .nav-bar .brand {
         margin: 0 20px;
     }
-    .brand img {
-        width: 50px;
-        height: 25px;
-    }
     .nav-list ul {
         -webkit-clip-path: ellipse(360px 370px at right);
         clip-path: ellipse(360px 370px at right)
