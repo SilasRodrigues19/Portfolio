@@ -70,8 +70,8 @@ footer {
 
 .brand img {
     opacity: .7;
-    width: fit-content;
-    height: fit-content;
+    width: 85px;
+    height: 35px;
 }
 
 .brand h1 span {
