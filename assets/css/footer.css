@@ -68,10 +68,15 @@ footer {
     color: #cacaca
 }
 
+.band a {
+    width: fit-content;
+    height: fit-content;
+}
+
 .brand img {
     opacity: .7;
-    width: 85px;
-    height: 35px;
+    width: 50px;
+    height: 25px;
 }
 
 .brand h1 span {
