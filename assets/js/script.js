@@ -34,6 +34,7 @@ erase = () => {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
     if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1100);
 }
 
 
@@ -141,13 +142,13 @@ textArea.addEventListener("keyup", e => {
     textArea.style.height = "auto";
 
     let scrollHeight = e.target.scrollHeight;
-    textArea.style.height = `${ scrollHeight }px`;
+    textArea.style.height = `${scrollHeight}px`;
 });
 
 
 countLetters = () => {
     const textLength = textArea.value.length;
-    count.innerText = `${ textLength }`;
+    count.innerText = `${textLength}`;
 
     textLength >= 1500 ? count.classList.add("error") : count.classList.remove("error");
 }
