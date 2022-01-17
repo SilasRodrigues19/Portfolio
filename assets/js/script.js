@@ -75,8 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Tooltip Alert */
     $('[data-toggle="tooltip"]').tooltip();
     home.classList.add('infoAnimation');
-    if (textArray.length) setTimeout(type, newTextDelay + 250);
-    return
+    textArray.length && setTimeout(type, newTextDelay + 250);
 });
 
 const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
