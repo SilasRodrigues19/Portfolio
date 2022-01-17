@@ -5,7 +5,7 @@ const typedTextSpan = document.querySelector(".typed-text"),
 const textArray = ["Web Developer", "Programador", "Front End"];
 const typingDelay = 50;
 const erasingDelay = 50;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 2500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -38,27 +38,26 @@ erase = () => {
 }
 
 
-setAttributes = (el, attrs) => {
+setAttributesHelper = (el, attrs) => {
     for (let attr in attrs) {
         el.setAttribute(attr, attrs[attr]);
     }
 }
 
-/* Loader */
-window.onload = displayContent;
 
-// Add animation after the page loaded
-function displayContent() {
-    // Fix  Lightbox Uncrawlable Links
+// Fix  Lightbox Uncrawlable Links
+displayContent = () => {
     const lightBoxCancel = document.querySelector('.lb-cancel'),
         lightBoxPrev = document.querySelector('.lb-prev'),
         lightBoxNext = document.querySelector('.lb-next'),
         lightBoxClose = document.querySelector('.lb-close');
-    setAttributes(lightBoxCancel, { 'rel': 'nofollow', 'href': '#' });
-    setAttributes(lightBoxPrev, { 'rel': 'nofollow', 'href': '#' });
-    setAttributes(lightBoxNext, { 'rel': 'nofollow', 'href': '#' });
-    setAttributes(lightBoxClose, { 'rel': 'nofollow', 'href': '#' });
+    setAttributesHelper(lightBoxCancel, { 'rel': 'nofollow', 'href': '#' });
+    setAttributesHelper(lightBoxPrev, { 'rel': 'nofollow', 'href': '#' });
+    setAttributesHelper(lightBoxNext, { 'rel': 'nofollow', 'href': '#' });
+    setAttributesHelper(lightBoxClose, { 'rel': 'nofollow', 'href': '#' });
 }
+
+window.onload = displayContent;
 
 /* Add warning when the user tries to access mail.php by URL */
 let buttonMailAlert = document.getElementById('warningMail_button'),
@@ -83,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
     mobile_menu = document.querySelector('.header .nav-bar .nav-list ul'),
     menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'),
+    hamburger = document.querySelector('#hamburger'),
     header = document.querySelector('.header.container');
 
 const scrollToTop = document.querySelector('#smoothScroll'),
@@ -96,12 +96,10 @@ menu.addEventListener('click', () => {
 
     // Improving accessibility for visually impaired people
     if (mobile_menu.classList.contains('active')) {
-        menu.setAttribute('aria-expanded', 'true');
-        menu.setAttribute('aria-label', 'Fechar Menu');
+        setAttributesHelper(menu, { 'aria-expanded': 'true', 'aria-label': 'Fechar Menu' });
         return;
     }
-    menu.setAttribute('aria-expanded', 'false');
-    menu.setAttribute('aria-label', 'Abrir Menu');
+    setAttributesHelper(menu, { 'aria-expanded': 'false', 'aria-label': 'Abrir Menu' });
 });
 
 
@@ -122,16 +120,17 @@ document.addEventListener('scroll', () => {
 
 });
 
+// Close menu after link is clicked
 menu_item.forEach((item) => {
     item.addEventListener('click', () => {
         menu.classList.toggle('active');
         mobile_menu.classList.toggle('active');
-        // Fix Menu Error
+        // Animate menu icon when link is clicked
         if (!mobile_menu.classList.contains('active')) {
-            $('#hamburger').prop("checked", false);
+            hamburger.checked = false;
             return;
         }
-        $('#hamburger').prop("checked", true);
+        hamburger.checked = true;
     });
 });
 
