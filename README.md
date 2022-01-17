@@ -142,12 +142,12 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [issues-url]: https://github.com/SilasRodrigues19/Static-Portfolio/issues
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/Static-Portfolio/blob/master/LICENSE
-[product-screenshot]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview.gif
-[product-screenshot2]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview404.png
-[product-screenshot3]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview2.gif
-[product-screenshot4]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/preview404-mobile.png
-[product-screenshot5]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/previewErrorMail.png
-[product-screenshot6]: https://github.com/SilasRodrigues19/silasdev.epizy.com/blob/master/assets/img/previewSuccessMail.png
+[product-screenshot]: ./assets/img/preview.gif
+[product-screenshot2]: ./assets/img/preview404.png
+[product-screenshot3]: ./assets/img/preview2.gif
+[product-screenshot4]: ./assets/img/preview404-mobile.png
+[product-screenshot5]: ./assets/img/previewErrorMail.png
+[product-screenshot6]: ./assets/img/previewSuccessMail.png
 
 <br><hr>
 [🔼 Back to top](#Static-Portfolio)
