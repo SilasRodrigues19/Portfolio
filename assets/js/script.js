@@ -126,13 +126,15 @@ document.addEventListener('scroll', () => {
 menu_item.forEach((item) => {
     item.addEventListener('click', () => {
         menu.classList.toggle('active');
-        mobile_menu.classList.toggle('active');
-        // Animate menu icon when link is clicked
-        if (!mobile_menu.classList.contains('active')) {
-            hamburger.checked = false;
-            return;
-        }
-        hamburger.checked = true;
+        setTimeout(() => {
+            mobile_menu.classList.toggle('active');
+            // Animate menu icon when link is clicked
+            if (!mobile_menu.classList.contains('active')) {
+                hamburger.checked = false;
+                return;
+            }
+            hamburger.checked = true;
+        }, 1800);
     });
 });
 
