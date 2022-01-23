@@ -155,3 +155,15 @@ countLetters = () => {
 
     textLength >= 1500 ? count.classList.add("error") : count.classList.remove("error");
 }
+
+const certificate = document.querySelector('.certificate');
+
+certificate.addEventListener('wheel', e => {
+    e.preventDefault();
+    certificate.scrollLeft += e.deltaY;
+})
+
+const certificateScroll = document.querySelector('.certificate-scroll');
+
+navigator.userAgent.match(/Mobile/) ? certificateScroll.innerHTML = 'Pressione com o dedo e arraste para o lado' :
+    certificateScroll.innerHTML = 'Utilize o scroll para rolagem lateral e clique na imagem para abrir';
