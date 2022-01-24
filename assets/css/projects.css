@@ -1,1 +1,183 @@
-#projects{background-image:-webkit-gradient(linear,left bottom,left top,from(#b1f4cf),color-stop(50%,#9890e3));background-image:linear-gradient(to top,#b1f4cf 0,#9890e3 50%)}.projects{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:1200px;margin:0 auto;padding:100px 0}.projects-header p{position:relative;left:0;top:0;z-index:2;}.all-projects{font-family:Kodchasan,sans-serif,'Open Sans',sans-serif;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.project-item{display:-webkit-box;display:-ms-flexbox;display:flex;margin:20px auto}.project-info{-ms-flex-preferred-size:50px;flex-basis:50px;height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:#fff}.project-info h1{font-size:4rem;font-weight:500}.project-info h2{font-size:1.8rem;font-weight:500;margin-top:10px}.project-info p{color:#cacaca}.project-info a{text-align:center;font-size:3rem;color:var(--primary-color)}.project-info a:hover{color:#f30c0c}.project-info figure:hover+figcaption h2{opacity:0;-webkit-transition:ease 1s;transition:ease 1s}.swiper{width:100%;height:100%}.swiper-wrapper{width:100vw}.swiper-slide{text-align:center;font-size:18px;display:flex;justify-content:center;align-items:center}.swiper-slide img{display:block;width:100%;height:100%;object-fit:cover}.wrapper{padding:5rem 0;display:flex;justify-content:center;align-items:center}.swiper-button-next{right:10%}.swiper-button-prev{left:10%}.swiper-button-next,.swiper-button-prev{width:45px;height:45px}.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-bullets.swiper-pagination-horizontal,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:0;left:0;width:100%}.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 var(--swiper-pagination-bullet-horizontal-gap,15px);}.carousel{max-height:500px;overflow:hidden}figure{height:500px;width:100rem;transform:perspective(1000px) rotateY(-13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(-3%) translateY(-3%);transition:all var(--speed) ease,transform .5s ease}figure:hover{background-position:bottom center!important;cursor:pointer;overflow:auto;transform:perspective(1000px) rotateY(0) rotateX(0) rotate(0) scale(1) translate(0) translateY(0);transition:all var(--speed) ease,transform .5s ease}
+#projects {
+    /* background-image:-webkit-gradient(linear,left bottom,left top,from(#b1f4cf),color-stop(50%,#9890e3)); */
+    background: var(--bg-gray-900);
+}
+
+.projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0
+}
+
+.projects-header p {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.all-projects {
+    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.project-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto
+}
+
+.project-info {
+    -ms-flex-preferred-size: 50px;
+    flex-basis: 50px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff
+}
+
+.project-info h1 {
+    font-size: 4rem;
+    font-weight: 500
+}
+
+.project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px
+}
+
+.project-info p {
+    color: var(--text-color)
+}
+
+.project-info a {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary-color)
+}
+
+.project-info a:hover {
+    color: #f30c0c
+}
+
+.project-info figure:hover+figcaption h2 {
+    opacity: 0;
+    -webkit-transition: ease 1s;
+    transition: ease 1s
+}
+
+.swiper {
+    width: 100%;
+    height: 100%
+}
+
+.swiper-wrapper {
+    width: 100vw
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.wrapper {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.swiper-button-next {
+    right: 10%
+}
+
+.swiper-button-prev {
+    left: 10%
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 45px;
+    height: 45px
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 15px);
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--swiper-theme-color);
+}
+
+.carousel {
+    max-height: 500px;
+    overflow: hidden
+}
+
+figure {
+    height: 500px;
+    width: 100rem;
+    transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(-3%) translateY(-3%);
+    transition: all var(--speed) ease, transform .5s ease
+}
+
+figure:hover {
+    background-position: bottom center!important;
+    cursor: pointer;
+    overflow: auto;
+    transform: perspective(1000px) rotateY(0) rotateX(0) rotate(0) scale(1) translate(0) translateY(0);
+    transition: all var(--speed) ease, transform .5s ease
+}

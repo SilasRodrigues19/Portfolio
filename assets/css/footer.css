@@ -1,1 +1,85 @@
-footer{font-family:Kodchasan,sans-serif,'Open Sans',sans-serif;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:#111}.footer{min-height:200px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:50px 0 10px 0}#footer h2{color:#cacaca;font-weight:600;font-size:1.4rem;letter-spacing:.5rem;margin:10px 0}.contact-icon{overflow:hidden;display:-webkit-box;display:-ms-flexbox;display:flex;margin:20px 0 20px 20px}#smoothScroll{position:fixed;background-color:rgba(71,11,169,.1);border:solid 2.5px;border-color:var(--primary-color);padding:15px;border-radius:10px;bottom:50px;right:25px;font-size:3rem;text-align:center;line-height:10px}#smoothScroll:hover{background-color:rgba(71,11,169,.3)}.contact-item{height:50px;overflow:hidden;width:75px;margin:0 10px}#footer p{color:#cacaca;font-size:1.3rem}.brand h1{font-size:3rem;text-transform:uppercase;color:#cacaca}.band a{width:fit-content;height:fit-content}.brand img{opacity:.7;width:75px;height:30px}.brand h1 span{color:var(--primary-color)}
+footer {
+    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: var(--bg-gray-800)
+}
+
+.footer {
+    min-height: 200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0 10px 0
+}
+
+#footer h2 {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .5rem;
+    margin: 10px 0
+}
+
+.contact-icon {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 20px 20px
+}
+
+#smoothScroll {
+    position: fixed;
+    background-color: rgba(71, 11, 169, .1);
+    border: solid 2.5px;
+    border-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 10px;
+    bottom: 50px;
+    right: 25px;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 10px
+}
+
+#smoothScroll:hover {
+    background-color: rgba(71, 11, 169, .3)
+}
+
+.contact-item {
+    height: 50px;
+    overflow: hidden;
+    width: 75px;
+    margin: 0 10px
+}
+
+#footer p {
+    color: var(--text-color);
+    font-size: 1.3rem
+}
+
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.band a {
+    width: fit-content;
+    height: fit-content
+}
+
+.brand img {
+    opacity: .7;
+    width: 75px;
+    height: 30px;
+    filter: var(--logo-filter);
+}
+
+.brand h1 span {
+    color: var(--primary-color)
+}

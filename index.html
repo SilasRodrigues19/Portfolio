@@ -74,6 +74,8 @@
     <link rel="preload" href="assets/css/icons.css" as="style">
     <link rel="stylesheet" href="assets/css/icons.css">
 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,7 +108,7 @@
     <link rel="canonical" href="https://silasrodrigues.me">
 </head>
 
-<body ondragstart="false">
+<body ondragstart="false" class="body-theme">
     <!-- Header -->
     <header id="header">
         <div class="header container">
@@ -136,6 +138,11 @@
                         </li>
                         <li data-aos="zoom-in-left" data-aos-easing="ease-in" data-aos-delay="1200">
                             <a class="scroll" href="#form" data-after="Contact">Contato</a>
+                        </li>
+                        <li data-aos="zoom-in-left" data-aos-easing="ease-in" data-aos-delay="1500">
+                            <a href="#theme-toggle" rel="noreferrer" aria-label="Mudar tema do site" data-after="Tema" class="iconLink">
+                                <i class="uil uil-moon" id="theme-toggle"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -580,8 +587,9 @@
             <div class="form-header">
                 <h1 class="section-title">
                     <div data-aos="fade-down"><span>Contato</span> pessoal</div>
+                    <hr data-aos="fade-down">
+                    <p data-aos="fade-left">Utilize o formulário abaixo para me enviar um e-mail para contato</p>
                     <hr data-aos="fade-up">
-                    <p data-aos="fade-up">Utilize o formulário abaixo para me enviar um e-mail para contato</p>
                 </h1>
             </div>
             <div class="my-form" data-aos="zoom-in-up">
@@ -711,6 +719,7 @@
     <!-- Aos Animate -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="assets/js/script.js"></script>
+    <script src="assets/js/theme.js"></script>
 
     <!-- Swiper JS -->
     <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.js" as="script">

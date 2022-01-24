@@ -1,1 +1,178 @@
-.envelope,.file-pdf,.globe-americas{font-size:50px;-webkit-transition:all ease .7s;transition:all ease .7s}.arrow-up,.envelope,.file-pdf,.globe-americas{color:var(--primary-color)}.codepen,.github,.linkedin,.twitter{font-size:20px}.codepen,.github,.linkedin,.twitter,.whatsapp{color:#3a9fbf;-webkit-transition:all ease 4s;transition:all ease 4s}.whatsapp{font-size:15px}.codepen:hover,.github:hover,.linkedin:hover,.twitter:hover,.whatsapp:hover{-webkit-transition:all ease .6s;transition:all ease .6s;color:#470ba9}.envelope:hover,.fa-arrow-up:hover,.file-pdf:hover,.globe-americas:hover{color:#000}.social{visibility:hidden;position:fixed;top:50%;left:-65px;transform:rotate(-90deg);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;cursor:pointer;width:240px;height:72px;background-color:rgba(1,1,1,.4);border-radius:80px;padding:0 18px;will-change:transform;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out}.social:hover{-webkit-transform:scale(1.1);transform:scale(1.1) rotate(90deg)}.socialBtn{position:absolute;-webkit-text-stroke:thin;z-index:20;width:240px;height:72px;border-radius:80px;font-size:20px;text-align:center;line-height:68px;letter-spacing:10px;color:#eeeeed;background-color:var(--portfolio-hover);padding:0 18px;-webkit-transition:all 1.2s ease;transition:all 1.2s ease}.socialBtn+.iconsBox i{opacity:0}.socialText{writing-mode:vertical-rl;word-break:break-all;height:10px;font-size:1.2rem;line-height:28px;text-transform:uppercase}.iconsBox{transform:rotate(-90deg);display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column-reverse;align-items:center;border-radius:80px}.iconsBox i{opacity:1;margin:12px 0}.iconsBox i:nth-of-type(1){-webkit-transition-delay:1.8s;transition-delay:1.8s}.iconsBox i:nth-of-type(2){-webkit-transition-delay:1.5s;transition-delay:1.5s}.iconsBox i:nth-of-type(3){-webkit-transition-delay:1.2s;transition-delay:1.2s}.iconsBox i:nth-of-type(4){-webkit-transition-delay:.9s;transition-delay:.9s}.social:hover span{-webkit-transition-delay:.25s;transition-delay:.25s;-webkit-transform:translateX(-280px);transform:translateX(-280px)}.social:hover i{opacity:1;-webkit-transform:scale(1);transform:scale(1)}#home .cta,#smoothScroll,.knowledge-icons,.programmer{-webkit-filter:drop-shadow(2px 4px 8px var(--primary-color));filter:drop-shadow(2px 4px 8px var(--primary-color))}
+.envelope,
+.file-pdf,
+.globe-americas {
+    font-size: 50px;
+    -webkit-transition: all ease .7s;
+    transition: all ease .7s
+}
+
+.arrow-up,
+.envelope,
+.file-pdf,
+.globe-americas {
+    color: var(--primary-color)
+}
+
+.codepen,
+.github,
+.linkedin,
+.twitter {
+    font-size: 20px
+}
+
+.codepen,
+.github,
+.linkedin,
+.twitter,
+.whatsapp {
+    color: #3a9fbf;
+    -webkit-transition: all ease 4s;
+    transition: all ease 4s
+}
+
+.whatsapp {
+    font-size: 15px
+}
+
+.codepen:hover,
+.github:hover,
+.linkedin:hover,
+.twitter:hover,
+.whatsapp:hover {
+    -webkit-transition: all ease .6s;
+    transition: all ease .6s;
+    color: #470ba9
+}
+
+.envelope:hover,
+.fa-arrow-up:hover,
+.file-pdf:hover,
+.globe-americas:hover {
+    color: #000
+}
+
+.social {
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: -65px;
+    transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 240px;
+    height: 72px;
+    background-color: rgba(1, 1, 1, .4);
+    border-radius: 80px;
+    padding: 0 18px;
+    will-change: transform;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1) rotate(90deg)
+}
+
+.socialBtn {
+    position: absolute;
+    -webkit-text-stroke: thin;
+    z-index: 20;
+    width: 240px;
+    height: 72px;
+    border-radius: 80px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: 10px;
+    color: #eeeeed;
+    /* background-color:var(--portfolio-hover); */
+    padding: 0 18px;
+    -webkit-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.socialBtn+.iconsBox i {
+    opacity: 0
+}
+
+.socialText {
+    writing-mode: vertical-rl;
+    word-break: break-all;
+    height: 10px;
+    font-size: 1.2rem;
+    line-height: 28px;
+    text-transform: uppercase
+}
+
+.iconsBox {
+    transform: rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 80px
+}
+
+.iconsBox i {
+    opacity: 1;
+    margin: 12px 0
+}
+
+.iconsBox i:nth-of-type(1) {
+    -webkit-transition-delay: 1.8s;
+    transition-delay: 1.8s
+}
+
+.iconsBox i:nth-of-type(2) {
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s
+}
+
+.iconsBox i:nth-of-type(3) {
+    -webkit-transition-delay: 1.2s;
+    transition-delay: 1.2s
+}
+
+.iconsBox i:nth-of-type(4) {
+    -webkit-transition-delay: .9s;
+    transition-delay: .9s
+}
+
+.social:hover span {
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
+    -webkit-transform: translateX(-280px);
+    transform: translateX(-280px)
+}
+
+.social:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+#home .cta,
+#smoothScroll,
+.knowledge-icons,
+.programmer {
+    -webkit-filter: drop-shadow(2px 4px 8px var(--primary-color));
+    filter: drop-shadow(2px 4px 8px var(--primary-color))
+}

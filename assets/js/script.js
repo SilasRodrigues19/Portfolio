@@ -107,7 +107,7 @@ document.addEventListener('scroll', () => {
 
     //scroll_position > 100 ? header.style.backgroundColor = '#111' : header.style.backgroundColor = 'transparent';
     scroll_position < 100 ? header.style.cssText = 'background: transparent; backdrop-filter: none' :
-        header.style.cssText = 'background: rgba(31, 30, 30, .30); backdrop-filter: blur(25px); border-bottom: 1px solid rgba(111, 111, 111, 0.2);'
+        header.style.cssText = 'background: rgba(31, 30, 30, .30); backdrop-filter: blur(25px); border-bottom: 1px solid rgba(111, 111, 111, 0.4);'
 
 
     if (scroll_position < 600) {
