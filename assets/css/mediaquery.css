@@ -142,7 +142,10 @@
     }
     .nav-list ul li:nth-child(3) a::before {
         background: url(https://api.iconify.design/clarity:certificate-solid.svg?color=gray) no-repeat center center/contain;
-        left: -35px
+        left: -28px
+    }
+    .nav-list ul li:nth-child(3) a {
+        margin-right: 18px
     }
     .nav-list ul li:nth-child(4) a::before {
         background: url(https://api.iconify.design/ri:mail-send-line.svg?color=gray) no-repeat center center/contain
