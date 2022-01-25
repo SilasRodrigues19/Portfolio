@@ -8,7 +8,6 @@
     --primary-color: #470ba9;
     --portfolio-hover: rgba(71, 11, 69, .5);
     --lightblue: #5c94cd;
-    --scrollbar: #111;
     --speed: 3.5s;
     --text-color: #cacaca;
     --border-color: #808080;
@@ -19,6 +18,8 @@
     --logo-filter: none;
     --form-focus-border: #f1f1f1;
     --menu-line-bg: #808080;
+    --scrollbar-thumb: #ab9cc9;
+    --scrollbar-thumb-hover: #c7bddb;
 }
 
 .dark-theme {
@@ -31,6 +32,8 @@
     --logo-filter: brightness(0.7);
     --form-focus-border: #111;
     --menu-line-bg: #cacaca;
+    --scrollbar-thumb: #15171A;
+    --scrollbar-thumb-hover: #373c44;
 }
 
 #theme-toggle {
@@ -42,15 +45,19 @@
     content: ''
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     padding-right: 5px;
     width: 8px;
     background: transparent;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background: #15171A;
+    background: var(--scrollbar-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
 }
 
 ::selection {
