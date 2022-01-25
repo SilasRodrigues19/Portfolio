@@ -150,14 +150,14 @@
     .nav-list ul li:nth-child(4) a::before {
         background: url(https://api.iconify.design/ri:mail-send-line.svg?color=gray) no-repeat center center/contain
     }
-    .nav-list ul li:nth-child(5) {
+    .nav-list ul li:last-child {
         position: relative;
         right: 47px;
     }
-    .nav-list ul li:nth-child(5):hover {
+    .nav-list ul li:last-child:hover {
         right: 26px;
     }
-    .nav-list ul li:nth-child(5):hover i::before {
+    .nav-list ul li:last-child:hover i::before {
         content: '';
     }
     .home h1 {

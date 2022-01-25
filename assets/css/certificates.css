@@ -3,8 +3,7 @@
     background: var(--bg-gray-800);
 }
 
-.certificate-header h1,
-.certificate-header p {
+.certificate-header :is(h1, p) {
     color: var(--text-color)
 }
 

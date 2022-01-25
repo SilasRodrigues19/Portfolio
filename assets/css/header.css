@@ -247,15 +247,6 @@
     transition: .5s ease background
 }
 
-
-/*.d-flex {
-    position: absolute;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-
 .nav-bar {
     display: -webkit-box;
     display: -ms-flexbox;
