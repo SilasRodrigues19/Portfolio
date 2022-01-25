@@ -9,20 +9,9 @@
     --portfolio-hover: rgba(71, 11, 69, .5);
     --lightblue: #5c94cd;
     --speed: 3.5s;
-    --text-color: #cacaca;
-    --border-color: #808080;
-    --bg-gray-900: #171923;
-    --bg-gray-800: #1A202C;
-    --hr-color: rgba(255, 255, 255, .2);
-    --nav-links: #a3a3a3;
-    --logo-filter: none;
-    --form-focus-border: #f1f1f1;
-    --menu-line-bg: #808080;
-    --scrollbar-thumb: #ab9cc9;
-    --scrollbar-thumb-hover: #c7bddb;
 }
 
-.dark-theme {
+.body-theme {
     --text-color: #222;
     --border-color: #111;
     --bg-gray-900: #CBD5E0;
@@ -34,6 +23,20 @@
     --menu-line-bg: #cacaca;
     --scrollbar-thumb: #15171A;
     --scrollbar-thumb-hover: #373c44;
+}
+
+.dark-theme {
+    --text-color: #cacaca;
+    --border-color: #808080;
+    --bg-gray-900: #171923;
+    --bg-gray-800: #1A202C;
+    --hr-color: rgba(255, 255, 255, .2);
+    --nav-links: #a3a3a3;
+    --logo-filter: none;
+    --form-focus-border: #f1f1f1;
+    --menu-line-bg: #808080;
+    --scrollbar-thumb: #ab9cc9;
+    --scrollbar-thumb-hover: #c7bddb;
 }
 
 #theme-toggle {
