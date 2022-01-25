@@ -108,8 +108,7 @@
         font-size: 2rem
     }
     .brand img {
-        width: 40px;
-        height: 20px
+        transform: scale(.7);
     }
     .nav-bar .brand {
         margin: 0 20px
