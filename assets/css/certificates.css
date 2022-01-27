@@ -1,60 +1,63 @@
 #certificates {
-    /* background-image:-webkit-gradient(linear,left top,right top,from(#243b55),to(#141e30)); */
-    background: var(--bg-gray-800);
+  /* background-image:-webkit-gradient(linear,left top,right top,from(#243b55),to(#141e30)); */
+  background: var(--bg-gray-800);
 }
 
 .certificate-header :is(h1, p) {
-    color: var(--text-color)
+  color: var(--text-color);
 }
 
 .certificate-header .section-title {
-    padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .certificate-header hr {
-    border-top: 1px solid var(--hr-color)
+  border-top: 1px solid var(--hr-color);
 }
 
 .certificates {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 100px 0
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 0;
 }
 
 .certificate {
-    width: 100%;
-    border-radius: 8px;
-    max-width: 75vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    overflow-x: auto;
-    border-bottom: 1px solid var(--hr-color)
+  width: 100%;
+  border-radius: 8px;
+  max-width: 75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--hr-color);
 }
 
 .certificate::-webkit-scrollbar {
-    display: none
+  display: none;
 }
 
 .certificate img {
-    border-radius: 10px;
-    margin: 15px;
-    max-width: 200px;
-    max-height: 150px;
-    object-fit: cover;
-    -webkit-transition: all .5s!important;
-    transition: all .5s!important
+  border-radius: 10px;
+  margin: 15px;
+  max-width: 200px;
+  max-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+  filter: none;
 }
 
 .certificate img:hover {
-    -webkit-transform: scale(1) translateY(-.5rem)!important;
-    transform: scale(1) translateY(-.5rem)!important
+    -webkit-transform: scale(1) translateY(-0.5rem) !important;
+    transform: scale(1) translateY(-0.5rem) !important;
+    filter: grayscale(1);
 }
