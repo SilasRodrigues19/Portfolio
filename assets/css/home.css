@@ -79,8 +79,8 @@
 }
 
 .home .cta:hover {
-    -webkit-box-shadow: 1px 1px 25px 10px var(--portfolio-hover);
-    box-shadow: 1px 1px 25px 10px var(--portfolio-hover);
+    -webkit-box-shadow: 1px 1px 10PX 5px var(--portfolio-hover);
+    box-shadow: 1px 1px 10PX 5px var(--portfolio-hover);
     background-color: var(--primary-color)
 }
 
@@ -92,8 +92,12 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(120deg, transparent, var(--portfolio-hover), transparent);
-    -webkit-transition: all 999ms;
-    transition: all 999ms
+    -webkit-transition: ease-in-out 999ms;
+    transition: ease-in-out 999ms
+}
+
+.cta:hover:before {
+    left: 100%;
 }
 
 .portfolioIcon {

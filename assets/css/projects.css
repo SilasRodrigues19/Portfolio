@@ -155,7 +155,7 @@
 }
 
 .swiper-pagination-bullet {
-    background: #fff;
+    background: var(--swiper-pagination-bullet);
 }
 
 .swiper-pagination-bullet-active {
@@ -168,6 +168,7 @@
 }
 
 figure {
+    --speed: 2s;
     height: 500px;
     width: 100rem;
     transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotate(1deg) scaleY(.9) scaleX(.95) translate(-3%) translateY(-3%);
@@ -175,6 +176,7 @@ figure {
 }
 
 figure:hover {
+    --speed: 6s;
     background-position: bottom center!important;
     cursor: pointer;
     overflow: auto;

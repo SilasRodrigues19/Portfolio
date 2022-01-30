@@ -53,8 +53,8 @@
 }
 
 .carousel-info h2 {
-    background-color: rgba(0, 0, 0, .6);
-    color: var(--text-color);
+    background-color: var(--carousel-info-bg);
+    color: var(--carousel-info-text);
     width: 60rem;
     border-radius: 25px;
     padding: 10px 0;
