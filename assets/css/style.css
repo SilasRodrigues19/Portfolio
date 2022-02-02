@@ -26,6 +26,8 @@
     --carousel-info-bg: rgba(1, 1, 1, .6);
     --carousel-info-text: #fff;
     --swiper-pagination-bullet: #111;
+    --content-title: #111;
+    --content-title-span: #555;
 }
 
 .dark-theme {
@@ -43,6 +45,8 @@
     --carousel-info-bg: rgba(255, 255, 255, .6);
     --carousel-info-text: #111;
     --swiper-pagination-bullet: #fff;
+    --content-title: #cacaca;
+    --content-title-span: #808080;
 }
 
 #theme-toggle {
@@ -190,6 +194,7 @@ p {
 }
 
 .cursor.typing {
+    background-color: var(--text-color);
     -webkit-animation: none;
     animation: none;
 }
@@ -312,25 +317,25 @@ p {
 
 @-webkit-keyframes blink {
     0% {
-        background-color: #ccc;
+        background-color: var(--text-color);
     }
     50% {
         background-color: transparent;
     }
     100% {
-        background-color: #ccc;
+        background-color: var(--text-color);
     }
 }
 
 @keyframes blink {
     0% {
-        background-color: #ccc;
+        background-color: var(--text-color);
     }
     50% {
         background-color: transparent;
     }
     100% {
-        background-color: #ccc;
+        background-color: var(--text-color);
     }
 }
 

@@ -104,10 +104,14 @@
     .swiper-button-prev {
         transform: scale(.5)
     }
+    .box {
+        display: none;
+    }
     .brand h1 {
         font-size: 2rem
     }
     .brand img {
+        margin-left: 0;
         transform: scale(.7);
     }
     .nav-bar .brand {
@@ -140,7 +144,7 @@
         background: url(https://api.iconify.design/entypo:code.svg?color=gray) no-repeat center center/contain
     }
     .nav-list ul li:nth-child(3) a::before {
-        background: url(https://api.iconify.design/clarity:certificate-solid.svg?color=gray) no-repeat center center/contain;
+        background: url(https://api.iconify.design/vaadin/diploma-scroll.svg?color=gray) no-repeat center center/contain;
         left: -28px
     }
     .nav-list ul li:nth-child(3) a {
