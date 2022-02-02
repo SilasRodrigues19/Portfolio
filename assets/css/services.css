@@ -1,6 +1,5 @@
 #services {
     background: var(--bg-gray-800);
-    /* background-image:linear-gradient(to bottom,#a663fc 20%,#515aec 70%); */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

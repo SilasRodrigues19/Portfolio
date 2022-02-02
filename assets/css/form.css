@@ -15,8 +15,6 @@
 }
 
 #form {
-    /* background-image:-webkit-gradient(linear,left bottom,left top,from(#fbc2eb),to(#a6c1ee)); */
-    /* background-image:linear-gradient(to top,#fbc2eb 0,#a6c1ee 100%); */
     background: var(--bg-gray-900);
 }
 

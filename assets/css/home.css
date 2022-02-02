@@ -1,8 +1,5 @@
 #home {
     font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
-    background-image: url(../img/code.webp);
-    background-size: cover;
-    background-position: top center;
     position: relative;
     z-index: 1;
     -webkit-animation: bgAnimation 40s linear infinite alternate;
@@ -16,9 +13,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#151515), to(#000));
-    background-image: linear-gradient(to right, #151515 0, #000 100%);
-    opacity: .7;
+    background: var(--bg-gray-900);
     z-index: -1
 }
 
@@ -37,13 +32,98 @@
     width: fit-content;
     padding: 2px;
     font-size: 5rem;
-    text-shadow: 6px 3px 0 rgba(0, 0, 0, .2)
+}
+
+.box {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    margin: 4rem;
+}
+
+.box:hover .imgBox {
+    transform: translate(-2rem, -8rem);
+}
+
+.box:hover .content {
+    transform: translate(2.5rem, 5rem);
+    z-index: 1;
+}
+
+.box .imgBox img {
+    transition: all .5s ease-in-out;
+}
+
+.box:hover .imgBox img {
+    padding: 0;
+    transition: all .8s ease-in-out;
+    transform: scale(.8);
+    border-style: solid;
+}
+
+.imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    transition: all .5s ease-in-out;
+}
+
+.imgBox img {
+    object-fit: cover;
+    user-select: none;
+    pointer-events: none;
+    height: 300px;
+    filter: drop-shadow(1px 2px 3px #470ba9) brightness(.9);
+    -webkit-filter: drop-shadow(1px 2px 3px #470ba9) brightness(.9);
+    border-radius: 50%;
+    border: 2px var(--text-color);
+    border-style: solid dashed;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    z-index: -1;
+    align-items: flex-end;
+    text-align: center;
+    transition: 1.3s ease-in-out;
+}
+
+.content-title {
+    display: block;
+    font-size: 2rem;
+    white-space: pre-line;
+    color: var(--content-title);
+    font-weight: 500;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.content-title span {
+    color: var(--content-title-span);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .infoAnimation {
-    -webkit-animation: moveInfo 3s cubic-bezier(.175, .885, .32, 1);
-    animation: moveInfo 3s cubic-bezier(.175, .885, .32, 1);
-    color: #cacaca
+    -webkit-animation: moveInfo 4.5s cubic-bezier(.175, .885, .32, 1);
+    animation: moveInfo 4.5s cubic-bezier(.175, .885, .32, 1);
+    color: var(--text-color);
+    display: flex;
+    align-items: flex-start;
 }
 
 .home h1:nth-child(3) {
@@ -63,7 +143,7 @@
     display: inline-block;
     padding: 15px 35px;
     text-transform: uppercase;
-    color: #cacaca;
+    color: var(--text-color);
     background-color: transparent;
     border: 2px solid;
     border-color: var(--primary-color);
@@ -79,9 +159,9 @@
 }
 
 .home .cta:hover {
-    -webkit-box-shadow: 1px 1px 10PX 5px var(--portfolio-hover);
+    -webkit-box-shadow: 1px 1px 10px 5px var(--portfolio-hover);
     box-shadow: 1px 1px 10PX 5px var(--portfolio-hover);
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
 }
 
 .cta:before {
@@ -102,8 +182,15 @@
 
 .portfolioIcon {
     font-size: 25px;
-    color: #fff;
-    margin: 0 10px -4px 0
+    color: var(--text-color);
+    margin: 0 10px -4px 0;
+    transition: color .5s ease-in-out;
+}
+
+.home .cta:hover,
+.home .cta:hover .portfolioIcon {
+    color: #cacaca;
+    transition: color .5s ease-in-out;
 }
 
 @-webkit-keyframes bgAnimation {
@@ -126,8 +213,8 @@
 
 @-webkit-keyframes moveInfo {
     0% {
-        -webkit-transform: translateY(10rem) rotateY(-30deg);
-        transform: translateY(10rem) rotateY(-30deg)
+        -webkit-transform: translateY(10rem) rotateY(20deg);
+        transform: translateY(10rem) rotateY(20deg)
     }
     100% {
         -webkit-transform: translateY(0) rotateY(0);
@@ -138,8 +225,8 @@
 
 @keyframes moveInfo {
     0% {
-        -webkit-transform: translateY(10rem) rotateY(-30deg);
-        transform: translateY(10rem) rotateY(-30deg)
+        -webkit-transform: translateY(10rem) rotateY(20deg);
+        transform: translateY(10rem) rotateY(20deg)
     }
     100% {
         -webkit-transform: translateY(0) rotateY(0);

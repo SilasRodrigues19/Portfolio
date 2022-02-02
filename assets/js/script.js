@@ -1,11 +1,13 @@
 const typedTextSpan = document.querySelector(".typed-text"),
     cursorSpan = document.querySelector(".cursor"),
-    home = document.querySelector(".home .container");
+    home = document.querySelector(".home .container"),
+    avatar = document.querySelector('.avatar');
 
-const textArray = ["Web Developer", "Programador", "Front End"];
-const typingDelay = 50;
-const erasingDelay = 50;
-const newTextDelay = 2500; // Delay between current and next text
+const textArray = ["Web Developer", "Programador", "Front End"],
+    typingDelay = 50,
+    erasingDelay = 50,
+    newTextDelay = 2500; // Delay between current and next text
+
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -75,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Tooltip Alert */
     $('[data-toggle="tooltip"]').tooltip();
     home.classList.add('infoAnimation');
+    avatar.classList.add('infoAnimation');
     textArray.length && setTimeout(type, newTextDelay + 250);
 });
 
@@ -113,12 +116,12 @@ document.addEventListener('scroll', () => {
     if (scroll_position < 600) {
         scrollToTop.style.cssText = 'opacity: 0; display: none';
         social.style.cssText = 'visibility: hidden; opacity: 0; pointer-events: none';
-        rightButton.style.cssText = 'opacity: 0';
+        rightButton.style.cssText = 'visibility: hidden; opacity: 0';
         return;
     }
     scrollToTop.style.cssText = 'opacity: 1';
     social.style.cssText = 'visibility: visible; opacity: 1; pointer-events: auto';
-    rightButton.style.cssText = 'opacity: 1';
+    rightButton.style.cssText = 'visibility: visible; opacity: 1';
 
 });
 

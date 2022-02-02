@@ -52,6 +52,10 @@
     color: #000;
 }
 
+.rightButton {
+    visibility: hidden;
+}
+
 .social {
     visibility: hidden;
     position: fixed;
