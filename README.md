@@ -73,13 +73,16 @@
 
 This project was built to show some of my projects and my freelancing services.
 
-The website is divided into:
+The main sections and features are described below:
 
+- **Light / Dark**: toggle between dark and light mode. The last theme chosen will be saved to localStorage to be displayed on the next access.
+- **Header**: contains navigation menu and button to switch between light and dark mode.
 - **Home**: presentation about me with name and professional focus.
 - **Services**: it shows my main skills and technologies that I use in my projects.
 - **Projects**: it has some projects that I developed.
 - **Certificates**: as the name suggests is a part that's show my certificates.
 - **Contact**: area with a form to get in touch with me.
+- **Footer**: contains links to contact, location, to view my resume and back to top.
 
 ### Built With
 
