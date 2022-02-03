@@ -52,11 +52,13 @@
     object-fit: cover;
     -webkit-transition: all 0.5s !important;
     transition: all 0.5s !important;
+    -webkit-filter: none;
     filter: none;
 }
 
 .certificate img:hover {
     -webkit-transform: scale(1) translateY(-0.5rem) !important;
     transform: scale(1) translateY(-0.5rem) !important;
+    -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }

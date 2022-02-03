@@ -1,4 +1,4 @@
-@media only screen and (min-width:980px) {
+@media only screen and (min-width: 980px) {
     .knowledge-header p {
         font-weight: 600;
         opacity: .9;
@@ -6,11 +6,11 @@
         color: var(--text-color);
     }
     .knowledge-icons {
-        margin-right: 10px
+        margin-right: 10px;
     }
 }
 
-@media only screen and (max-width:960px) {
+@media only screen and (max-width: 960px) {
     .knowledge-wrapper {
         font-family: 'Open Sans', sans-serif;
         display: -webkit-box;
@@ -22,33 +22,33 @@
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column
+        flex-direction: column;
     }
     .knowledge {
-        margin: 10px 0
+        margin: 10px 0;
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
     html {
-        font-family: 'Open Sans', sans-serif
+        font-family: 'Open Sans', sans-serif;
     }
     .portfolioIcon {
-        font-size: 20px
+        font-size: 20px;
     }
     #services .section-title,
     h1.section-title {
-        font-size: 3rem
+        font-size: 3rem;
     }
     .home h1 {
-        font-size: 3.4rem
+        font-size: 3.4rem;
     }
     .home h2 {
-        font-size: 2.4rem
+        font-size: 2.4rem;
     }
     .home .cta {
         padding: 10px 20px;
-        font-size: 1.5rem
+        font-size: 1.5rem;
     }
     #services .service-item {
         text-align: center;
@@ -57,18 +57,18 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        margin: 2.5%
+        margin: 2.5%;
     }
     .my-form {
-        width: 80%
+        width: 80%;
     }
     .my-form h1 {
         font-family: 'Open Sans', sans-serif;
-        font-size: 2.5rem
+        font-size: 2.5rem;
     }
     .social {
-        -webkit-transform: rotate(90deg) translateY(150%)!important;
-        transform: rotate(90deg) translateY(150%)!important
+        -webkit-transform: rotate(90deg) translateY(150%) !important;
+        transform: rotate(90deg) translateY(150%) !important;
     }
     .rightButton {
         visibility: visible;
@@ -76,56 +76,61 @@
         position: fixed;
         left: 5px;
         top: 50%;
-        font-size: 30px
+        font-size: 30px;
     }
     .rightButton:hover {
         visibility: hidden;
-        transition: ease .7s
+        -webkit-transition: ease .7s;
+        transition: ease .7s;
     }
     .rightButton:hover+.social {
-        -webkit-transform: rotate(90deg) translateY(0)!important;
-        transform: rotate(90deg) translateY(0)!important
+        -webkit-transform: rotate(90deg) translateY(0) !important;
+        transform: rotate(90deg) translateY(0) !important;
     }
     .rightButton:hover+.social span {
         -webkit-transform: translateX(-280px);
-        transform: translateX(-280px)
+        transform: translateX(-280px);
     }
     .rightButton:hover+.social .socialBtn+.iconsBox i {
-        opacity: 1
+        opacity: 1;
     }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
     .swiper-pagination {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        margin-bottom: 30px
+        margin-bottom: 30px;
     }
     .swiper-button-next,
     .swiper-button-prev {
-        transform: scale(.5)
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
     }
     .box {
         display: none;
     }
     .brand h1 {
-        font-size: 2rem
+        font-size: 2rem;
     }
     .brand img {
         margin-left: 0;
-        transform: scale(.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
     }
     .nav-bar .brand {
-        margin: 0 20px
+        margin: 0 20px;
     }
     .nav-list ul {
         -webkit-clip-path: ellipse(360px 370px at right);
-        clip-path: ellipse(360px 370px at right)
+        clip-path: ellipse(360px 370px at right);
     }
     .nav-list ul a::before {
-        position: absolute
+        position: absolute;
     }
     .nav-list ul a:hover::before {
-        opacity: 0
+        opacity: 0;
     }
     .nav-list ul li a::before {
         content: '';
@@ -135,23 +140,23 @@
         background-size: cover;
         width: 25px;
         height: 25px;
-        left: -25px
+        left: -25px;
     }
     .nav-list ul li:nth-child(1) a::before {
-        background: url(https://api.iconify.design/fluent:window-dev-tools-24-regular.svg?color=gray) no-repeat center center/contain
+        background: url(https://api.iconify.design/fluent:window-dev-tools-24-regular.svg?color=gray) no-repeat center center/contain;
     }
     .nav-list ul li:nth-child(2) a::before {
-        background: url(https://api.iconify.design/entypo:code.svg?color=gray) no-repeat center center/contain
+        background: url(https://api.iconify.design/entypo:code.svg?color=gray) no-repeat center center/contain;
     }
     .nav-list ul li:nth-child(3) a::before {
         background: url(https://api.iconify.design/vaadin/diploma-scroll.svg?color=gray) no-repeat center center/contain;
-        left: -28px
+        left: -28px;
     }
     .nav-list ul li:nth-child(3) a {
-        margin-right: 18px
+        margin-right: 18px;
     }
     .nav-list ul li:nth-child(4) a::before {
-        background: url(https://api.iconify.design/ri:mail-send-line.svg?color=gray) no-repeat center center/contain
+        background: url(https://api.iconify.design/ri:mail-send-line.svg?color=gray) no-repeat center center/contain;
     }
     .nav-list ul li:last-child {
         position: relative;
@@ -164,32 +169,32 @@
         content: '';
     }
     .home h1 {
-        font-size: 2.4rem
+        font-size: 2.4rem;
     }
     .home h2 {
         font-size: 1.6rem;
-        margin-top: 35px
+        margin-top: 35px;
     }
     #services .service-bottom {
-        display: initial
+        display: initial;
     }
     #services .service-item {
         width: 245px;
         padding: 25px;
-        margin: 2.5% 0 10% 0
+        margin: 2.5% 0 10% 0;
     }
     .service-top p {
-        width: 35rem
+        width: 35rem;
     }
     .carousel-info h2 {
-        display: none
+        display: none;
     }
     figure {
         height: 300px;
-        width: 380px
+        width: 380px;
     }
     .certificate {
-        height: 200px
+        height: 200px;
     }
     #footer h2,
     #footer p,
@@ -201,31 +206,31 @@
     .lb-details,
     .nav-list ul a,
     .social ul li a span {
-        font-family: 'Open Sans', sans-serif
+        font-family: 'Open Sans', sans-serif;
     }
     .social ul li a span {
-        display: none
+        display: none;
     }
     #footer h2 {
         word-break: break-all;
-        letter-spacing: .4rem
+        letter-spacing: .4rem;
     }
     .contact-icon #smoothScroll,
     .programmer {
-        display: none
+        display: none;
     }
 }
 
-@media only screen and (max-width:386px) {
+@media only screen and (max-width: 386px) {
     #footer h2,
     .brand h1 {
         font-size: 1.6rem;
-        text-align: center
+        text-align: center;
     }
     .fa-arrow-up,
     .fa-envelope,
     .fa-file-pdf,
     .fa-globe-americas {
-        font-size: 30px
+        font-size: 30px;
     }
 }

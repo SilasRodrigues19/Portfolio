@@ -42,6 +42,7 @@
     -webkit-transition: all ease .6s;
     transition: all ease .6s;
     color: #470ba9;
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -61,6 +62,7 @@
     position: fixed;
     top: 50%;
     left: -65px;
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,6 +112,8 @@
 }
 
 .socialText {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     word-break: break-all;
     height: 10px;
@@ -119,6 +123,7 @@
 }
 
 .iconsBox {
+    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     display: -webkit-box;
     display: -ms-flexbox;

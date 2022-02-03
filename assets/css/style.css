@@ -73,6 +73,11 @@
     background: var(--scrollbar-thumb-hover);
 }
 
+::-moz-selection {
+    background: #605080;
+    color: #fff;
+}
+
 ::selection {
     background: #605080;
     color: #fff;

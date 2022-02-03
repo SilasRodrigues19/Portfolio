@@ -13,7 +13,7 @@
     align-items: center;
     width: 100vw;
     overflow: visible;
-    height: 100vh
+    height: 100vh;
 }
 
 #loader::before {
@@ -23,6 +23,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #151515), to(#000));
     background-image: linear-gradient(90deg, #151515 0, #000);
     opacity: .6;
     z-index: -1;
@@ -34,45 +35,45 @@
     height: 75px;
     margin: 0 15px;
     -webkit-animation: dots 1s infinite ease-in-out;
-    animation: dots 1s infinite ease-in-out
+    animation: dots 1s infinite ease-in-out;
 }
 
 #loader span:nth-child(2) {
     -webkit-animation-delay: .15s;
-    animation-delay: .15s
+    animation-delay: .15s;
 }
 
 #loader span:nth-child(3) {
     -webkit-animation-delay: .25s;
-    animation-delay: .25s
+    animation-delay: .25s;
 }
 
 @-webkit-keyframes dots {
     50% {
         opacity: 0;
-        -webkit-transform: scale(.5) translateY(5px);
-        transform: scale(.5) translateY(5px)
+        -webkit-transform: scale(0.5) translateY(5px);
+        transform: scale(0.5) translateY(5px);
     }
 }
 
 @keyframes dots {
     50% {
         opacity: 0;
-        -webkit-transform: scale(.5) translateY(5px);
-        transform: scale(.5) translateY(5px)
+        -webkit-transform: scale(0.5) translateY(5px);
+        transform: scale(0.5) translateY(5px);
     }
 }
 
 @-webkit-keyframes loadingAnimation {
     50% {
-        -webkit-transform: scale(.8);
-        transform: scale(.8)
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
     }
 }
 
 @keyframes loadingAnimation {
     50% {
-        -webkit-transform: scale(.8);
-        transform: scale(.8)
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
     }
 }
