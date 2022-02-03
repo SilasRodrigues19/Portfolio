@@ -1,14 +1,16 @@
 /* Smoth scroll */
-jQuery(document).ready(function($) {
-    $("#smoothScroll").click(function(event) {
-        event.preventDefault();
+$(document).ready(function($) {
+
+    $("#smoothScroll").click(function(e) {
+        e.preventDefault();
         $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
     });
 
-    $(".scroll").click(function(event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 3000);
+    $(".scroll").click(function(e) {
+        e.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1500);
     });
+
 });
 
 const iconLink = document.querySelector('.iconLink');
