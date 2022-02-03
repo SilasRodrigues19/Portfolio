@@ -89,7 +89,7 @@ const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
 
 const scrollToTop = document.querySelector('#smoothScroll'),
     social = document.querySelector('.social'),
-    rightButton = document.querySelector('.rightButton');
+    rightArrow = document.querySelector('.rightArrow');
 
 
 menu.addEventListener('click', () => {
@@ -116,13 +116,12 @@ document.addEventListener('scroll', () => {
     if (scroll_position < 600) {
         scrollToTop.style.cssText = 'opacity: 0; display: none';
         social.style.cssText = 'visibility: hidden; opacity: 0; pointer-events: none';
-        rightButton.style.cssText = 'visibility: hidden; opacity: 0';
+        rightArrow.style.cssText = 'opacity: 0';
         return;
     }
     scrollToTop.style.cssText = 'opacity: 1';
     social.style.cssText = 'visibility: visible; opacity: 1; pointer-events: auto';
-    rightButton.style.cssText = 'visibility: visible; opacity: 1';
-
+    rightArrow.style.cssText = 'opacity: 1';
 });
 
 // Close menu after link is clicked

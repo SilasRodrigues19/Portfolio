@@ -53,8 +53,8 @@
     color: #000;
 }
 
-.rightButton {
-    visibility: hidden;
+.rightArrow {
+    opacity: 0;
 }
 
 .social {

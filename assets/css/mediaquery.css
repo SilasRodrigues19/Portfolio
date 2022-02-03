@@ -70,28 +70,27 @@
         -webkit-transform: rotate(90deg) translateY(150%) !important;
         transform: rotate(90deg) translateY(150%) !important;
     }
-    .rightButton {
-        visibility: visible;
+    .rightArrow {
         opacity: 0;
         position: fixed;
         left: 5px;
         top: 50%;
         font-size: 30px;
     }
-    .rightButton:hover {
+    .rightArrow:hover {
         visibility: hidden;
         -webkit-transition: ease .7s;
         transition: ease .7s;
     }
-    .rightButton:hover+.social {
+    .rightArrow:hover+.social {
         -webkit-transform: rotate(90deg) translateY(0) !important;
         transform: rotate(90deg) translateY(0) !important;
     }
-    .rightButton:hover+.social span {
+    .rightArrow:hover+.social span {
         -webkit-transform: translateX(-280px);
         transform: translateX(-280px);
     }
-    .rightButton:hover+.social .socialBtn+.iconsBox i {
+    .rightArrow:hover+.social .socialBtn+.iconsBox i {
         opacity: 1;
     }
 }
