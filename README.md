@@ -69,7 +69,7 @@
 
 ## Lighthouse Report
 
-[![Lighthouse Report][product-screenshot6]](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fsilasrodrigues.me%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)]
+[![Lighthouse Report][product-screenshot7]](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fsilasrodrigues.me%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)]
 
 This project was built to show some of my projects and my freelancing services.
 
