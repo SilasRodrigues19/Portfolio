@@ -28,6 +28,7 @@
     --swiper-pagination-bullet: #111;
     --content-title: #111;
     --content-title-span: #555;
+    --lb-navigation: invert(1);
 }
 
 .dark-theme {
@@ -47,6 +48,16 @@
     --swiper-pagination-bullet: #fff;
     --content-title: #cacaca;
     --content-title-span: #808080;
+    --lb-navigation: none;
+}
+
+.lb-next,
+.lb-prev {
+    filter: var(--lb-navigation);
+}
+
+.lb-data .lb-number {
+    font-weight: 600;
 }
 
 #theme-toggle {

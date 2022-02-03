@@ -114,7 +114,7 @@
         font-size: 2rem;
     }
     .brand img {
-        margin-left: 0;
+        margin-left: 15px;
         -webkit-transform: scale(0.7);
         transform: scale(0.7);
     }
