@@ -109,6 +109,10 @@ html {
     overflow: overlay;
 }
 
+body {
+    background: var( --bg-gray-900);
+}
+
 p {
     text-transform: initial;
     text-align: center;
