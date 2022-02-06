@@ -107,6 +107,12 @@
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
     }
+    #theme-toggle::before {
+        color: #808080;
+    }
+    #theme-toggle {
+        color: inherit;
+    }
     .box {
         display: none;
     }

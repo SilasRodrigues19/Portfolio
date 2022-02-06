@@ -62,7 +62,7 @@
 
 #theme-toggle {
     margin: 0 auto;
-    color: var(--textColor);
+    color: var(--nav-links);
 }
 
 #theme-toggle::after {
