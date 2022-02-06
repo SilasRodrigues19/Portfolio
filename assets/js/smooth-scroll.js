@@ -1,4 +1,4 @@
-/* Smoth scroll */
+/* Smooth scroll */
 $(document).ready(function($) {
 
     $("#smoothScroll").click(function(e) {
