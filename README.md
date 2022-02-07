@@ -82,7 +82,6 @@ The main sections and features are described below:
 - **Projects**: it has some projects that I developed.
 - **Certificates**: as the name suggests is a part that's show my certificates.
 - **Form**: form to get in touch with me.
-- **Contact**: area with a form to get in touch with me.
 - **Footer**: contains links to contact, location, to view my resume and back to top.
 
 ### Built With
