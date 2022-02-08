@@ -88,7 +88,7 @@
     color: #f30c0c;
 }
 
-.project-info figure:hover+figcaption h2 {
+.project-info figure:hover figcaption h2 {
     opacity: 0;
     -webkit-transition: ease 1s;
     transition: ease 1s;
