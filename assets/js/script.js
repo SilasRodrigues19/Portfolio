@@ -105,7 +105,7 @@ menu.addEventListener('click', () => {
 });
 
 
-document.addEventListener('scroll', () => {
+document.addEventListener('scroll', { passive: true }, () => {
     let scroll_position = window.scrollY;
 
     if (!navigator.userAgent.match(/Mobile/) && scroll_position < 100) {
