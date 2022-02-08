@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #470ba9;
-    --portfolio-hover: rgba(71, 11, 169, 0.5);
+    --portfolio-hover: rgba(71, 11, 169, .5);
     --lightblue: #5c94cd;
     --speed: 3.5s;
 }
@@ -63,6 +63,10 @@
 #theme-toggle {
     margin: 0 auto;
     color: var(--nav-links);
+}
+
+#theme-toggle:hover {
+    color: var(--primary-color);
 }
 
 #theme-toggle::after {

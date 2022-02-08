@@ -108,10 +108,17 @@ menu.addEventListener('click', () => {
 document.addEventListener('scroll', () => {
     let scroll_position = window.scrollY;
 
-    //scroll_position > 100 ? header.style.backgroundColor = '#111' : header.style.backgroundColor = 'transparent';
+    if (!navigator.userAgent.match(/Mobile/) && scroll_position < 100) {
+        menu_item.forEach((item) => item.classList.add('underline'));
+    } else if (navigator.userAgent.match(/Mobile/)) {
+        menu_item.forEach((item) => item.classList.remove('underline'));
+        iconLink.classList.remove('underline');
+    } else {
+        menu_item.forEach((item) => item.classList.remove('underline'));
+    }
+
     scroll_position < 100 ? header.style.cssText = 'background: transparent; backdrop-filter: none' :
         header.style.cssText = 'background: rgba(31, 30, 30, .30); backdrop-filter: blur(25px); border-bottom: 1px solid rgba(111, 111, 111, 0.4);'
-
 
     if (scroll_position < 600) {
         scrollToTop.style.cssText = 'opacity: 0; display: none';
@@ -169,3 +176,7 @@ const certificateScroll = document.querySelector('.certificate-scroll');
 
 navigator.userAgent.match(/Mobile/) ? certificateScroll.innerHTML = 'Pressione com o dedo e arraste para o lado' :
     certificateScroll.innerHTML = 'Utilize o scroll para rolagem lateral e clique na imagem para abrir';
+
+
+navigator.userAgent.match(/Mobile/) ? menu_item.forEach((item) => item.classList.remove('underline')) :
+    menu_item.forEach((item) => item.classList.add('underline'));
