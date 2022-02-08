@@ -43,16 +43,16 @@
   ExpiresDefault "access 1 month"
 </IfModule>
 <IfModule mod_headers.c>
-  <filesmatch "\.(ico|svg|webp|png|gif|css)$">
+  <filesmatch "\.(css|js)$">
   Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  <filesmatch "\.(ico|svg|webp|png|gif)$">
+  Header set Cache-Control "max-age=29030400, public"
   </filesmatch>
   <filesmatch "\.(html|htm)$">
   Header set Cache-Control "max-age=7200, private, must-revalidate"
   </filesmatch>
   <filesmatch "\.(pdf)$">
   Header set Cache-Control "max-age=86400, public"
-  </filesmatch>
-  <filesmatch "\.(js)$">
-  Header set Cache-Control "max-age=2678400, private"
   </filesmatch>
 </IfModule>
