@@ -8,7 +8,7 @@
 <samp>
 <p align="center">
   <a href="http://silasrodrigues.me">
-    <img src="assets/img/logo.png" alt="Logo" height="40">
+    <img src="assets/img/logo.svg" alt="Logo" height="40">
   </a>
 
   <h3 align="center">Static Portfolio</h3>
