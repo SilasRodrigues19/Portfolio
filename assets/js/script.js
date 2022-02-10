@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text"),
     cursorSpan = document.querySelector(".cursor"),
     home = document.querySelector(".home .container"),
-    avatar = document.querySelector('.avatar');
+    avatar = document.querySelector(".avatar");
 
 const textArray = ["Web Developer", "Programador", "Front End"],
     typingDelay = 50,
@@ -11,11 +11,11 @@ const textArray = ["Web Developer", "Programador", "Front End"],
 let textArrayIndex = 0;
 let charIndex = 0;
 
-
 /* Data Words */
 type = () => {
     if (charIndex < textArray[textArrayIndex].length) {
-        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
         typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
         charIndex++;
         setTimeout(type, typingDelay);
@@ -23,12 +23,16 @@ type = () => {
     }
     cursorSpan.classList.remove("typing");
     setTimeout(erase, newTextDelay);
-}
+};
 
 erase = () => {
     if (charIndex > 0) {
-        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        if (!cursorSpan.classList.contains("typing"))
+            cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(
+            0,
+            charIndex - 1
+        );
         charIndex--;
         setTimeout(erase, erasingDelay);
         return;
@@ -37,110 +41,115 @@ erase = () => {
     textArrayIndex++;
     if (textArrayIndex >= textArray.length) textArrayIndex = 0;
     setTimeout(type, typingDelay + 1100);
-}
-
+};
 
 setAttributesHelper = (el, attrs) => {
     for (let attr in attrs) {
         el.setAttribute(attr, attrs[attr]);
     }
-}
-
+};
 
 // Fix  Lightbox Uncrawlable Links
 displayContent = () => {
-    const lightBoxCancel = document.querySelector('.lb-cancel'),
-        lightBoxPrev = document.querySelector('.lb-prev'),
-        lightBoxNext = document.querySelector('.lb-next'),
-        lightBoxClose = document.querySelector('.lb-close');
-    setAttributesHelper(lightBoxCancel, { 'rel': 'nofollow', 'href': '#' });
-    setAttributesHelper(lightBoxPrev, { 'rel': 'nofollow', 'href': '#' });
-    setAttributesHelper(lightBoxNext, { 'rel': 'nofollow', 'href': '#' });
-    setAttributesHelper(lightBoxClose, { 'rel': 'nofollow', 'href': '#' });
-}
+    const lightBoxCancel = document.querySelector(".lb-cancel"),
+        lightBoxPrev = document.querySelector(".lb-prev"),
+        lightBoxNext = document.querySelector(".lb-next"),
+        lightBoxClose = document.querySelector(".lb-close");
+    setAttributesHelper(lightBoxCancel, { rel: "nofollow", href: "#" });
+    setAttributesHelper(lightBoxPrev, { rel: "nofollow", href: "#" });
+    setAttributesHelper(lightBoxNext, { rel: "nofollow", href: "#" });
+    setAttributesHelper(lightBoxClose, { rel: "nofollow", href: "#" });
+};
 
 window.onload = displayContent;
 
 /* Add warning when the user tries to access mail.php by URL */
-let buttonMailAlert = document.getElementById('warningMail_button'),
-    mailAlert = document.getElementById('warningMail');
+let buttonMailAlert = document.getElementById("warningMail_button"),
+    mailAlert = document.getElementById("warningMail");
 
-if (mailAlert != null) { /* Avoid null variable error when the user doesn't try to access by URL */
-    buttonMailAlert.addEventListener('click', () => {
-        mailAlert.style.display = 'none';
+if (mailAlert != null) {
+    /* Avoid null variable error when the user doesn't try to access by URL */
+    buttonMailAlert.addEventListener("click", () => {
+        mailAlert.style.display = "none";
     });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    loader = document.getElementById('loader');
-    loader.style.display = 'none';
+    loader = document.getElementById("loader");
+    loader.style.display = "none";
     /* Tooltip Alert */
     $('[data-toggle="tooltip"]').tooltip();
-    home.classList.add('infoAnimation');
-    avatar.classList.add('infoAnimation');
+    home.classList.add("infoAnimation");
+    avatar.classList.add("infoAnimation");
     textArray.length && setTimeout(type, newTextDelay + 250);
 });
 
-const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
-    mobile_menu = document.querySelector('.header .nav-bar .nav-list ul'),
-    menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'),
-    hamburger = document.querySelector('#hamburger'),
-    header = document.querySelector('.header.container');
+const menu = document.querySelector(".header .nav-bar .nav-list .menu"),
+    mobile_menu = document.querySelector(".header .nav-bar .nav-list ul"),
+    menu_item = document.querySelectorAll(".header .nav-bar .nav-list ul li a"),
+    hamburger = document.querySelector("#hamburger"),
+    header = document.querySelector(".header.container");
 
-const scrollToTop = document.querySelector('#smoothScroll'),
-    social = document.querySelector('.social'),
-    rightArrow = document.querySelector('.rightArrow');
+const scrollToTop = document.querySelector("#smoothScroll"),
+    social = document.querySelector(".social"),
+    rightArrow = document.querySelector(".rightArrow");
 
-
-menu.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    mobile_menu.classList.toggle('active');
+menu.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    mobile_menu.classList.toggle("active");
 
     // Improving accessibility for visually impaired people
-    if (mobile_menu.classList.contains('active')) {
-        setAttributesHelper(menu, { 'aria-expanded': 'true', 'aria-label': 'Fechar Menu' });
+    if (mobile_menu.classList.contains("active")) {
+        setAttributesHelper(menu, {
+            "aria-expanded": "true",
+            "aria-label": "Fechar Menu",
+        });
         return;
     }
-    setAttributesHelper(menu, { 'aria-expanded': 'false', 'aria-label': 'Abrir Menu' });
+    setAttributesHelper(menu, {
+        "aria-expanded": "false",
+        "aria-label": "Abrir Menu",
+    });
 });
 
-
-document.addEventListener('scroll', () => {
+document.addEventListener("scroll", () => {
     let scroll_position = window.scrollY;
 
     if (!navigator.userAgent.match(/Mobile/) && scroll_position < 100) {
-        menu_item.forEach((item) => item.classList.add('underline'));
+        menu_item.forEach((item) => item.classList.add("underline"));
     } else if (navigator.userAgent.match(/Mobile/)) {
-        menu_item.forEach((item) => item.classList.remove('underline'));
-        iconLink.classList.remove('underline');
+        menu_item.forEach((item) => item.classList.remove("underline"));
+        iconLink.classList.remove("underline");
     } else {
-        menu_item.forEach((item) => item.classList.remove('underline'));
+        menu_item.forEach((item) => item.classList.remove("underline"));
     }
 
-    //scroll_position > 100 ? header.style.backgroundColor = '#111' : header.style.backgroundColor = 'transparent';
-    scroll_position < 100 ? header.style.cssText = 'background: transparent; backdrop-filter: none' :
-        header.style.cssText = 'background: rgba(31, 30, 30, .30); backdrop-filter: blur(25px); border-bottom: 1px solid rgba(111, 111, 111, 0.4);'
-
+    scroll_position < 100 ?
+        (header.style.cssText = "background: transparent; backdrop-filter: none") :
+        (header.style.cssText =
+            "background: rgba(31, 30, 30, .30); backdrop-filter: blur(25px); border-bottom: 1px solid rgba(111, 111, 111, 0.4);");
 
     if (scroll_position < 600) {
-        scrollToTop.style.cssText = 'opacity: 0; display: none';
-        social.style.cssText = 'visibility: hidden; opacity: 0; pointer-events: none';
-        rightArrow.style.cssText = 'opacity: 0';
+        scrollToTop.style.cssText = "opacity: 0; display: none";
+        social.style.cssText =
+            "visibility: hidden; opacity: 0; pointer-events: none";
+        rightArrow.style.cssText = "opacity: 0";
         return;
     }
-    scrollToTop.style.cssText = 'opacity: 1';
-    social.style.cssText = 'visibility: visible; opacity: 1; pointer-events: auto';
-    rightArrow.style.cssText = 'opacity: 1';
+    scrollToTop.style.cssText = "opacity: 1";
+    social.style.cssText =
+        "visibility: visible; opacity: 1; pointer-events: auto";
+    rightArrow.style.cssText = "opacity: 1";
 });
 
 // Close menu after link is clicked
 menu_item.forEach((item) => {
-    item.addEventListener('click', () => {
-        menu.classList.toggle('active');
+    item.addEventListener("click", () => {
+        menu.classList.toggle("active");
         setTimeout(() => {
-            mobile_menu.classList.toggle('active');
+            mobile_menu.classList.toggle("active");
             // Animate menu icon when link is clicked
-            if (!mobile_menu.classList.contains('active')) {
+            if (!mobile_menu.classList.contains("active")) {
                 hamburger.checked = false;
                 return;
             }
@@ -149,35 +158,39 @@ menu_item.forEach((item) => {
     });
 });
 
-const textArea = document.querySelector('#mensagem');
-const count = document.querySelector('.count');
+const textArea = document.querySelector("#mensagem");
+const count = document.querySelector(".count");
 
-textArea.addEventListener("keyup", e => {
+textArea.addEventListener("keyup", (e) => {
     textArea.style.height = "auto";
 
     let scrollHeight = e.target.scrollHeight;
     textArea.style.height = `${scrollHeight}px`;
 });
 
-
 countLetters = () => {
     const textLength = textArea.value.length;
     count.innerText = `${textLength}`;
 
-    textLength >= 1500 ? count.classList.add("error") : count.classList.remove("error");
-}
+    textLength >= 1500 ?
+        count.classList.add("error") :
+        count.classList.remove("error");
+};
 
-const certificate = document.querySelector('.certificate');
+const certificate = document.querySelector(".certificate");
 
-certificate.addEventListener('wheel', e => {
+certificate.addEventListener("wheel", (e) => {
     e.preventDefault();
     certificate.scrollLeft += e.deltaY;
-})
+});
 
-const certificateScroll = document.querySelector('.certificate-scroll');
+const certificateScroll = document.querySelector(".certificate-scroll");
 
-navigator.userAgent.match(/Mobile/) ? certificateScroll.innerHTML = 'Pressione com o dedo e arraste para o lado' :
-    certificateScroll.innerHTML = 'Utilize o scroll para rolagem lateral e clique na imagem para abrir';
+navigator.userAgent.match(/Mobile/) ?
+    (certificateScroll.innerHTML = "Pressione com o dedo e arraste para o lado") :
+    (certificateScroll.innerHTML =
+        "Utilize o scroll para rolagem lateral e clique na imagem para abrir");
 
-navigator.userAgent.match(/Mobile/) ? menu_item.forEach((item) => item.classList.remove('underline')) :
-    menu_item.forEach((item) => item.classList.add('underline'));
+navigator.userAgent.match(/Mobile/) ?
+    menu_item.forEach((item) => item.classList.remove("underline")) :
+    menu_item.forEach((item) => item.classList.add("underline"));

@@ -3,15 +3,16 @@ $(document).ready(function($) {
 
     $("#smoothScroll").click(function(e) {
         e.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000, 'easeInOutExpo');
     });
 
     $(".scroll").click(function(e) {
         e.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1500);
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1500, 'easeInOutExpo');
     });
 
 });
+
 
 const iconLink = document.querySelector('.iconLink');
 
