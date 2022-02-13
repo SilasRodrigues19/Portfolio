@@ -9,6 +9,14 @@
     --portfolio-hover: rgba(71, 11, 169, .5);
     --lightblue: #5c94cd;
     --speed: 3.5s;
+    --main-color: hsl(232, 47%, 56%);
+    --main-color-accent: hsl(230, 58%, 30%);
+    --text-color: hsl(208, 13%, 45%);
+    --text-color-accent: hsl(235, 26%, 35%);
+    --background-color: hsl(220, 38%, 97%);
+    --line-color: hsl(249, 20%, 86%);
+    --max-width: 60rem;
+    --min-width: 45rem;
 }
 
 .body-theme {
@@ -53,6 +61,7 @@
 
 .lb-next,
 .lb-prev {
+    -webkit-filter: var(--lb-navigation);
     filter: var(--lb-navigation);
 }
 
@@ -114,7 +123,7 @@ html {
 }
 
 body {
-    background: var( --bg-gray-900);
+    background: var(--bg-gray-900);
 }
 
 p {

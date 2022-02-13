@@ -1,5 +1,5 @@
 #certificates {
-    background: var(--bg-gray-800);
+    background: var(--bg-gray-900);
 }
 
 .certificate-header :is(h1, p) {
