@@ -194,3 +194,18 @@ navigator.userAgent.match(/Mobile/) ?
 navigator.userAgent.match(/Mobile/) ?
     menu_item.forEach((item) => item.classList.remove("underline")) :
     menu_item.forEach((item) => item.classList.add("underline"));
+
+
+
+$(document).ready(function() {
+    $(".boxInfo").on("click", "li", function() {
+
+        let tabsId = $(this).attr("id");
+        $(this).toggleClass("active").siblings().removeClass("active");
+        $("#" + tabsId + "-content-box")
+            .toggleClass("activeTabs")
+            .siblings()
+            .removeClass("activeTabs");
+
+    });
+});
