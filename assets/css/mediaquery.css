@@ -264,7 +264,7 @@
     }
     .contact-icon #smoothScroll,
     .programmer {
-        display: none;
+        display: none !important;
     }
 }
 

@@ -26,9 +26,11 @@
     --bg-gray-800: #cbd5e0;
     --hr-color: rgba(1, 1, 1, 0.2);
     --nav-links: #cacaca;
+    --nav-links2: #303030;
     --logo-filter: brightness(0.7);
     --form-focus-border: #111;
     --menu-line-bg: #cacaca;
+    --menu-line-bg2: #808080;
     --scrollbar-thumb: #15171a;
     --scrollbar-thumb-hover: #373c44;
     --carousel-info-bg: rgba(1, 1, 1, .6);
@@ -46,9 +48,11 @@
     --bg-gray-800: #1a202c;
     --hr-color: rgba(255, 255, 255, 0.2);
     --nav-links: #a3a3a3;
+    --nav-links2: #a3a3a3;
     --logo-filter: none;
     --form-focus-border: #f1f1f1;
     --menu-line-bg: #808080;
+    --menu-line-bg2: #808080;
     --scrollbar-thumb: #ab9cc9;
     --scrollbar-thumb-hover: #c7bddb;
     --carousel-info-bg: rgba(255, 255, 255, .6);
@@ -57,6 +61,35 @@
     --content-title: #cacaca;
     --content-title-span: #808080;
     --lb-navigation: none;
+}
+
+a[href]:not([class]) {
+    color: #5c94cd;
+    text-decoration: none;
+}
+
+a::active {
+    color: var(--primary-color);
+}
+
+.teste {
+    color: var(--nav-links)!important;
+}
+
+.teste2 {
+    background-color: var(--menu-line-bg2)!important;
+}
+
+.menu-transparent {
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
+}
+
+.menu-default {
+    background: rgba(31, 30, 30, .30);
+    backdrop-filter: blur(25px);
+    border-bottom: 1px solid rgba(111, 111, 111, 0.4);
 }
 
 .lb-next,
@@ -71,7 +104,6 @@
 
 #theme-toggle {
     margin: 0 auto;
-    color: var(--nav-links);
 }
 
 #theme-toggle:hover {

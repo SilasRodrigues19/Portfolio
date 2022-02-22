@@ -33,6 +33,7 @@ footer {
 }
 
 #smoothScroll {
+    display: none;
     position: fixed;
     background-color: rgba(71, 11, 169, 0.1);
     border: solid 2.5px;

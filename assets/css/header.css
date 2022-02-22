@@ -242,7 +242,7 @@
         display: inline-block;
     }
     .nav-list ul li a {
-        color: var(--nav-links);
+        color: var(--nav-links2);
         font-size: 1.8rem;
     }
     .nav-list ul a:after {
