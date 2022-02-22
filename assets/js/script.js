@@ -92,7 +92,8 @@ const menu = document.querySelector(".header .nav-bar .nav-list .menu"),
 
 const scrollToTop = document.querySelector("#smoothScroll"),
     social = document.querySelector(".social"),
-    rightArrow = document.querySelector(".rightArrow");
+    rightArrow = document.querySelector(".rightArrow"),
+    themeIcon = document.querySelector('#theme-toggle');
 
 menu.addEventListener("click", () => {
     menu.classList.toggle("active");
@@ -124,19 +125,26 @@ document.addEventListener("scroll", () => {
         menu_item.forEach((item) => item.classList.remove("underline"));
     }
 
-    scroll_position < 100 ?
-        (header.style.cssText = "background: transparent; backdrop-filter: none") :
-        (header.style.cssText =
-            "background: rgba(31, 30, 30, .30); backdrop-filter: blur(25px); border-bottom: 1px solid rgba(111, 111, 111, 0.4);");
+    if (scroll_position < 100) {
+        header.classList.remove('menu-default');
+        header.classList.add('menu-transparent');
+        menu_item.forEach((item) => item.classList.remove('teste'));
+        themeIcon.classList.remove('teste');
+        return;
+    }
+    header.classList.remove('menu-transparent');
+    header.classList.add('menu-default');
+    menu_item.forEach((item) => item.classList.add('teste'));
+    themeIcon.classList.add('teste');
 
     if (scroll_position < 600) {
-        scrollToTop.style.cssText = "opacity: 0; display: none";
+        scrollToTop.style.cssText = "display: none";
         social.style.cssText =
             "visibility: hidden; opacity: 0; pointer-events: none";
         rightArrow.style.cssText = "opacity: 0";
         return;
     }
-    scrollToTop.style.cssText = "opacity: 1";
+    scrollToTop.style.cssText = "display: block";
     social.style.cssText =
         "visibility: visible; opacity: 1; pointer-events: auto";
     rightArrow.style.cssText = "opacity: 1";
