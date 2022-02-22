@@ -74,18 +74,9 @@
     margin-top: 10px;
 }
 
-.project-info p {
-    color: var(--text-color);
-}
-
 .project-info a {
     text-align: center;
     font-size: 3rem;
-    color: var(--primary-color);
-}
-
-.project-info a:hover {
-    color: #f30c0c;
 }
 
 .project-info figure:hover figcaption h2 {

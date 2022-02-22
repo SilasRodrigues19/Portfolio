@@ -128,14 +128,14 @@ document.addEventListener("scroll", () => {
     if (scroll_position < 100) {
         header.classList.remove('menu-default');
         header.classList.add('menu-transparent');
-        menu_item.forEach((item) => item.classList.remove('teste'));
-        themeIcon.classList.remove('teste');
+        menu_item.forEach((item) => item.classList.remove('menuLinks-2'));
+        themeIcon.classList.remove('menuLinks-2');
         return;
     }
     header.classList.remove('menu-transparent');
     header.classList.add('menu-default');
-    menu_item.forEach((item) => item.classList.add('teste'));
-    themeIcon.classList.add('teste');
+    menu_item.forEach((item) => item.classList.add('menuLinks-2'));
+    themeIcon.classList.add('menuLinks-2');
 
     if (scroll_position < 600) {
         scrollToTop.style.cssText = "display: none";
@@ -214,6 +214,5 @@ $(document).ready(function() {
             .toggleClass("activeTabs")
             .siblings()
             .removeClass("activeTabs");
-
     });
 });

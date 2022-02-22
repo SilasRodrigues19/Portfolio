@@ -72,12 +72,8 @@ a::active {
     color: var(--primary-color);
 }
 
-.teste {
+.menuLinks-2 {
     color: var(--nav-links)!important;
-}
-
-.teste2 {
-    background-color: var(--menu-line-bg2)!important;
 }
 
 .menu-transparent {
