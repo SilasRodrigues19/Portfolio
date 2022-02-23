@@ -125,16 +125,25 @@ document.addEventListener("scroll", () => {
         menu_item.forEach((item) => item.classList.remove("underline"));
     }
 
+    const logo = document.querySelector('.logo');
     if (scroll_position < 100) {
+        logo.style.cssText = "filter: none";
+    } else {
+        logo.style.cssText = "filter: invert(1)";
+    }
+
+
+
+    if (!navigator.userAgent.match(/Mobile/) && scroll_position < 100) {
         header.classList.remove('menu-default');
         header.classList.add('menu-transparent');
-        menu_item.forEach((item) => item.classList.remove('menuLinks-2'));
+        menu_item.forEach((item) => item.classList.remove('menuLinks-2', 'scale95'));
         themeIcon.classList.remove('menuLinks-2');
         return;
     }
     header.classList.remove('menu-transparent');
     header.classList.add('menu-default');
-    menu_item.forEach((item) => item.classList.add('menuLinks-2'));
+    menu_item.forEach((item) => item.classList.add('menuLinks-2', 'scale95'));
     themeIcon.classList.add('menuLinks-2');
 
     if (scroll_position < 600) {
