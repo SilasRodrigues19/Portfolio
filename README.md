@@ -8,7 +8,7 @@
 <samp>
 <p align="center">
   <a href="http://silasrodrigues.me">
-    <img src="assets/img/logo.svg" alt="Logo" height="40">
+    <img src="assets/img/logo-large.svg" alt="Logo" height="40">
   </a>
 
   <h3 align="center">Static Portfolio</h3>
@@ -78,6 +78,7 @@ The main sections and features are described below:
 - **Light / Dark**: toggle between dark and light mode. The last theme chosen will be saved to localStorage to be displayed on the next access.
 - **Header**: contains navigation menu and button to switch between light and dark mode.
 - **Home**: presentation about me with name and professional focus.
+- **About** describes about my background, about me, experience and my future plans.
 - **Services**: it shows my main skills and technologies that I use in my projects.
 - **Projects**: it has some projects that I developed.
 - **Certificates**: as the name suggests is a part that's show my certificates.
