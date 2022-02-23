@@ -111,7 +111,7 @@
         transform: scale(0.5);
     }
     #theme-toggle::before {
-        color: #808080;
+        color: #585858;
     }
     #theme-toggle {
         color: inherit;
@@ -126,6 +126,9 @@
         margin-left: 15px;
         -webkit-transform: scale(0.7);
         transform: scale(0.7);
+    }
+    .dark-theme .brand img {
+        opacity: .4;
     }
     .nav-bar .brand {
         margin: 0 20px;
@@ -154,23 +157,23 @@
         margin-right: 36px;
     }
     .nav-list ul li:nth-child(1) a::before {
-        background: url(https://api.iconify.design/healthicons/info-outline.svg?color=gray) no-repeat center center/contain;
+        background: url(https://api.iconify.design/healthicons/info-outline.svg?color=darkgray) no-repeat center center/contain;
     }
     .nav-list ul li:nth-child(2) a::before {
-        background: url(https://api.iconify.design/fluent:window-dev-tools-24-regular.svg?color=gray) no-repeat center center/contain;
+        background: url(https://api.iconify.design/fluent:window-dev-tools-24-regular.svg?color=darkgray) no-repeat center center/contain;
     }
     .nav-list ul li:nth-child(3) a::before {
-        background: url(https://api.iconify.design/entypo:code.svg?color=gray) no-repeat center center/contain;
+        background: url(https://api.iconify.design/entypo:code.svg?color=darkgray) no-repeat center center/contain;
     }
     .nav-list ul li:nth-child(4) a::before {
-        background: url(https://api.iconify.design/vaadin/diploma-scroll.svg?color=gray) no-repeat center center/contain;
+        background: url(https://api.iconify.design/vaadin/diploma-scroll.svg?color=darkgray) no-repeat center center/contain;
         left: -28px;
     }
     .nav-list ul li:nth-child(4) a {
         margin-right: 18px;
     }
     .nav-list ul li:nth-child(5) a::before {
-        background: url(https://api.iconify.design/ri:mail-send-line.svg?color=gray) no-repeat center center/contain;
+        background: url(https://api.iconify.design/ri:mail-send-line.svg?color=darkgray) no-repeat center center/contain;
     }
     .nav-list ul li:last-child {
         position: relative;

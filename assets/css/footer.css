@@ -83,8 +83,11 @@ footer {
     width: 75px;
     height: 30px;
     margin-left: 95px;
-    -webkit-filter: var(--logo-filter);
-    filter: var(--logo-filter);
+}
+
+.dark-theme .brand img {
+    opacity: .65;
+    filter: invert(1) !important;
 }
 
 .brand h1 span {

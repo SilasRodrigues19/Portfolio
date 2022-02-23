@@ -139,7 +139,7 @@
 .infoAnimation {
     -webkit-animation: moveInfo 4.5s cubic-bezier(0.175, 0.885, 0.32, 1);
     animation: moveInfo 4.5s cubic-bezier(0.175, 0.885, 0.32, 1);
-    color: var(--text-color);
+    color: var(--nav-links2);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

@@ -27,7 +27,7 @@
     --hr-color: rgba(1, 1, 1, 0.2);
     --nav-links: #cacaca;
     --nav-links2: #303030;
-    --logo-filter: brightness(0.7);
+    --logo-filter: invert(1);
     --form-focus-border: #111;
     --menu-line-bg: #cacaca;
     --menu-line-bg2: #808080;
@@ -49,7 +49,7 @@
     --hr-color: rgba(255, 255, 255, 0.2);
     --nav-links: #a3a3a3;
     --nav-links2: #a3a3a3;
-    --logo-filter: none;
+    --logo-filter: invert(0);
     --form-focus-border: #f1f1f1;
     --menu-line-bg: #808080;
     --menu-line-bg2: #808080;
@@ -68,12 +68,16 @@ a[href]:not([class]) {
     text-decoration: none;
 }
 
+.scale95:hover {
+    transform: scale(.95);
+}
+
 a::active {
     color: var(--primary-color);
 }
 
 .menuLinks-2 {
-    color: var(--nav-links)!important;
+    color: var(--nav-links) !important;
 }
 
 .menu-transparent {
