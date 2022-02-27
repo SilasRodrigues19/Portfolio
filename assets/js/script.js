@@ -3,7 +3,7 @@ const typedTextSpan = document.querySelector(".typed-text"),
     home = document.querySelector(".home .container"),
     avatar = document.querySelector(".avatar");
 
-const textArray = ["Web Developer", "Programador", "Front End"],
+const textArray = ["Programador", "Front End"],
     typingDelay = 50,
     erasingDelay = 50,
     newTextDelay = 2500;
@@ -126,25 +126,30 @@ document.addEventListener("scroll", () => {
     }
 
     const logo = document.querySelector('.logo');
+    const menubar = document.querySelectorAll('.bar');
+
+
     if (scroll_position < 100) {
-        logo.style.cssText = "filter: none";
-    } else {
-        logo.style.cssText = "filter: invert(1)";
-    }
-
-
-
-    if (!navigator.userAgent.match(/Mobile/) && scroll_position < 100) {
         header.classList.remove('menu-default');
         header.classList.add('menu-transparent');
         menu_item.forEach((item) => item.classList.remove('menuLinks-2', 'scale95'));
         themeIcon.classList.remove('menuLinks-2');
+        logo.style.cssText = "filter: none";
+        menubar.forEach((item) => item.style.cssText = 'filter: invert(1)');
         return;
     }
     header.classList.remove('menu-transparent');
     header.classList.add('menu-default');
     menu_item.forEach((item) => item.classList.add('menuLinks-2', 'scale95'));
     themeIcon.classList.add('menuLinks-2');
+    logo.style.cssText = 'filter: invert(1)';
+    menubar.forEach((item) => (item.style.cssText = 'filter: none'));
+
+    if (navigator.userAgent.match(/Mobile/)) {
+        menu_item.forEach((item) =>
+            item.classList.remove('menuLinks-2', 'scale95')
+        );
+    }
 
     if (scroll_position < 600) {
         scrollToTop.style.cssText = "display: none";
