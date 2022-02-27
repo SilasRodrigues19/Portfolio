@@ -11,7 +11,7 @@
     <img src="assets/img/logo-large.svg" alt="Logo" height="40">
   </a>
 
-  <h3 align="center">Static Portfolio</h3>
+  <h3 align="center">Portfolio</h3>
 
   <p align="center">
     Portfólio to show my projects.
@@ -156,7 +156,7 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [issues-url]: https://github.com/SilasRodrigues19/Static-Portfolio/issues
 [license-shield]: https://img.shields.io/github/license/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
 [license-url]: https://github.com/SilasRodrigues19/Static-Portfolio/blob/master/LICENSE
-[product-screenshot]: ./assets/img/preview.gif
+[product-screenshot]: ./assets/img/preview.png
 [product-screenshot2]: ./assets/img/preview404.png
 [product-screenshot3]: ./assets/img/preview2.gif
 [product-screenshot4]: ./assets/img/preview404-mobile.png
@@ -165,4 +165,4 @@ Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://g
 [product-screenshot7]: ./assets/img/previewLighthouse.png
 
 <br><hr>
-[🔼 Back to top](#Static-Portfolio)
+[🔼 Back to top](#Portfolio)
