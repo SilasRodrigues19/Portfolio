@@ -128,7 +128,6 @@ document.addEventListener("scroll", () => {
     const logo = document.querySelector('.logo');
     const menubar = document.querySelectorAll('.bar');
 
-
     if (scroll_position < 100) {
         header.classList.remove('menu-default');
         header.classList.add('menu-transparent');
