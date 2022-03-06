@@ -130,9 +130,12 @@
 }
 
 .menu {
+    border-radius: 50%;
     position: relative;
     z-index: 10;
     cursor: pointer;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
     margin-right: 20px;
 }
 
