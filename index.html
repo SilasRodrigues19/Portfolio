@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Silas Rodrigues">
-    <meta name="description" content="Meu nome é Silas Rodrigues e eu desenvolvo aplicações web modernas com boa performance, animações, responsividade e SEO">
+    <meta name="description" content="Meu nome é Silas Rodrigues e eu desenvolvo aplicações web modernas com boas performances, boas práticas de programação, telas responsivas compatíveis com diferentes navegadores e configuração de SEO">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#470ba9">
     <meta name="copyright" content="Silas Rodrigues 2022">
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Silas Rodrigues - Desenvolvedor Front End - Programador">
     <meta property="og:description" content="Meu nome é Silas Rodrigues e este é meu portfolio com todos os trabalhos já realizados até então,
 	sou programador e desenvolvo aplicações web">
-    <meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor, portfolio, frontend">
+    <meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor, portfolio, frontend, autodidata">
     <title>Portfólio | Silas Rodrigues - Front End</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -37,8 +37,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- My styles -->
-    <link rel="preload" href="assets/css/main.css" as="style">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preload" href="./assets/css/main.css" as="style">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <link rel="preload" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css" as="style">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
@@ -58,15 +58,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- JQuery Validator -->
-    <script defer src="assets/js/jquery.validate.min.js"></script>
+    <script defer src="./assets/js/jquery.validate.min.js"></script>
 
     <!-- Mask Plugin JQuery -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" as="script">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
     <!-- Form Validator -->
-    <link rel="preload" href="assets/js/formvalidator.js" as="script">
-    <script defer src="assets/js/formvalidator.js"></script>
+    <link rel="preload" href="./assets/js/formvalidator.js" as="script">
+    <script defer src="./assets/js/formvalidator.js"></script>
 
     <!-- Validator Messages -->
     <link rel="preload" href="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
@@ -82,7 +82,7 @@
             <div class="nav-bar">
                 <div class="brand" data-aos="zoom-in-left" data-aos-easing="ease" data-aos-duration="2000">
                     <a href="#home" class="scroll" rel="noreferrer">
-                        <img class="logo" src="assets/img/logo.svg" srcset="assets/img/logo-large.svg" alt="logo">
+                        <img class="logo" src="./assets/img/logo.svg" srcset="./assets/img/logo-large.svg" alt="logo">
                     </a>
                 </div>
                 <div class="nav-list">
@@ -165,22 +165,26 @@
                 </span>
                 <div class="iconsBox">
                     <i>
-                        <a href="https://wa.me/5519992576970" target="_blank" rel="noreferrer">
+                        <a href="https://wa.me/5519992576970" target="_blank" rel="noreferrer"
+                            aria-label="WhatsApp">
                             <span class="iconify whatsapp" data-icon="whh:whatsapp" data-inline="false"></span>
                         </a>
                     </i>
                     <i>
-                        <a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer">
+                        <a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer"
+                            aria-label="Twitter">
                             <span class="iconify twitter" data-icon="websymbol:twitter-bird" data-inline="false"></span>
                         </a>
                     </i>
                     <i>
-                        <a href="https://www.linkedin.com/in/silasrodrigues19" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/silasrodrigues19" target="_blank" rel="noreferrer"
+                            aria-label="LinkedIn">
                             <span class="iconify linkedin" data-icon="line-md:linkedin"></span>
                         </a>
                     </i>
                     <i>
-                        <a href="https://codepen.io/SilasRodrigues19" target="_blank" rel="noreferrer">
+                        <a href="https://codepen.io/SilasRodrigues19" target="_blank" rel="noreferrer"
+                            aria-label="CodePen">
                             <span class="iconify codepen" data-icon="mdi:codepen" data-inline="false"></span>
                         </a>
                     </i>
@@ -229,7 +233,7 @@
                     <div id="tab-one-content-box" class="hideTabs">
                         <hr>
                         <p>Graduado em Análise e Desenvolvimento de Sistemas pela
-                            <a href="http://fatec.edu.br" target="_blank">Fatec.</a> 2017-2021</p>
+                            <a href="http://fatec.edu.br" target="_blank" rel="noreferrer" aria-label="Site da Faculdade Fatec">Fatec.</a> 2017-2021</p>
                         <hr>
                     </div>
                     <div id="tab-two-content-box" class="hideTabs">
@@ -721,7 +725,7 @@
             <div class="contact-icon">
                 <div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
                     <div data-aos="fade-left" data-aos-offset="0">
-                        <a href="https://goo.gl/maps/Cic8v3TR64rj2RNMA" target="_blank" aria-label="Google Maps">
+                        <a href="https://goo.gl/maps/Cic8v3TR64rj2RNMA" target="_blank" rel="noreferrer" aria-label="Google Maps">
                             <span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
                         </a>
                     </div>
@@ -729,7 +733,7 @@
 
                 <div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
                     <div data-aos="fade-up" data-aos-offset="0">
-                        <a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site" aria-label="Gmail">
+                        <a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site" rel="noreferrer" aria-label="Gmail">
                             <span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
                         </a>
                     </div>
@@ -737,7 +741,7 @@
 
                 <div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
                     <div data-aos="fade-right" data-aos-offset="0">
-                        <a href="curriculo.pdf" target="_blank" aria-label="Currículo PDF">
+                        <a href="curriculo.pdf" target="_blank" rel="noreferrer" aria-label="Currículo PDF">
                             <span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
                         </a>
                     </div>
