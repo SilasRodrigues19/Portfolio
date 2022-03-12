@@ -261,6 +261,9 @@
     .social ul li a span {
         font-family: 'Open Sans', sans-serif;
     }
+    p {
+        font-weight: 500;
+    }
     .social ul li a span {
         display: none;
     }
