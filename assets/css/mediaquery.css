@@ -153,6 +153,9 @@
         height: 25px;
         left: -25px;
     }
+    .nav-list ul li a {
+        font-weight: 200;
+    }
     .nav-list ul li:nth-child(1) a {
         margin-right: 36px;
     }
