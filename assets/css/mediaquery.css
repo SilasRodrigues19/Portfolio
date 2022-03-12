@@ -114,7 +114,7 @@
         color: #585858;
     }
     #theme-toggle {
-        color: inherit;
+        color: #a3a3a3 !important;
     }
     .box {
         display: none;
