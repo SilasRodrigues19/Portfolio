@@ -246,13 +246,16 @@
     .certificate {
         height: 200px;
     }
+    p,
     #footer h2,
     #footer p,
     #form,
+    .form-group,
     .brand h1,
     .home .cta,
     .home h1,
     .home h2,
+    .knowledge-header p,
     .lb-details,
     .nav-list ul a,
     .social ul li a span {
