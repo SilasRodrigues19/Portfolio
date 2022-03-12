@@ -31,6 +31,7 @@
 }
 
 #about .boxInfo {
+    user-select: none;
     width: 800px;
     height: auto;
     min-height: 200px;
@@ -60,7 +61,7 @@
 }
 
 .boxInfo ul li img {
-    user-select: none;
+    pointer-events: none;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     width: 100px;
