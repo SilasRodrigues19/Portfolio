@@ -175,7 +175,7 @@ menu_item.forEach((item) => {
                 return;
             }
             hamburger.checked = true;
-        }, 1800);
+        }, 1500);
     });
 });
 
