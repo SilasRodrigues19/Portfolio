@@ -17,7 +17,7 @@ body {
     background-image: url(../img/404-bg.svg), linear-gradient(to top, #fbc2eb 0, #a6c1ee 100%);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom center
+    background-position: bottom center;
 }
 
 header {
@@ -34,7 +34,7 @@ header {
     background-color: rgba(50, 50, 50, .1);
     -webkit-box-shadow: 0 5px 20px rgba(1, 1, 1, .2);
     box-shadow: 0 5px 20px rgba(1, 1, 1, .2);
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 .menu {
@@ -47,7 +47,7 @@ header {
     width: 100%;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 .menu li a {
@@ -78,7 +78,7 @@ header {
     text-decoration: none;
     letter-spacing: 4.5px;
     padding: 10px 20px 10px 20px;
-    border-radius: 25px
+    border-radius: 25px;
 }
 
 .menu li a:hover {
@@ -135,28 +135,28 @@ p {
 
 img {
     width: 100%;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 @media only screen and (max-width:500px) {
     body {
-        background-size: contain
+        background-size: contain;
     }
     header {
         padding: 0;
     }
     h1 {
-        font-size: 16px
+        font-size: 16px;
     }
     p {
         font-size: 14px
     }
     .intro {
-        padding: 20px
+        padding: 20px;
     }
     .intro h1,
     p {
-        margin-top: 20px
+        margin-top: 20px;
     }
     .menu {
         -webkit-box-pack: flex-end;

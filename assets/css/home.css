@@ -91,7 +91,6 @@
     -webkit-filter: drop-shadow(1px 2px 3px #470ba9) brightness(0.9) grayscale(1);
     border-radius: 50%;
     border: 2px var(--text-color);
-    /* border-style: solid dashed; */
     padding: 15px;
     margin-top: 25px;
 }
