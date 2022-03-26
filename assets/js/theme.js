@@ -1,18 +1,22 @@
 const themeToggle = document.getElementById('theme-toggle')
 
 const darkTheme = 'dark-theme',
-    ligthTheme = 'uil-sun';
+    ligthTheme = 'bi-cloud-sun';
 
 // localStorage variables
 const selectedTheme = localStorage.getItem('selected-theme'),
     selectedIcon = localStorage.getItem('selected-icon');
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light',
-    getCurrentIcon = () => themeToggle.classList.contains(ligthTheme) ? 'uil-moon' : 'uil_sun';
+const getCurrentTheme = () =>
+    document.body.classList.contains(darkTheme) ? 'dark' : 'light',
+  getCurrentIcon = () =>
+    themeToggle.classList.contains(ligthTheme)
+      ? 'bi-cloud-moon'
+      : 'bi-cloud-sun';
 
 if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
-    themeToggle.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](ligthTheme);
+    themeToggle.classList[selectedIcon === 'bi-cloud-moon' ? 'add' : 'remove'](ligthTheme);
 }
 
 themeToggle.addEventListener('click', () => {
