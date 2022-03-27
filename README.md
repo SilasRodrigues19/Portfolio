@@ -131,7 +131,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-This work is licensed under a GNU Affero General Public License v3.0 License. See [`LICENSE`](https://github.com/SilasRodrigues19/Portfolio/edit/main/LICENSE) for more information
+This work is licensed under a GNU Affero General Public License v3.0 License. See [`LICENSE`](https://github.com/SilasRodrigues19/Portfolio/blob/main/LICENSE) for more information
 
 <!-- CONTACT -->
 
