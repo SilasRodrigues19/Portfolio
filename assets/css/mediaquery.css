@@ -99,6 +99,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .nav-list ul li:hover a {
+        color: #a3a3a3;
+    }
     .swiper-pagination {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -151,7 +154,7 @@
         background-size: cover;
         width: 25px;
         height: 25px;
-        left: -25px;
+        left: 75px;
     }
     .nav-list ul li a {
         font-weight: 200;
@@ -170,7 +173,6 @@
     }
     .nav-list ul li:nth-child(4) a::before {
         background: url(https://api.iconify.design/vaadin/diploma-scroll.svg?color=darkgray) no-repeat center center/contain;
-        left: -28px;
     }
     .nav-list ul li:nth-child(4) a {
         margin-right: 18px;
