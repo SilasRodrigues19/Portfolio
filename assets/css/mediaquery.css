@@ -266,6 +266,9 @@
     .social ul li a span {
         font-family: 'Open Sans', sans-serif;
     }
+    .nav-list ul a {
+        padding: 20px 0;
+    }
     p {
         font-weight: 500;
     }
