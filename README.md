@@ -139,7 +139,7 @@ This work is licensed under a MIT License. See `LICENSE` for more information
 
 Silas Rodrigues - [@jinuye1](https://twitter.com/jinuye1) - silasrodrigues.fatec@gmail.com
 
-Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://github.com/SilasRodrigues19/Portfolio)
+Project Link: [silasrodrigues.me](https://silasrodrigues.me)
 
    <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
