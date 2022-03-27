@@ -7,7 +7,7 @@
 <br />
 <samp>
 <p align="center">
-  <a href="http://silasrodrigues.me">
+  <a href="https://silasrodrigues.me">
     <img src="assets/img/logo-large.svg" alt="Logo" height="40">
   </a>
 
@@ -16,7 +16,7 @@
   <p align="center">
     Portfólio to show my projects.
     <br />
-    <a href="http://silasrodrigues.me"><strong>View Demo »</strong></a>
+    <a href="https://silasrodrigues.me"><strong>View Demo »</strong></a>
     <br />
   </p>
 </p>
@@ -139,23 +139,23 @@ This work is licensed under a MIT License. See `LICENSE` for more information
 
 Silas Rodrigues - [@jinuye1](https://twitter.com/jinuye1) - silasrodrigues.fatec@gmail.com
 
-Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://github.com/SilasRodrigues19/Static-Portfolio)
+Project Link: [https://github.com/SilasRodrigues19/silasdev.epizy.com](https://github.com/SilasRodrigues19/Portfolio)
 
    <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
-[contributors-url]: https://github.com/SilasRodrigues19/Static-Portfolio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/SilasRodrigues19/Static-Portfolio/network/members
-[stars-shield]: https://img.shields.io/github/stars/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
-[stars-url]: https://github.com/SilasRodrigues19/Static-Portfolio/stargazers
-[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
-[forks-url]: https://github.com/SilasRodrigues19/Static-Portfolio/network/members
-[issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
-[issues-url]: https://github.com/SilasRodrigues19/Static-Portfolio/issues
-[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/Static-Portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/SilasRodrigues19/Static-Portfolio/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/SilasRodrigues19/Portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/SilasRodrigues19/Portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/Portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/SilasRodrigues19/Portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/SilasRodrigues19/Portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/SilasRodrigues19/Portfolio/stargazers
+[forks-shield]: https://img.shields.io/github/forks/SilasRodrigues19/Portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/SilasRodrigues19/Portfolio/network/members
+[issues-shield]: https://img.shields.io/github/issues/SilasRodrigues19/Portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/SilasRodrigues19/Portfolio/issues
+[license-shield]: https://img.shields.io/github/license/SilasRodrigues19/Portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/SilasRodrigues19/Portfolio/blob/master/LICENSE
 [product-screenshot]: ./assets/img/preview.png
 [product-screenshot2]: ./assets/img/preview404.png
 [product-screenshot3]: ./assets/img/preview2.gif
