@@ -82,8 +82,8 @@
     position: absolute;
     left: 50%;
     margin-top: 10px;
-    -webkit-transform: translate(-50%) scale(0);
-    transform: translate(-50%) scale(0);
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     color: var(--portfolio-hover);
     font-size: 5rem;
     letter-spacing: 50px;
