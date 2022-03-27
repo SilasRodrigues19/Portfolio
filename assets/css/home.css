@@ -174,7 +174,7 @@
     letter-spacing: .2rem;
     margin-top: 30px;
     -webkit-transition: background-color .7s ease-in, color 1s ease;
-    transition: background-color .7s ease-in, color 1s ease;
+    transition: background-color .7s ease-in, color 1s ease, transform .5s ease-in-out;
 }
 
 .home .cta:hover {
@@ -214,6 +214,7 @@
     color: #cacaca;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+    transform: scale(1.05);
 }
 
 @-webkit-keyframes bgAnimation {
