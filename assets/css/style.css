@@ -252,14 +252,14 @@ p {
 .cursor {
     display: inline-block;
     width: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     margin-left: 0.1rem;
     -webkit-animation: blink 1s infinite;
     animation: blink 1s infinite;
 }
 
 .cursor.typing {
-    background-color: var(--text-color);
+    background-color: var(--primary-color);
     -webkit-animation: none;
     animation: none;
 }
