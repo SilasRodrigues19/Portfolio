@@ -154,7 +154,7 @@
         background-size: cover;
         width: 25px;
         height: 25px;
-        left: 75px;
+        margin-left: -42px;
     }
     .nav-list ul li a {
         font-weight: 200;
