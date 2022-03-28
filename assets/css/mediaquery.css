@@ -136,10 +136,10 @@
     .nav-bar .brand {
         margin: 0 20px;
     }
-    .nav-list ul {
+    /* .nav-list ul {
         -webkit-clip-path: ellipse(360px 370px at right);
         clip-path: ellipse(360px 370px at right);
-    }
+    } */
     .nav-list ul a::before {
         position: absolute;
     }
