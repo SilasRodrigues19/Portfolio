@@ -20,7 +20,8 @@ body {
     background-position: bottom center;
 }
 
-header {
+header,
+footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -35,6 +36,15 @@ header {
     -webkit-box-shadow: 0 5px 20px rgba(1, 1, 1, .2);
     box-shadow: 0 5px 20px rgba(1, 1, 1, .2);
     padding: 0 10px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    color: #cacaca;
 }
 
 .menu {

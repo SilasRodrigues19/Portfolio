@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 </head>
 
-<body ondragstart="return false">
+<body ondragstart="false">
 
     <header>
         <ul class="menu" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2500" data-aos-offset="0">
@@ -41,6 +41,11 @@
         <p data-aos="fade-up" data-aos-duration="2500" data-aos-offset="0">Utilize o menu para voltar para uma página válida
         </p>
     </section>
+    <footer>
+        <script>
+            document.write('Copyright &copy 2020-' + new Date().getFullYear() + '. Silas Rodrigues. Todos os direitos reservados.');
+        </script>
+    </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
