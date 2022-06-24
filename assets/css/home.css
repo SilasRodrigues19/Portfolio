@@ -214,7 +214,20 @@
     color: #cacaca;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    transform: scale(1.05);
+    transform: scale(1) translateY(-5px);
+}
+
+.home .cta:hover .portfolioIcon {
+    animation: floating .5s linear infinite alternate;
+}
+
+@keyframes floating {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
 }
 
 @-webkit-keyframes bgAnimation {
