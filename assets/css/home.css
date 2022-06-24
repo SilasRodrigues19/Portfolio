@@ -59,8 +59,8 @@
     -webkit-transform: scale(0.8);
     transform: scale(0.8);
     border-style: solid;
-    -webkit-filter: none;
-    filter: none;
+    -webkit-filter: hue-rotate(265deg) contrast(.8);
+    filter: hue-rotate(265deg) contrast(.8);
 }
 
 .imgBox {
