@@ -1,3 +1,32 @@
+@font-face {
+    font-family: "custom-icons";
+    src: url("../fonts/icons.woff2?08efbba7c53d8c5413793eecb19b20bb") format("woff2"), url("../fonts/icons.woff?08efbba7c53d8c5413793eecb19b20bb") format("woff");
+}
+
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+    display: inline-block;
+    font-display: block;
+    font-family: custom-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bi-cloud-moon::before {
+    content: "\f2b0";
+}
+
+.bi-cloud-sun::before {
+    content: "\f2be";
+}
+
 .envelope,
 .file-pdf,
 .globe-americas {
