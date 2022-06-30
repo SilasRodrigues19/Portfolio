@@ -26,6 +26,12 @@
     padding: 25px;
 }
 
+#about .section-title img {
+    pointer-events: none;
+    user-select: none;
+    height: 15rem;
+}
+
 #about .section-title p {
     color: var(--text-color);
 }
