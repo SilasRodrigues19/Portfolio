@@ -83,6 +83,8 @@
 }
 
 .rightArrow {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all ease-in-out .9s;
     opacity: 0;
 }
 
@@ -110,8 +112,8 @@
     border-radius: 80px;
     padding: 0 18px;
     will-change: transform;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .social:hover {

@@ -151,13 +151,13 @@ document.addEventListener("scroll", () => {
     }
 
     if (scroll_position < 600) {
-        scrollToTop.style.cssText = "display: none";
+        scrollToTop.style.cssText = "bottom: -150px";
         social.style.cssText =
-            "visibility: hidden; opacity: 0; pointer-events: none";
-        rightArrow.style.cssText = "opacity: 0";
+            "visibility: hidden; opacity: 0; left: -50%; pointer-events: none";
+        rightArrow.style.cssText = "opacity: 0; top: -100%";
         return;
     }
-    scrollToTop.style.cssText = "display: block";
+    scrollToTop.style.cssText = "bottom: 50px";
     social.style.cssText =
         "visibility: visible; opacity: 1; pointer-events: auto";
     rightArrow.style.cssText = "opacity: 1";
