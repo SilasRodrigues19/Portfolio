@@ -46,6 +46,7 @@ footer {
     line-height: 10px;
     transition: all .9s;
     -webkit-transition: all .9s;
+    bottom: -150px;
 }
 
 #smoothScroll:hover {
