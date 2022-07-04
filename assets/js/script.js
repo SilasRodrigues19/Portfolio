@@ -159,7 +159,7 @@ document.addEventListener("scroll", () => {
     }
     scrollToTop.style.cssText = "bottom: 50px";
     social.style.cssText =
-        "visibility: visible; opacity: 1; pointer-events: auto; transition: 2s ease-in-out";
+        "visibility: visible; opacity: 1; pointer-events: auto; transition: .7s ease-in-out";
     rightArrow.style.cssText = "opacity: 1";
 });
 
