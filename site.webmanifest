@@ -1,18 +1,33 @@
 {
-    "name": "Silas Rodrigues - Portfólio",
-    "short_name": "Silas Rodrigues",
-    "icons": [{
-            "src": "/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#470ba9",
-    "background_color": "#a0aec0",
-    "display": "standalone"
+  "name": "Silas Rodrigues - Portfólio",
+  "short_name": "Silas Rodrigues",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#470ba9",
+  "start_url": "/index.html",
+  "background_color": "#a0aec0",
+  "display": "standalone",
+  "description": "Meu nome é Silas Rodrigues e eu desenvolvo aplicações web modernas com boas performances, boas práticas de programação, telas responsivas compatíveis com diferentes navegadores e configuração de SEO",
+  "screenshots": [
+    {
+      "src": "/assets/img/preview.png",
+      "type": "image/png",
+      "sizes": "1859x884"
+    },
+    {
+      "src": "/assets/img/preview2.png",
+      "type": "image/png",
+      "sizes": "1859x884"
+    }
+  ]
 }
