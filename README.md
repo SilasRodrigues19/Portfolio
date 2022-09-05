@@ -49,13 +49,17 @@
 
 ## About The Project
 
+### Desktop View
+
+## [![About View Desktop][product-screenshot9]](http://silasrodrigues.me)
+
 ### Desktop Dark View
 
 ## [![About View Desktop][product-screenshot]](http://silasrodrigues.me)
 
 ### Desktop Light View
 
-## [![About View Desktop][product-screenshot8]](http://silasrodrigues.me)
+## [![About View Desktop][p9]](http://silasrodrigues.me)
 
 ### 404 View
 
@@ -168,6 +172,7 @@ Project Link: [silasrodrigues.me](https://silasrodrigues.me)
 [product-screenshot6]: ./assets/img/previewSuccessMail.png
 [product-screenshot7]: ./assets/img/previewLighthouse.png
 [product-screenshot8]: ./assets/img/preview2.png
+[product-screenshot9]: ./assets/img/preview.gif
 
 <br><hr>
 [🔼 Back to top](#Portfolio)
