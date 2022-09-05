@@ -59,7 +59,7 @@
 
 ### Desktop Light View
 
-## [![About View Desktop][p9]](http://silasrodrigues.me)
+## [![About View Desktop][product-screenshot8]](http://silasrodrigues.me)
 
 ### 404 View
 
