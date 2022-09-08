@@ -137,7 +137,8 @@ a::active {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 4px;
+  display: none;
+  border-radius: 15px 0 0 15px;
   background: var(--scrollbar-thumb);
 }
 
@@ -153,6 +154,10 @@ a::active {
 ::selection {
   background: #605080;
   color: #fff;
+}
+
+.showScrollbar ::-webkit-scrollbar-thumb {
+  display: initial;
 }
 
 html {

@@ -218,6 +218,11 @@ navigator.userAgent.match(/Mobile/)
   ? menu_item.forEach((item) => item.classList.remove('underline'))
   : menu_item.forEach((item) => item.classList.add('underline'));
 
+const htmlEl = document.querySelector('html');
+
+htmlEl.onmouseover = () => htmlEl.classList.add('showScrollbar');
+htmlEl.onmouseleave = () => htmlEl.classList.remove('showScrollbar');
+
 $(document).ready(function () {
   $('.boxInfo').on('click', 'li', function () {
     let tabsId = $(this).attr('id');
