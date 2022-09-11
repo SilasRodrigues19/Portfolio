@@ -109,7 +109,13 @@ a::active {
   border-top-color: var(--primary-color);
 }
 
+.bs-tooltip-auto[x-placement^='bottom'] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: var(--primary-color);
+}
+
 .tooltip-inner {
+  max-width: 400px;
   padding: 0.5rem 1.5rem;
   color: var(--text-color);
   background-color: rgba(71, 11, 169, 0.1);
@@ -305,100 +311,6 @@ p {
   font-size: 15px;
   word-wrap: break-word;
   opacity: 0;
-}
-
-.tooltip.show {
-  opacity: 0.9;
-}
-
-.tooltip .tooltip-arrow {
-  position: absolute;
-  display: block;
-  width: 0.8rem;
-  height: 0.4rem;
-}
-
-.tooltip .tooltip-arrow::before {
-  position: absolute;
-  content: '';
-  border-color: transparent;
-  border-style: solid;
-}
-
-.bs-tooltip-auto[data-popper-placement^='top'],
-.bs-tooltip-top {
-  padding: 0.4rem 0;
-}
-
-.bs-tooltip-auto[data-popper-placement^='top'] .tooltip-arrow,
-.bs-tooltip-top .tooltip-arrow {
-  bottom: 0;
-}
-
-.bs-tooltip-auto[data-popper-placement^='top'] .tooltip-arrow::before,
-.bs-tooltip-top .tooltip-arrow::before {
-  top: -1px;
-  border-width: 0.4rem 0.4rem 0;
-  border-top-color: #000;
-}
-
-.bs-tooltip-auto[data-popper-placement^='right'],
-.bs-tooltip-end {
-  padding: 0 0.4rem;
-}
-
-.bs-tooltip-auto[data-popper-placement^='right'] .tooltip-arrow,
-.bs-tooltip-end .tooltip-arrow {
-  left: 0;
-  width: 0.4rem;
-  height: 0.8rem;
-}
-
-.bs-tooltip-auto[data-popper-placement^='right'] .tooltip-arrow::before,
-.bs-tooltip-end .tooltip-arrow::before {
-  right: -1px;
-  border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: #000;
-}
-
-.bs-tooltip-auto[data-popper-placement^='bottom'],
-.bs-tooltip-bottom {
-  padding: 0.4rem 0;
-}
-
-.bs-tooltip-auto[data-popper-placement^='bottom'] .tooltip-arrow,
-.bs-tooltip-bottom .tooltip-arrow {
-  top: 0;
-}
-
-.bs-tooltip-auto[data-popper-placement^='bottom'] .tooltip-arrow::before,
-.bs-tooltip-bottom .tooltip-arrow::before {
-  bottom: -1px;
-  border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: #000;
-}
-
-.bs-tooltip-auto[data-popper-placement^='left'],
-.bs-tooltip-start {
-  padding: 0 0.4rem;
-}
-
-.bs-tooltip-auto[data-popper-placement^='left'] .tooltip-arrow,
-.bs-tooltip-start .tooltip-arrow {
-  right: 0;
-  width: 0.4rem;
-  height: 0.8rem;
-}
-
-.bs-tooltip-auto[data-popper-placement^='left'] .tooltip-arrow::before,
-.bs-tooltip-start .tooltip-arrow::before {
-  left: -1px;
-  border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: #000;
-}
-
-.tooltip-inner {
-  max-width: 400px;
 }
 
 @-webkit-keyframes blink {
