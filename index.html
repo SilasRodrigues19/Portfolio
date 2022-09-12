@@ -44,7 +44,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@200;300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Lightbox -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" as="style">
@@ -97,7 +96,7 @@
                             <a class="scroll" href="#about" data-after="About">Sobre</a>
                         </li>
                         <li>
-                            <a class="scroll" href="#services" data-after="Services">Serviços</a>
+                            <a class="scroll" href="#skills" data-after="Skills">Habilidades</a>
                         </li>
                         <li>
                             <a class="scroll" href="#projects" data-after="Projects">Projetos</a>
@@ -201,14 +200,13 @@
     <section id="about">
         <div class="about container">
             <div class="section-title">
-                <img data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-easing="ease-in-sine" src="./assets/img/about.svg" alt="Imagem de Sobre">
+                <img data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-easing="ease" src="./assets/img/about.svg" alt="Imagem de Sobre">
                 <h1 data-aos="fade-down"><span>Sobre</span> mim</h1>
                 <hr data-aos="fade-down">
                 <p data-aos="fade-up">Para saber um pouco mais a meu respeito, clique nas imagens abaixo.
                 </p>
-                <hr data-aos="fade-up">
             </div>
-            <div class="boxInfo" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine" data-aos-delay="300">
+            <div class="boxInfo" data-aos="fade-up" data-aos-duration="900">
                 <ul>
                     <li id="tab-one">
                         <img src="./assets/img/education.svg" alt="Imagem representando graduação">
@@ -229,23 +227,19 @@
                 </ul>
                 <div class="tabs-content">
                     <div id="tab-one-content-box" class="hideTabs">
-                        <hr>
                         <p>Graduado em Análise e Desenvolvimento de Sistemas pela
                             <a href="http://fatec.edu.br" target="_blank" rel="noreferrer" aria-label="Site da Faculdade Fatec">Fatec.</a> 2017-2021</p>
                         <hr>
                     </div>
                     <div id="tab-two-content-box" class="hideTabs">
-                        <hr>
                         <p>Meu nome é Silas, tenho 23 anos e estudo Desenvolvimento Web de maneira autodidata. Possuo maiores aptidões para Desenvolvimento Front End, mas tento aprender de tudo um pouco, conforme a necessidade.</p>
                         <hr>
                     </div>
                     <div id="tab-three-content-box" class="hideTabs">
-                        <hr>
                         <p>Trabalhando atualmente como estagiário PHP e em busca de contribuir com projetos open source e sempre disponível para novos desafios.</p>
                         <hr>
                     </div>
                     <div id="tab-four-content-box" class="hideTabs">
-                        <hr>
                         <p>Busco ser uma pessoa hábil em Desenvolvimento Web como um todo, atualmente, aprendendo Back End e praticando para aprimorar minhas habilidades em Front End para futuramente me tornar um profissional Full Stack.</p>
                         <hr>
                     </div>
@@ -255,7 +249,7 @@
     </section>
 
     <!-- Service Section -->
-    <section id="services">
+    <section id="skills">
         <div class="section-title">
             <h1 data-aos="fade-down">Conhecimentos</h1>
             <p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo nos meus projetos.
@@ -341,10 +335,10 @@
             </div>
             <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="1200">
                 <div class="knowledge-header">
-                    <div class="knowledge-icons" data-toggle="tooltip" title="Git">
-                        <span class="iconify" data-inline="false" data-icon="cib:git"></span>
+                    <div class="knowledge-icons" data-toggle="tooltip" title="Firebase">
+                        <span class="iconify" data-icon="bxl:firebase"></span>
                     </div>
-                    <p>Sistema de controle de versão de projetos.</p>
+                    <p>Fornece diversos serviços comuns no desenvolvimento web para garantir mais produtividade</p>
                 </div>
             </div>
             <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="900">
@@ -365,10 +359,10 @@
             </div>
             <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600">
                 <div class="knowledge-header">
-                    <div class="knowledge-icons" data-toggle="tooltip" title="Material UI">
-                        <span class="iconify" data-icon="mdi:material-ui"></span>
+                    <div class="knowledge-icons" data-toggle="tooltip" title="Tailwind CSS">
+                        <span class="iconify" data-icon="file-icons:tailwind"></span>
                     </div>
-                    <p>Biblioteca de estilização moderna para criação de UI's.</p>
+                    <p>Biblioteca de estilização com fácil customização, adaptação e grande produtividade.</p>
                 </div>
             </div>
             <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600">
@@ -393,7 +387,6 @@
                     <p data-aos="fade-right">Os projetos abaixo não possuem nenhum vínculo empregatício</p>
                     <hr data-aos="fade-down">
                     <p data-aos="fade-left">Clique na imagem para saber mais sobre o respectivo projeto</p>
-                    <hr data-aos="fade-up">
                     <img data-aos="fade-down" data-aos-offset="200" data-aos-duration="1300" data-aos-easing="ease-in-sine" class="programmer" src="assets/img/programmer.svg" width="500px" height="450px" loading="lazy" alt="Imagem de Programador">
                 </h1>
             </div>
@@ -593,7 +586,6 @@
                 <h1 class="section-title" data-aos="fade-down">Certificados</h1>
                 <hr data-aos="fade-down">
                 <p class="certificate-scroll" data-aos="fade-right"></p>
-                <hr data-aos="fade-up">
             </div>
             <div class="certificate" data-aos="fade-up">
                 <a href="assets/img/certificados/responsive-web-design.avif" data-lightbox="mygallery" data-title="FreeCodeCamp Responsive Web Design">
@@ -645,7 +637,6 @@
                     <div data-aos="fade-down"><span>Contato</span> pessoal</div>
                     <hr data-aos="fade-down">
                     <p data-aos="fade-left">Utilize o formulário abaixo para me enviar um e-mail para contato</p>
-                    <hr data-aos="fade-up">
                 </h1>
             </div>
             <div class="my-form" data-aos="zoom-in-up">
@@ -757,9 +748,7 @@
                 </a>
             </div>
             <p>
-                <script>
-                    document.write('Copyright &copy 2020-' + new Date().getFullYear() + '. Silas Rodrigues. Todos os direitos reservados.');
-                </script>
+                Copyright &copy 2022. Silas Rodrigues. Todos os direitos reservados.
             </p>
         </div>
     </footer>
