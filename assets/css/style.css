@@ -68,6 +68,17 @@ a[href]:not([class]) {
   text-decoration: none;
 }
 
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .scale95:hover {
   transform: scale(0.95);
 }
