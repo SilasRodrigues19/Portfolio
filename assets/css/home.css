@@ -1,5 +1,5 @@
 #home {
-  font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
   z-index: 1;
   -webkit-animation: bgAnimation 40s linear infinite alternate;
@@ -201,9 +201,9 @@
 }
 
 .portfolioIcon {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--text-color);
-  margin: 0 10px -4px 0;
+  margin: 0 6px -3px 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }

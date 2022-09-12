@@ -1,1 +1,31 @@
-.swal2-popup{font-family:Kodchasan,sans-serif,'Open Sans',sans-serif;width:40rem;height:25rem;background:rgba(17,17,17,.8);-webkit-box-shadow:.1rem .1rem 1rem .01rem #5c94cd;box-shadow:.1rem .1rem 1rem .01rem #5c94cd}.swal2-html-container,.swal2-title{color:#fff}.swal2-styled.swal2-confirm{border:2px solid #5c94cd;width:25rem;height:3rem;border-radius:2rem;-webkit-transition:background-color ease 2s;transition:background-color ease 2s;background-color:transparent;color:#fff}.swal2-styled.swal2-confirm:hover{-webkit-transition:background-color ease 2s;transition:background-color ease 2s;background-color:#5c94cd}.swal2-styled.swal2-confirm:focus{-webkit-box-shadow:none;box-shadow:none}
+.swal2-popup {
+  font-family: 'Open Sans', sans-serif;
+  width: 40rem;
+  height: 25rem;
+  background: rgba(17, 17, 17, 0.8);
+  -webkit-box-shadow: 0.1rem 0.1rem 1rem 0.01rem #5c94cd;
+  box-shadow: 0.1rem 0.1rem 1rem 0.01rem #5c94cd;
+}
+.swal2-html-container,
+.swal2-title {
+  color: #fff;
+}
+.swal2-styled.swal2-confirm {
+  border: 2px solid #5c94cd;
+  width: 25rem;
+  height: 3rem;
+  border-radius: 2rem;
+  -webkit-transition: background-color ease 2s;
+  transition: background-color ease 2s;
+  background-color: transparent;
+  color: #fff;
+}
+.swal2-styled.swal2-confirm:hover {
+  -webkit-transition: background-color ease 2s;
+  transition: background-color ease 2s;
+  background-color: #5c94cd;
+}
+.swal2-styled.swal2-confirm:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

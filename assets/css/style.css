@@ -199,7 +199,7 @@ body {
 p {
   text-transform: initial;
   text-align: center;
-  font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
   font-size: 1.4rem;
   margin-top: 5px;
