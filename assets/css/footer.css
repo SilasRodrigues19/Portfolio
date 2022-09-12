@@ -1,97 +1,97 @@
 footer {
-    font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: var(--bg-gray-900);
+  font-family: Kodchasan, sans-serif, 'Open Sans', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: var(--bg-gray-900);
 }
 
 .footer {
-    min-height: 200px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 50px 0 10px 0;
+  min-height: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 50px 0 10px 0;
 }
 
 #footer h2 {
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 1.4rem;
-    letter-spacing: .5rem;
-    margin: 10px 0;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+  margin: 10px 0;
 }
 
 .contact-icon {
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 20px 0 20px 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 20px 20px;
 }
 
 #smoothScroll {
-    position: fixed;
-    background-color: rgba(71, 11, 169, 0.1);
-    border: solid 2.5px;
-    border-color: var(--primary-color);
-    padding: 15px;
-    border-radius: 10px;
-    bottom: 50px;
-    right: 25px;
-    font-size: 3rem;
-    text-align: center;
-    line-height: 10px;
-    transition: all .9s;
-    -webkit-transition: all .9s;
-    bottom: -150px;
+  position: fixed;
+  background-color: rgba(71, 11, 169, 0.1);
+  border: solid 2.5px;
+  border-color: var(--primary-color);
+  padding: 15px;
+  border-radius: 10px;
+  bottom: 50px;
+  right: 25px;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 10px;
+  transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  bottom: -150px;
 }
 
 #smoothScroll:hover {
-    background-color: rgba(71, 11, 169, 0.3);
+  background-color: rgba(71, 11, 169, 0.3);
 }
 
 .contact-item {
-    height: 50px;
-    overflow: hidden;
-    width: 75px;
-    margin: 0 10px;
+  height: 50px;
+  overflow: hidden;
+  width: 75px;
+  margin: 0 10px;
 }
 
 #footer p {
-    color: var(--text-color);
-    font-size: 1.3rem;
+  color: var(--text-color);
+  font-size: 1.3rem;
 }
 
 .brand h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: var(--text-color);
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .band a {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .brand img {
-    opacity: .7;
-    width: 75px;
-    height: 30px;
-    margin-left: 95px;
+  opacity: 0.7;
+  width: 75px;
+  height: 30px;
+  margin-left: 95px;
 }
 
 .dark-theme .brand img {
-    opacity: .65;
-    filter: invert(1) !important;
+  opacity: 0.65;
+  filter: invert(1) !important;
 }
 
 .brand h1 span {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
