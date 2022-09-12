@@ -223,6 +223,12 @@ const htmlEl = document.querySelector('html');
 htmlEl.onmouseover = () => htmlEl.classList.add('showScrollbar');
 htmlEl.onmouseleave = () => htmlEl.classList.remove('showScrollbar');
 
+const images = document.querySelectorAll('img');
+
+images.forEach((img) =>
+  img.addEventListener('contextmenu', (e) => e.preventDefault())
+);
+
 $(document).ready(function () {
   $('.boxInfo').on('click', 'li', function () {
     let tabsId = $(this).attr('id');
