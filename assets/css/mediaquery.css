@@ -157,11 +157,14 @@
     height: 25px;
     margin-left: -42px;
   }
+  .nav-list ul li:nth-of-type(2) a {
+    margin-left: 4rem;
+  }
   .nav-list ul li a {
     font-weight: 200;
   }
   .nav-list ul li:nth-child(1) a {
-    margin-right: 36px;
+    margin-right: 5rem;
   }
   .nav-list ul li:nth-child(1) a::before {
     background: url(https://api.iconify.design/healthicons/info-outline.svg?color=darkgray)
