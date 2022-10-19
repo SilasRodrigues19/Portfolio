@@ -62,7 +62,7 @@
 
 .form-control {
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 1.5rem;
   height: calc(2.5em + 0.75rem + 2px);
@@ -70,7 +70,7 @@
 
 label {
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 

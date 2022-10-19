@@ -110,7 +110,7 @@ a::active {
 }
 
 .lb-data .lb-number {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .bs-tooltip-auto[x-placement^='top'] .arrow::before,
@@ -204,7 +204,7 @@ p {
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.05rem;
 }
 

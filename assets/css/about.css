@@ -81,7 +81,7 @@
 .boxInfo ul li h4 {
   opacity: 0;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--primary-color);
   letter-spacing: 3px;
   -webkit-transition: all 1s ease-in-out;

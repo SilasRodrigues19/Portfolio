@@ -18,7 +18,7 @@ footer {
 
 #footer h2 {
   color: var(--text-color);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.4rem;
   letter-spacing: 0.5rem;
   margin: 10px 0;
@@ -67,6 +67,7 @@ footer {
 
 .brand h1 {
   font-size: 3rem;
+  font-weight: 300;
   text-transform: uppercase;
   color: var(--text-color);
 }
