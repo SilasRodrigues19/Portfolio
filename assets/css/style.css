@@ -39,6 +39,7 @@
   --content-title: #111;
   --content-title-span: #555;
   --lb-navigation: invert(1);
+  --error-message-color: #8b0000;
 }
 
 .dark-theme {
@@ -61,6 +62,8 @@
   --content-title: #cacaca;
   --content-title-span: #808080;
   --lb-navigation: none;
+  --error-message-color: #FF9883;
+  
 }
 
 a[href]:not([class]) {

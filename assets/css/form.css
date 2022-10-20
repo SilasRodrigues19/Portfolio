@@ -39,7 +39,7 @@
 
 .error {
   margin-top: 3px;
-  color: rgba(255, 0, 0, 0.5);
+  color: var(--error-message-color);
   -webkit-animation: bounce;
   animation: bounce;
   -webkit-animation-duration: 1s;
