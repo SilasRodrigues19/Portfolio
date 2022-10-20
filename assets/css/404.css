@@ -3,7 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -63,7 +63,7 @@ footer {
 }
 
 .menu li a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   color: rgba(71, 11, 169, 0.6);
@@ -79,7 +79,7 @@ footer {
 }
 
 .menu li a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: transparent;
   border: 2px solid rgba(71, 11, 169, 0.6);
   text-transform: uppercase;

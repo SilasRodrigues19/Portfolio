@@ -12,7 +12,7 @@
 
 @media only screen and (max-width: 960px) {
   .knowledge-wrapper {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -31,7 +31,7 @@
 
 @media only screen and (max-width: 768px) {
   html {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   .portfolioIcon {
     font-size: 17px;
@@ -70,7 +70,7 @@
     width: 80%;
   }
   .my-form h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.5rem;
   }
   .social {
@@ -276,7 +276,7 @@
   .lb-details,
   .nav-list ul a,
   .social ul li a span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
   }
   .nav-list ul a {
     padding: 20px 0;

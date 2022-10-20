@@ -47,7 +47,7 @@
 }
 
 .my-form {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -57,7 +57,7 @@
 
 .my-form h1 {
   color: var(--text-color);
-  font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
+  font-family: 'Salvation Typeface Font', 'Source Sans Pro', sans-serif;
 }
 
 .form-control {

@@ -181,7 +181,7 @@ a::active {
 }
 
 html {
-  font-family: 'Salvation Typeface Font', 'Open Sans', sans-serif;
+  font-family: 'Salvation Typeface Font', 'Source Sans Pro', sans-serif;
   font-size: 10px;
 }
 
@@ -202,7 +202,7 @@ body {
 p {
   text-transform: initial;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: var(--text-color);
   font-size: 1.4rem;
   margin-top: 5px;
