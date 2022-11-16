@@ -75,10 +75,8 @@ if (mailAlert != null) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
   loader = document.querySelector('.wrapperLoader');
   loader.style.display = 'none';
-
   /* Tooltip Alert */
   $('[data-toggle="tooltip"]').tooltip();
   home.classList.add('infoAnimation');
