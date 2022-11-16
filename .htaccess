@@ -35,6 +35,7 @@
   ExpiresByType image/gif "access 1 year"
   ExpiresByType image/png "access 1 year"
   ExpiresByType image/webp "access 1 year"
+  ExpiresByType image/avif "access 1 year"
   ExpiresByType text/css "access 1 month"
   ExpiresByType text/html "access 1 month"
   ExpiresByType application/pdf "access 1 month"
@@ -43,10 +44,10 @@
   ExpiresDefault "access 1 month"
 </IfModule>
 <IfModule mod_headers.c>
-  <filesmatch "\.(css|js)$">
+  <filesmatch "\.(css|js|woff|otf)$">
   Header set Cache-Control "max-age=2678400, public"
   </filesmatch>
-  <filesmatch "\.(ico|svg|webp|png|gif)$">
+  <filesmatch "\.(ico|svg|webp|avif|png|gif)$">
   Header set Cache-Control "max-age=29030400, public"
   </filesmatch>
   <filesmatch "\.(html|htm)$">
