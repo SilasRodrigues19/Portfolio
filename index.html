@@ -2,9 +2,14 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="author" content="Silas Rodrigues">
-    <meta name="description" content="Meu nome é Silas Rodrigues e eu desenvolvo aplicações web modernas com boas performances, boas práticas de programação, telas responsivas compatíveis com diferentes navegadores e configuração de SEO">
+    <meta name="description"
+        content="Meu nome é Silas Rodrigues e eu desenvolvo aplicações web modernas com boas performances, boas práticas de programação, telas responsivas compatíveis com diferentes navegadores e configuração de SEO">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#470ba9">
     <meta name="copyright" content="Silas Rodrigues 2022">
@@ -14,7 +19,8 @@
     <meta property="og:title" content="Silas Rodrigues - Desenvolvedor Front End - Programador">
     <meta property="og:description" content="Meu nome é Silas Rodrigues e este é meu portfolio com alguns dos meus projetos pessoais de estudo,
 	sou programador e desenvolvo aplicações web">
-    <meta name="keywords" content="Silas Rodrigues, freelancer, programador, desenvolvedor, portfolio, frontend, autodidata">
+    <meta name="keywords"
+        content="Silas Rodrigues, freelancer, programador, desenvolvedor, portfolio, frontend, autodidata">
     <title>Silas Rodrigues - Front End Developer</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -39,9 +45,10 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Lightbox -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" as="style">
@@ -55,7 +62,8 @@
     <script defer src="./assets/js/jquery.validate.min.js"></script>
 
     <!-- Mask Plugin JQuery -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        as="script">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
     <!-- Form Validator -->
@@ -63,7 +71,8 @@
     <script defer src="./assets/js/formvalidator.js"></script>
 
     <!-- Validator Messages -->
-    <link rel="preload" href="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js" as="script">
+    <link rel="preload" href="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"
+        as="script">
     <script defer src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
     <!-- Scripts need to be imported before </head> to resolve validation messages error -->
     <link rel="canonical" href="https://silasrodrigues.me">
@@ -106,7 +115,8 @@
                             <a class="scroll" href="#form" data-after="Contact">Contato</a>
                         </li>
                         <li>
-                            <a href="#theme-toggle" rel="noreferrer" aria-label="Mudar tema do site" data-after="Theme" class="iconLink">
+                            <a href="#theme-toggle" rel="noreferrer" aria-label="Mudar tema do site" data-after="Theme"
+                                class="iconLink">
                                 <i class="bi bi-cloud-moon" id="theme-toggle"></i>
                             </a>
                         </li>
@@ -161,14 +171,14 @@
                 </span>
                 <div class="iconsBox">
                     <i>
-                        <a href="https://wa.me/5519992576970" target="_blank" rel="noreferrer"
-                            aria-label="WhatsApp" accesskey="w">
+                        <a href="https://wa.me/5519992576970" target="_blank" rel="noreferrer" aria-label="WhatsApp"
+                            accesskey="w">
                             <span class="iconify whatsapp" data-icon="whh:whatsapp" data-inline="false"></span>
                         </a>
                     </i>
                     <i>
-                        <a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer"
-                            aria-label="Twitter" accesskey="t">
+                        <a href="https://twitter.com/Jinuye1" target="_blank" rel="noreferrer" aria-label="Twitter"
+                            accesskey="t">
                             <span class="iconify twitter" data-icon="websymbol:twitter-bird" data-inline="false"></span>
                         </a>
                     </i>
@@ -200,7 +210,8 @@
     <section id="about">
         <div class="about container">
             <div class="section-title">
-                <img data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200" data-aos-easing="ease" src="./assets/img/about.svg" alt="Imagem de Sobre">
+                <img data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200"
+                    data-aos-easing="ease" src="./assets/img/about.svg" alt="Imagem de Sobre">
                 <h1 data-aos="fade-down"><span>Sobre</span> mim</h1>
                 <hr data-aos="fade-down">
                 <p data-aos="fade-up">Para saber um pouco mais a meu respeito, clique nas imagens abaixo.
@@ -228,19 +239,27 @@
                 <div class="tabs-content">
                     <div id="tab-one-content-box" class="hideTabs">
                         <p>Graduado em Análise e Desenvolvimento de Sistemas pela
-                            <a href="http://fatec.edu.br" target="_blank" rel="noreferrer" aria-label="Site da Faculdade Fatec">Fatec</a> - 2017/2021 e desde então sempre buscando participar de eventos de programação e fazer cursos online em plataformas de ensino.</p>
+                            <a href="http://fatec.edu.br" target="_blank" rel="noreferrer"
+                                aria-label="Site da Faculdade Fatec">Fatec</a> - 2017/2021 e desde então sempre buscando
+                            participar de eventos de programação e fazer cursos online em plataformas de ensino.
+                        </p>
                         <hr>
                     </div>
                     <div id="tab-two-content-box" class="hideTabs">
-                        <p>Meu nome é Silas, tenho 23 anos e estudo Desenvolvimento Web de maneira autodidata. Possuo maiores aptidões para Desenvolvimento Front End, mas tento aprender de tudo um pouco, conforme a necessidade.</p>
+                        <p>Meu nome é Silas, tenho 23 anos e estudo Desenvolvimento Web de maneira autodidata. Possuo
+                            maiores aptidões para Desenvolvimento Front End, mas tento aprender de tudo um pouco,
+                            conforme a necessidade.</p>
                         <hr>
                     </div>
                     <div id="tab-three-content-box" class="hideTabs">
-                        <p>Trabalhando atualmente como Analista de Help Desk PHP Júnior e em busca de contribuir com projetos open source e sempre disponível para novos desafios.</p>
+                        <p>Trabalhando atualmente como Analista de Help Desk PHP Júnior e em busca de contribuir com
+                            projetos open source e sempre disponível para novos desafios.</p>
                         <hr>
                     </div>
                     <div id="tab-four-content-box" class="hideTabs">
-                        <p>Busco ser uma pessoa hábil em Desenvolvimento Web como um todo, atualmente, aprendendo Back End cada vez mais e praticando para aprimorar minhas habilidades em Front End para futuramente me tornar um profissional Full Stack.</p>
+                        <p>Busco ser uma pessoa hábil em Desenvolvimento Web como um todo, atualmente, aprendendo Back
+                            End cada vez mais e praticando para aprimorar minhas habilidades em Front End para
+                            futuramente me tornar um profissional Full Stack.</p>
                         <hr>
                     </div>
                 </div>
@@ -304,7 +323,8 @@
                     <div class="knowledge-icons" data-toggle="tooltip" title="JQuery">
                         <span class="iconify" data-inline="false" data-icon="cib:jquery"></span>
                     </div>
-                    <p>Biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX</p>
+                    <p>Biblioteca JavaScript que facilita a manipulação de eventos, animações, HTML e utilização de AJAX
+                    </p>
                 </div>
             </div>
             <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="950">
@@ -329,7 +349,8 @@
                     <div class="knowledge-icons" data-toggle="tooltip" title="TypeScript">
                         <span class="iconify" data-icon="ph:file-ts"></span>
                     </div>
-                    <p>É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.</p>
+                    <p>É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à
+                        linguagem.</p>
                 </div>
             </div>
             <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="1200">
@@ -386,7 +407,9 @@
                     <p data-aos="fade-right">Os projetos abaixo não possuem nenhum vínculo empregatício</p>
                     <hr data-aos="fade-down">
                     <p data-aos="fade-left">Clique na imagem para saber mais sobre o respectivo projeto</p>
-                    <img data-aos="fade-down" data-aos-offset="200" data-aos-duration="1300" data-aos-easing="ease-in-sine" class="programmer" src="assets/img/programmer.svg" width="500px" height="450px" loading="lazy" alt="Imagem de Programador">
+                    <img data-aos="fade-down" data-aos-offset="200" data-aos-duration="1300"
+                        data-aos-easing="ease-in-sine" class="programmer" src="assets/img/programmer.svg" width="500px"
+                        height="450px" loading="lazy" alt="Imagem de Programador">
                 </h1>
             </div>
 
@@ -399,9 +422,11 @@
                                 <!-- Project 1 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://github.com/SilasRodrigues19/silasdev.epizy.com" target="_blank" rel="noopener" aria-label="Portfólio">
+                                        <a href="https://github.com/SilasRodrigues19/silasdev.epizy.com" target="_blank"
+                                            rel="noopener" aria-label="Portfólio">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Meu portfólio" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1662402047/fullPagePrint/portfolio_ctqqvb.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Meu portfólio"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1662402047/fullPagePrint/portfolio_ctqqvb.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:logo-github"></span>
                                                     </i>
@@ -416,9 +441,11 @@
                                 <!-- Project 2 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://axie-infinity-lp.vercel.app" target="_blank" rel="noopener" aria-label="Axie Infinity Landing Page">
+                                        <a href="https://axie-infinity-lp.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Axie Infinity Landing Page">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Axie Infinity Landing Page" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/axie-lp_msq6su.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Axie Infinity Landing Page"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/axie-lp_msq6su.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:open-outline"></span>
                                                     </i>
@@ -433,9 +460,11 @@
                                 <!-- Project 3 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://i-shoes.vercel.app" target="_blank" rel="noopener" aria-label="Shoes Ecommerce Front End">
+                                        <a href="https://i-shoes.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Shoes Ecommerce Front End">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Front End Ecommerce" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/eccommerce_gvzrne.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Front End Ecommerce"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/eccommerce_gvzrne.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:open-outline"></span>
                                                     </i>
@@ -450,9 +479,11 @@
                                 <!-- Project 4 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://photo-gallery-two.vercel.app" target="_blank" rel="noopener" aria-label="Photo Gallery">
+                                        <a href="https://photo-gallery-two.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Photo Gallery">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Photo Gallery" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/photo-gallery_xeevvz.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Photo Gallery"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/photo-gallery_xeevvz.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:open-outline"></span>
                                                     </i>
@@ -467,14 +498,17 @@
                                 <!-- Project 5 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://github.com/SilasRodrigues19/dogcursos.epizy.com" target="_blank" rel="noopener" aria-label="Dog Cursos">
+                                        <a href="https://github.com/SilasRodrigues19/dogcursos.epizy.com"
+                                            target="_blank" rel="noopener" aria-label="Dog Cursos">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Dog Cursos" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288961/fullPagePrint/dogcursos_oa4w7z.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Dog Cursos"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288961/fullPagePrint/dogcursos_oa4w7z.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:logo-github"></span>
                                                     </i>
                                                     <figcaption class="carousel-info">
-                                                        <h2>Sistema de cadastro de alunos e gerenciamento de matrículas</h2>
+                                                        <h2>Sistema de cadastro de alunos e gerenciamento de matrículas
+                                                        </h2>
                                                     </figcaption>
                                                 </figure>
                                             </div>
@@ -484,9 +518,11 @@
                                 <!-- Project 6 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://github.com/SilasRodrigues19/Google-News-API" target="_blank" rel="noopener" aria-label="Google News API">
+                                        <a href="https://github.com/SilasRodrigues19/Google-News-API" target="_blank"
+                                            rel="noopener" aria-label="Google News API">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Brazil Headlines" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/google-api_yc2zma.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Brazil Headlines"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/google-api_yc2zma.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:logo-github"></span>
                                                     </i>
@@ -501,9 +537,11 @@
                                 <!-- Project 7 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="http://webresources.epizy.com" rel="noreferrer" target="_blank" rel="noopener" aria-label="Web Resources">
+                                        <a href="http://webresources.epizy.com" rel="noreferrer" target="_blank"
+                                            rel="noopener" aria-label="Web Resources">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Web Resources" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1662402737/fullPagePrint/webresource_ybijpg.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Web Resources"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1662402737/fullPagePrint/webresource_ybijpg.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:open-outline"></span>
                                                     </i>
@@ -518,9 +556,11 @@
                                 <!-- Project 8 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://github.com/SilasRodrigues19/Prize-draw-register" target="_blank" rel="noreferrer" aria-label="Sistema de Cadastro">
+                                        <a href="https://github.com/SilasRodrigues19/Prize-draw-register"
+                                            target="_blank" rel="noreferrer" aria-label="Sistema de Cadastro">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Sistema de cadastro" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/login_zg04kc.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Sistema de cadastro"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/login_zg04kc.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:logo-github"></span>
                                                     </i>
@@ -537,7 +577,8 @@
                                     <div class="wrapper">
                                         <a href="#" rel="noreferrer" aria-label="Cadastro de Clientes">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Cadastro de clientes" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288961/fullPagePrint/cadastro_wzhtqa.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Cadastro de clientes"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288961/fullPagePrint/cadastro_wzhtqa.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:logo-github"></span>
                                                     </i>
@@ -552,9 +593,11 @@
                                 <!-- Project 10 -->
                                 <div class="swiper-slide">
                                     <div class="wrapper">
-                                        <a href="https://random-quote-two.vercel.app" target="_blank" rel="noopener" aria-label="Random Quote">
+                                        <a href="https://random-quote-two.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Random Quote">
                                             <div class="carousel">
-                                                <figure data-toggle="tooltip" title="Random Quote Generator" style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/random-quote_u3bdfl.webp'); background-size: cover; background-position: top center;">
+                                                <figure data-toggle="tooltip" title="Random Quote Generator"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/random-quote_u3bdfl.webp'); background-size: cover; background-position: top center;">
                                                     <i>
                                                         <span class="iconify" data-icon="ion:open-outline"></span>
                                                     </i>
@@ -587,41 +630,56 @@
                 <p class="certificate-scroll" data-aos="fade-right"></p>
             </div>
             <div class="certificate" data-aos="fade-up">
-                <a href="assets/img/certificados/responsive-web-design.avif" data-lightbox="mygallery" data-title="FreeCodeCamp Responsive Web Design">
-                    <img src="assets/img/certificados/responsive-web-design.avif" width="200" height="150" loading="lazy" alt="Certificado FreeCodeCamp Responsive Web Design" data-aos="fade-up">
+                <a href="assets/img/certificados/responsive-web-design.avif" data-lightbox="mygallery"
+                    data-title="FreeCodeCamp Responsive Web Design">
+                    <img src="assets/img/certificados/responsive-web-design.avif" width="200" height="150"
+                        loading="lazy" alt="Certificado FreeCodeCamp Responsive Web Design" data-aos="fade-up">
                 </a>
-                <a href="assets/img/certificados/js.avif" data-lightbox="mygallery" data-title="FreeCodeCamp JavaScript Algorithms and Data Structures">
-                    <img src="assets/img/certificados/js.avif" width="200" height="150" loading="lazy" alt="Certificado FreeCodeCamp JavaScript Algorithms and Data Structures" data-aos="fade-up">
+                <a href="assets/img/certificados/js.avif" data-lightbox="mygallery"
+                    data-title="FreeCodeCamp JavaScript Algorithms and Data Structures">
+                    <img src="assets/img/certificados/js.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado FreeCodeCamp JavaScript Algorithms and Data Structures" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/git.avif" data-lightbox="mygallery" data-title="Git">
-                    <img src="assets/img/certificados/git.avif" width="200" height="150" loading="lazy" alt="Certificado de Git" data-aos="fade-up">
+                    <img src="assets/img/certificados/git.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de Git" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/HTML-CSS.avif" data-lightbox="mygallery" data-title="HTML e CSS">
-                    <img src="assets/img/certificados/HTML-CSS.avif" width="200" height="150" loading="lazy" alt="Certificado de HTML e CSS" data-aos="fade-up">
+                    <img src="assets/img/certificados/HTML-CSS.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de HTML e CSS" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/jquery.avif" data-lightbox="mygallery" data-title="jQuery">
-                    <img src="assets/img/certificados/jquery.avif" width="200" height="150" loading="lazy" alt="Certificado de jQuery" data-aos="fade-up">
+                    <img src="assets/img/certificados/jquery.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de jQuery" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/logica.avif" data-lightbox="mygallery" data-title="Lógica">
-                    <img src="assets/img/certificados/logica.avif" width="200" height="150" loading="lazy" alt="Certificado de Lógica de programação" data-aos="fade-up">
+                    <img src="assets/img/certificados/logica.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de Lógica de programação" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/MySQL.avif" data-lightbox="mygallery" data-title="MySQL">
-                    <img src="assets/img/certificados/MySQL.avif" width="200" height="150" loading="lazy" alt="Certificado de MySQL" data-aos="fade-up">
+                    <img src="assets/img/certificados/MySQL.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de MySQL" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/php.avif" data-lightbox="mygallery" data-title="PHP">
-                    <img src="assets/img/certificados/php.avif" width="200" height="150" loading="lazy" alt="Certificado de PHP" data-aos="fade-up">
+                    <img src="assets/img/certificados/php.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de PHP" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/WebDesign.avif" data-lightbox="mygallery" data-title="Web Design">
-                    <img src="assets/img/certificados/WebDesign.avif" width="200" height="150" loading="lazy" alt="Certificado de Web Design" data-aos="fade-up">
+                    <img src="assets/img/certificados/WebDesign.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de Web Design" data-aos="fade-up">
                 </a>
-                <a href="assets/img/certificados/html-full.avif" data-lightbox="mygallery" data-title="HTML Full Course">
-                    <img src="assets/img/certificados/html-full.avif" width="200" height="150" loading="lazy" alt="Certificado de HTML Completo" data-aos="fade-up">
+                <a href="assets/img/certificados/html-full.avif" data-lightbox="mygallery"
+                    data-title="HTML Full Course">
+                    <img src="assets/img/certificados/html-full.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de HTML Completo" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/css-full.avif" data-lightbox="mygallery" data-title="CSS Full Course">
-                    <img src="assets/img/certificados/css-full.avif" width="200" height="150" loading="lazy" alt="Certificado de CSS Completo" data-aos="fade-up">
+                    <img src="assets/img/certificados/css-full.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de CSS Completo" data-aos="fade-up">
                 </a>
                 <a href="assets/img/certificados/design.avif" data-lightbox="mygallery" data-title="Graphic Design">
-                    <img src="assets/img/certificados/design.avif" width="200" height="150" loading="lazy" alt="Intensivo de Design Gráfico" data-aos="fade-up">
+                    <img src="assets/img/certificados/design.avif" width="200" height="150" loading="lazy"
+                        alt="Intensivo de Design Gráfico" data-aos="fade-up">
                 </a>
             </div>
         </div>
@@ -662,7 +720,8 @@
                                 <!-- Surname -->
                                 <div class="form-group col-sm-6">
                                     <label for="sobrenome">Seu sobrenome</label>
-                                    <input type="text" class="form-control" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                                    <input type="text" class="form-control" name="sobrenome" id="sobrenome"
+                                        placeholder="Sobrenome">
                                 </div>
                             </div>
                             <!-- End Name and Surname rows -->
@@ -671,13 +730,15 @@
                                 <!-- Email -->
                                 <div class="form-group col-sm-6">
                                     <label for="email">Seu email</label>
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email">
                                 </div>
 
                                 <div class="form-group col-sm-6">
                                     <!-- Phone -->
                                     <label for="celular">Seu celular</label>
-                                    <input type="text" class="form-control" name="celular" id="celular" placeholder="(00) 00000-0000">
+                                    <input type="text" class="form-control" name="celular" id="celular"
+                                        placeholder="(00) 00000-0000">
                                 </div>
                             </div>
                             <!-- End Email and Phone rows -->
@@ -686,13 +747,15 @@
                                 <div class="form-group col-sm-12">
                                     <!-- Message -->
                                     <label for="mensagem">Sua mensagem</label>
-                                    <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
+                                    <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10"
+                                        placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
                                 </div>
                             </div>
                             <!-- End Message row -->
                             <div class="form-row">
                                 <div class="col-sm-12">
-                                    <input type="submit" class="btn btn-secondary form-control" name="btnSubmit" value="Enviar" id="btnSubmit">
+                                    <input type="submit" class="btn btn-secondary form-control" name="btnSubmit"
+                                        value="Enviar" id="btnSubmit">
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <br>
@@ -721,16 +784,21 @@
             <div class="contact-icon">
                 <div class="contact-item text" data-toggle="tooltip" title="Sumaré - São Paulo">
                     <div data-aos="fade-left" data-aos-offset="0">
-                        <a href="https://goo.gl/maps/Cic8v3TR64rj2RNMA" target="_blank" rel="noreferrer" aria-label="Google Maps">
-                            <span class="iconify globe-americas" data-icon="gis:earth-america" data-inline="false"></span>
+                        <a href="https://goo.gl/maps/Cic8v3TR64rj2RNMA" target="_blank" rel="noreferrer"
+                            aria-label="Google Maps">
+                            <span class="iconify globe-americas" data-icon="gis:earth-america"
+                                data-inline="false"></span>
                         </a>
                     </div>
                 </div>
 
                 <div class="contact-item" data-toggle="tooltip" title="Me contate por e-mail">
                     <div data-aos="fade-up" data-aos-offset="0">
-                        <a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site" rel="noreferrer" aria-label="Gmail">
-                            <span class="iconify envelope" data-icon="emojione-monotone:closed-mailbox-with-lowered-flag" data-inline="false"></span>
+                        <a href="mailto:silasrodrigues.ti@hotmail.com?subject=Contato%20Site" rel="noreferrer"
+                            aria-label="Gmail">
+                            <span class="iconify envelope"
+                                data-icon="emojione-monotone:closed-mailbox-with-lowered-flag"
+                                data-inline="false"></span>
                         </a>
                     </div>
                 </div>
@@ -738,7 +806,8 @@
                 <div class="contact-item" data-toggle="tooltip" title="Veja meu curriculo">
                     <div data-aos="fade-right" data-aos-offset="0">
                         <a href="resume.pdf" target="_blank" rel="noreferrer" aria-label="Currículo PDF">
-                            <span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill" data-inline="false"></span>
+                            <span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill"
+                                data-inline="false"></span>
                         </a>
                     </div>
                 </div>
@@ -763,14 +832,18 @@
     <!-- Sweet -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js" integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"
+        integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Lightbox -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Aos Animate -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    
+
     <script defer src="assets/js/script.js"></script>
     <script defer src="assets/js/jquery.easing.min.js"></script>
     <script defer src="assets/js/theme.js"></script>
