@@ -1,3 +1,7 @@
+@import url('./sweet-dark.css');
+@import url('./aos.css');
+@import url('./swiper.css');
+@import url('./lightbox.css');
 @import url('./swal.css');
 @import url('./bootstrap.css');
 @import url('./reset.css');
@@ -14,3 +18,4 @@
 @import url('./loader.css');
 @import url('./mediaquery.css');
 @import url('./icons.css');
+
