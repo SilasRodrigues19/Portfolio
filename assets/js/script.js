@@ -78,7 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
   loader = document.querySelector('.wrapperLoader');
   loader.style.display = 'none';
   /* Tooltip Alert */
-  $('[data-toggle="tooltip"]').tooltip();
+  document.querySelectorAll('[data-toggle="tooltip"]').forEach((el) => new bootstrap.Tooltip(el));
+
   home.classList.add('infoAnimation');
   avatar.classList.add('infoAnimation');
   textArray.length && setTimeout(type, newTextDelay + 250);
@@ -229,13 +230,17 @@ images.forEach((img) =>
   img.addEventListener('contextmenu', (e) => e.preventDefault())
 );
 
-$(document).ready(function () {
-  $('.boxInfo').on('click', 'li', function () {
-    let tabsId = $(this).attr('id');
-    $(this).toggleClass('active').siblings().removeClass('active');
-    $('#' + tabsId + '-content-box')
-      .toggleClass('activeTabs')
-      .siblings()
-      .removeClass('activeTabs');
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.boxInfo').addEventListener('click', (e) => {
+    if (e.target.matches('li img')) {
+      let tabsId = e.target.parentNode.getAttribute('id');
+      e.target.parentNode.classList.toggle('active');
+      document.querySelectorAll(`#${tabsId}-content-box`).forEach((sibling) => {
+        if (sibling !== document.querySelector(`#${tabsId}-content-box`)) {
+          sibling.classList.remove('activeTabs');
+        }
+      });
+      document.querySelector(`#${tabsId}-content-box`).classList.toggle('activeTabs');
+    }
   });
 });
