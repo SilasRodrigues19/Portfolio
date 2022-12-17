@@ -166,6 +166,7 @@ document.addEventListener('scroll', () => {
   rightArrow.style.cssText = 'opacity: 1';
 });
 
+
 // Close menu after link is clicked
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
@@ -210,14 +211,13 @@ certificate.addEventListener('wheel', (e) => {
 
 const certificateScroll = document.querySelector('.certificate-scroll');
 
-navigator.userAgent.match(/Mobile/)
-  ? (certificateScroll.innerHTML = 'Pressione com o dedo e arraste para o lado')
-  : (certificateScroll.innerHTML =
-      'Utilize o scroll para rolagem lateral e clique na imagem para abrir');
+const isMobile = /Mobile/.test(navigator.userAgent);
 
-navigator.userAgent.match(/Mobile/)
-  ? menu_item.forEach((item) => item.classList.remove('underline'))
-  : menu_item.forEach((item) => item.classList.add('underline'));
+certificateScroll.innerHTML = isMobile
+  ? 'Pressione com o dedo e arraste para o lado'
+  : 'Utilize o scroll para rolagem lateral e clique na imagem para abrir';
+
+menu_item.forEach((item) => item.classList[isMobile ? 'remove' : 'add']('underline'));
 
 const htmlEl = document.querySelector('html');
 
@@ -231,16 +231,23 @@ images.forEach((img) =>
 );
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.boxInfo').addEventListener('click', (e) => {
+  const boxInfo = document.querySelector('.boxInfo');
+
+  boxInfo.addEventListener('click', (e) => {
     if (e.target.matches('li img')) {
-      let tabsId = e.target.parentNode.getAttribute('id');
+      const tabsId = e.target.parentNode.id;
+
       e.target.parentNode.classList.toggle('active');
-      document.querySelectorAll(`#${tabsId}-content-box`).forEach((sibling) => {
-        if (sibling !== document.querySelector(`#${tabsId}-content-box`)) {
-          sibling.classList.remove('activeTabs');
-        }
-      });
-      document.querySelector(`#${tabsId}-content-box`).classList.toggle('activeTabs');
+
+      const siblings = [...boxInfo.querySelectorAll(`li[id=${tabsId}]`)].filter(
+        (el) => el !== e.target.parentNode
+      );
+
+      siblings.forEach((sibling) => sibling.classList.remove('activeTabs'));
+
+      const activeTabs = document.querySelector(`#${tabsId}-content-box`);
+      activeTabs.classList.toggle('activeTabs');
+      activeTabs.querySelector('p').classList.toggle('fadeInUp');
     }
   });
 });
