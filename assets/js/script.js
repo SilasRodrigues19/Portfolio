@@ -247,7 +247,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const activeTabs = document.querySelector(`#${tabsId}-content-box`);
       activeTabs.classList.toggle('activeTabs');
-      activeTabs.querySelector('p').classList.toggle('fadeInUp');
+      activeTabs.querySelectorAll('p, hr').forEach((el) => el.classList.toggle('fadeInUp'));
+
     }
   });
 });
