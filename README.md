@@ -7,7 +7,7 @@
 <br />
 <samp>
 <p align="center">
-  <a href="https://silasrodrigues.me">
+  <a href="https://silasrodrigues.vercel.app">
     <img src="assets/img/logo-large.svg" alt="Logo" height="40">
   </a>
 
@@ -16,7 +16,7 @@
   <p align="center">
     Portfólio to show my projects.
     <br />
-    <a href="https://silasrodrigues.me"><strong>View Demo »</strong></a>
+    <a href="https://silasrodrigues.vercel.app"><strong>View Demo »</strong></a>
     <br />
   </p>
 </p>
@@ -51,33 +51,33 @@
 
 ### Desktop View
 
-## [![About View Desktop][product-screenshot9]](http://silasrodrigues.me)
+## [![About View Desktop][product-screenshot9]](https://silasrodrigues.vercel.app)
 
 ### Desktop Dark View
 
-## [![About View Desktop][product-screenshot]](http://silasrodrigues.me)
+## [![About View Desktop][product-screenshot]](https://silasrodrigues.vercel.app)
 
 ### Desktop Light View
 
-## [![About View Desktop][product-screenshot8]](http://silasrodrigues.me)
+## [![About View Desktop][product-screenshot8]](https://silasrodrigues.vercel.app)
 
 ### 404 View
 
-[![About View 404][product-screenshot2]](http://silasrodrigues.me/Example404)
+[![About View 404][product-screenshot2]](https://silasrodrigues.vercel.app/Example404)
 
 ### Mail Message View
 
-[![Error Mail][product-screenshot5]](http://silasrodrigues.me)
-[![Success Mail][product-screenshot6]](http://silasrodrigues.me)
+[![Error Mail][product-screenshot5]](https://silasrodrigues.vercel.app)
+[![Success Mail][product-screenshot6]](https://silasrodrigues.vercel.app)
 
 ### Mobile View
 
-[![About View 404][product-screenshot3]](http://silasrodrigues.me/Example404)
-[![About View 404][product-screenshot4]](http://silasrodrigues.me/Example404)
+[![About View 404][product-screenshot3]](https://silasrodrigues.vercel.app/Example404)
+[![About View 404][product-screenshot4]](https://silasrodrigues.vercel.app/Example404)
 
 ## Lighthouse Report
 
-[![Lighthouse Report][product-screenshot7]](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fsilasrodrigues.me%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
+[![Lighthouse Report][product-screenshot7]](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fsilasrodrigues.vercel.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)
 
 This project was built to show some of my projects and my freelancing services.
 
@@ -147,7 +147,7 @@ This work is licensed under a GNU Affero General Public License v3.0 License. Se
 
 Silas Rodrigues - [@jinuye1](https://twitter.com/jinuye1) - silasrodrigues.fatec@gmail.com
 
-Project Link: [silasrodrigues.me](https://silasrodrigues.me)
+Project Link: [silasrodrigues.vercel.app](https://silasrodrigues.vercel.app)
 
    <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
