@@ -252,3 +252,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const favicon = document.querySelector('#favicon');
+  const pageTitle = document.title;
+  const attentionMessage = 'Volte para a página...';
+
+  document.addEventListener('visibilitychange', () => {
+    const isPageActive = !document.hidden;
+    toggle(isPageActive);
+  })
+
+  toggle = (isPageActive) => {
+    if (isPageActive) {
+      document.title = pageTitle;
+      favicon.href = '../../favicon.ico';
+      return;
+    }
+    document.title = attentionMessage;
+    favicon.href = '../../favicon-change.svg';
+  }
+})
