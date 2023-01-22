@@ -273,3 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
     favicon.href = '../../favicon-change.svg';
   }
 })
+
+const copy = document.querySelector('.copy');
+
+copy.innerHTML = `Copyright &copy 2021 - ${new Date().getFullYear()} - Silas Rodrigues. Todos os direitos reservados`;
