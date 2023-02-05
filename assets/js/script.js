@@ -78,7 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
   loader = document.querySelector('.wrapperLoader');
   loader.style.display = 'none';
   /* Tooltip Alert */
-  document.querySelectorAll('[data-toggle="tooltip"]').forEach((el) => new bootstrap.Tooltip(el));
+  document
+    .querySelectorAll('[data-toggle="tooltip"]')
+    .forEach((el) => new bootstrap.Tooltip(el));
 
   home.classList.add('infoAnimation');
   avatar.classList.add('infoAnimation');
@@ -166,7 +168,6 @@ document.addEventListener('scroll', () => {
   rightArrow.style.cssText = 'opacity: 1';
 });
 
-
 // Close menu after link is clicked
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
@@ -217,7 +218,9 @@ certificateScroll.innerHTML = isMobile
   ? 'Pressione com o dedo e arraste para o lado'
   : 'Utilize o scroll para rolagem lateral e clique na imagem para abrir';
 
-menu_item.forEach((item) => item.classList[isMobile ? 'remove' : 'add']('underline'));
+menu_item.forEach((item) =>
+  item.classList[isMobile ? 'remove' : 'add']('underline')
+);
 
 const htmlEl = document.querySelector('html');
 
@@ -247,8 +250,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const activeTabs = document.querySelector(`#${tabsId}-content-box`);
       activeTabs.classList.toggle('activeTabs');
-      activeTabs.querySelectorAll('p, hr').forEach((el) => el.classList.toggle('fadeInUp'));
-
+      activeTabs
+        .querySelectorAll('p, hr')
+        .forEach((el) => el.classList.toggle('fadeInUp'));
     }
   });
 });
@@ -261,7 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('visibilitychange', () => {
     const isPageActive = !document.hidden;
     toggle(isPageActive);
-  })
+  });
 
   toggle = (isPageActive) => {
     if (isPageActive) {
@@ -271,9 +275,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     document.title = attentionMessage;
     favicon.href = '../../favicon-change.svg';
-  }
-})
+  };
+});
 
 const copy = document.querySelector('.copy');
 
 copy.innerHTML = `Copyright &copy 2021 - ${new Date().getFullYear()} - Silas Rodrigues. Todos os direitos reservados`;
+
+const progressBar = document.querySelector('.progress-bar');
+
+document.addEventListener('scroll', () => {
+  let width =
+    ((document.body.scrollTop || document.documentElement.scrollTop) /
+      (document.documentElement.scrollHeight -
+        document.documentElement.clientHeight)) *
+    100;
+  progressBar.style.width = `${width}%`;
+});
