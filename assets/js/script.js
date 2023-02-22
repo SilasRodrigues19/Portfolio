@@ -292,3 +292,17 @@ document.addEventListener('scroll', () => {
     100;
   progressBar.style.width = `${width}%`;
 });
+
+const age = document.querySelector('.age');
+const myBirthYear = 1999;
+
+const currentYear = new Date().getFullYear();
+const isBirthdayPassed = new Date().getMonth() + 1 >= 4;
+
+let currentAge = currentYear - myBirthYear;
+
+if (!isBirthdayPassed) {
+  currentAge--;
+}
+
+age.innerHTML = `${currentAge} anos`;
