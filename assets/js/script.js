@@ -293,15 +293,16 @@ document.addEventListener('scroll', () => {
   progressBar.style.width = `${width}%`;
 });
 
-const age = document.querySelector('.age');
-const myBirthYear = 1999;
+const currentDate = new Date();
+const myBirthDate = new Date('1999-04-22');
+let currentAge = currentDate.getFullYear() - myBirthDate.getFullYear();
 
-const currentYear = new Date().getFullYear();
-const isBirthdayPassed = new Date().getMonth() + 1 >= 4;
-
-let currentAge = currentYear - myBirthYear;
-
-if (!isBirthdayPassed) {
+if (currentDate.getMonth() < myBirthDate.getMonth()) {
+  currentAge--;
+} else if (
+  currentDate.getMonth() === myBirthDate.getMonth() &&
+  currentDate.getDate() < myBirthDate.getDate()
+) {
   currentAge--;
 }
 
