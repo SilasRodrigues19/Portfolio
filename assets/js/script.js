@@ -270,8 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
   toggle = (isPageActive) => {
     if (isPageActive) {
       document.title = pageTitle;
-      favicon.href = '../../favicon.ico';
-      return;
+      return (favicon.href = '../../favicon.ico');
     }
     document.title = attentionMessage;
     favicon.href = '../../favicon-change.svg';
@@ -295,6 +294,7 @@ document.addEventListener('scroll', () => {
 
 const currentDate = new Date();
 const myBirthDate = new Date('1999-04-22');
+const age = document.querySelector('.age');
 let currentAge = currentDate.getFullYear() - myBirthDate.getFullYear();
 
 if (currentDate.getMonth() < myBirthDate.getMonth()) {
