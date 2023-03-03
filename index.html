@@ -109,7 +109,7 @@
                 </div>
                 <div class="nav-list">
                     <!-- Mobile Menu -->
-                    <input id="hamburger" type="checkbox">
+                    <input autocomplete="off" id="hamburger" type="checkbox">
                     <label for="hamburger">
                         <div class="menu">
                             <div class="bar bar1"></div>
@@ -736,19 +736,21 @@
 
                 <div class="row justify-content-center mb-5">
                     <div class="col-sm-12 col-md-10 col-lg-8">
-                        <form action="src/mail.php" method="POST" id="formContact">
+                        <form action="https://getform.io/f/b103cef7-a5b3-4930-8d0b-4ad1a30cfbb4" method="POST"
+                            id="formContact">
                             <div class="form-row">
                                 <!-- Name -->
                                 <div class="form-group col-sm-6">
                                     <label for="nome">Seu nome</label>
-                                    <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+                                    <input autocomplete="off" type="text" class="form-control" name="nome" id="nome"
+                                        placeholder="Nome">
                                 </div>
 
                                 <!-- Surname -->
                                 <div class="form-group col-sm-6">
                                     <label for="sobrenome">Seu sobrenome</label>
-                                    <input type="text" class="form-control" name="sobrenome" id="sobrenome"
-                                        placeholder="Sobrenome">
+                                    <input autocomplete="off" type="text" class="form-control" name="sobrenome"
+                                        id="sobrenome" placeholder="Sobrenome">
                                 </div>
                             </div>
                             <!-- End Name and Surname rows -->
@@ -757,15 +759,15 @@
                                 <!-- Email -->
                                 <div class="form-group col-sm-6">
                                     <label for="email">Seu email</label>
-                                    <input type="email" class="form-control" name="email" id="email"
+                                    <input autocomplete="off" type="email" class="form-control" name="email" id="email"
                                         placeholder="Email">
                                 </div>
 
                                 <div class="form-group col-sm-6">
                                     <!-- Phone -->
                                     <label for="celular">Seu celular</label>
-                                    <input type="text" class="form-control" name="celular" id="celular"
-                                        placeholder="(00) 00000-0000">
+                                    <input autocomplete="off" type="text" class="form-control" name="celular"
+                                        id="celular" placeholder="(00) 00000-0000">
                                 </div>
                             </div>
                             <!-- End Email and Phone rows -->
@@ -774,15 +776,16 @@
                                 <div class="form-group col-sm-12">
                                     <!-- Message -->
                                     <label for="mensagem">Sua mensagem</label>
-                                    <textarea class="form-control" name="mensagem" id="mensagem" cols="30" rows="10"
-                                        placeholder="Sinta-se a vontade" onkeyup="countLetters();"></textarea>
+                                    <textarea autocomplete="off" class="form-control" name="mensagem" id="mensagem"
+                                        cols="30" rows="10" placeholder="Sinta-se a vontade"
+                                        onkeyup="countLetters();"></textarea>
                                 </div>
                             </div>
                             <!-- End Message row -->
                             <div class="form-row">
                                 <div class="col-sm-12">
-                                    <input type="submit" class="btn btn-secondary form-control" name="btnSubmit"
-                                        value="Enviar" id="btnSubmit">
+                                    <input autocomplete="off" type="submit" class="btn btn-secondary form-control"
+                                        name="btnSubmit" value="Enviar" id="btnSubmit">
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <br>
