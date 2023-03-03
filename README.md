@@ -14,7 +14,7 @@
   <h3 align="center">Portfolio</h3>
 
   <p align="center">
-    Portfólio to show my projects.
+    Portfolio to show my projects.
     <br />
     <a href="https://silasrodrigues.vercel.app"><strong>View Demo »</strong></a>
     <br />
@@ -67,8 +67,26 @@
 
 ### Mail Message View
 
+###### NOTE: Due to the site being hosted on GitHub and deployed at Vercel, the function adopted with PHP mailer for sending e-mails does not work, but I kept the settings for future use. The files are located in the [Portfolio/src/](https://github.com/SilasRodrigues19/Portfolio/tree/main/src) folder
+
+###### Expanding and collapsing the items below, you can see how it looks in the implementation with PHPMailer and how it looks with GetForm
+
+<details>
+  <summary>PHPMailer</summary>
+
 [![Error Mail][product-screenshot5]](https://silasrodrigues.vercel.app)
 [![Success Mail][product-screenshot6]](https://silasrodrigues.vercel.app)
+
+</details>
+
+<hr>
+
+<details open>
+  <summary>GetForm</summary>
+
+[![Get Form Message][product-screenshot10]](https://silasrodrigues.vercel.app)
+
+</details>
 
 ### Mobile View
 
@@ -114,9 +132,12 @@ Technologies used in the project.
 
 - [PHPMailer](https://github.com/PHPMailer/PHPMailer) this repo contains everything you need to set up and use
 
+- [GetForm](https://getform.io/) smart form endpoints
+  for developers.
+
 ### Font Script
 
-- [Font Awesome](https://fontawesome.com)
+- [Google Fonts](https://fonts.google.com/)
 
 ### Plugins
 
@@ -173,6 +194,7 @@ Project Link: [silasrodrigues.vercel.app](https://silasrodrigues.vercel.app)
 [product-screenshot7]: ./assets/img/previewLighthouse.png
 [product-screenshot8]: ./assets/img/preview2.png
 [product-screenshot9]: ./assets/img/preview.gif
+[product-screenshot10]: ./assets/img/previewGetForm.png
 
 <br><hr>
 [🔼 Back to top](#Portfolio)
