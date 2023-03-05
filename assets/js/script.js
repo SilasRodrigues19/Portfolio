@@ -55,10 +55,17 @@ displayContent = () => {
     lightBoxPrev = document.querySelector('.lb-prev'),
     lightBoxNext = document.querySelector('.lb-next'),
     lightBoxClose = document.querySelector('.lb-close');
-  setAttributesHelper(lightBoxCancel, { rel: 'nofollow', href: '#' });
-  setAttributesHelper(lightBoxPrev, { rel: 'nofollow', href: '#' });
-  setAttributesHelper(lightBoxNext, { rel: 'nofollow', href: '#' });
-  setAttributesHelper(lightBoxClose, { rel: 'nofollow', href: '#' });
+
+  if (
+    !document.body.contains(
+      lightBoxCancel && lightBoxPrev && lightBoxNext && lightBoxClose
+    )
+  ) {
+    setAttributesHelper(lightBoxCancel, { rel: 'nofollow', href: '#' });
+    setAttributesHelper(lightBoxPrev, { rel: 'nofollow', href: '#' });
+    setAttributesHelper(lightBoxNext, { rel: 'nofollow', href: '#' });
+    setAttributesHelper(lightBoxClose, { rel: 'nofollow', href: '#' });
+  }
 };
 
 window.onload = displayContent;
@@ -75,16 +82,24 @@ if (mailAlert != null) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loader = document.querySelector('.wrapperLoader');
+  let loader = document.querySelector('.wrapperLoader'),
+    navBar = document.querySelector('.nav-bar'),
+    header = document.querySelector('#header');
+
   loader.style.display = 'none';
   /* Tooltip Alert */
   document
     .querySelectorAll('[data-toggle="tooltip"]')
     .forEach((el) => new bootstrap.Tooltip(el));
 
-  home.classList.add('infoAnimation');
-  avatar.classList.add('infoAnimation');
-  textArray.length && setTimeout(type, newTextDelay + 250);
+  if (loader.style.display === 'none') {
+    navBar.classList.add('nav-bar-animation');
+    home.classList.add('infoAnimation');
+    avatar.classList.add('infoAnimation');
+    textArray.length && setTimeout(type, newTextDelay + 250);
+  } else {
+    header.style.display = 'none';
+  }
 });
 
 const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
