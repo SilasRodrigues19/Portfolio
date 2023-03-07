@@ -1,7 +1,57 @@
-const typedTextSpan = document.querySelector('.typed-text'),
-  cursorSpan = document.querySelector('.cursor'),
-  home = document.querySelector('.home .container'),
-  avatar = document.querySelector('.avatar');
+// Helpers
+
+/**
+ * Define atributos para um elemento DOM especificado.
+ * @param {HTMLElement} el - O elemento DOM a ser modificado.
+ * @param {Object.<string, string>} attrs - Um objeto que contém os atributos que serão setados no el
+ */
+
+const setAttributesHelper = (el, attrs) => {
+  for (let attr in attrs) {
+    el.setAttribute(attr, attrs[attr]);
+  }
+};
+
+/**
+ * Seleciona um ou vários elementos do DOM através do seletor
+ * @param {string|HTMLElement} el - Uma string de seletores CSS ou o próprio elemento do DOM.
+ * @param {boolean} [isAll=false] - Uma flag que indica se deve retornar um ou vários elementos do DOM.
+ * @returns {HTMLElement|NodeListOf<HTMLElement>} - O elemento DOM correspondente ou uma lista de elementos DOM correspondentes.
+ */
+
+const selectElement = (el, isAll = false) => {
+  if (typeof el === 'string') {
+    return isAll ? document.querySelectorAll(el) : document.querySelector(el);
+  }
+  return el;
+};
+
+/**
+ * Adiciona, remove ou alterna a classe especificada em um elemento DOM.
+ * @param {HTMLElement} el - O elemento DOM a ser modificado.
+ * @param {string} className - A classe CSS a ser adicionada, removida ou alternada.
+ * @param {string} action - A ação a ser executada: 'add' para adicionar, 'rem' para remover ou qualquer outro valor para alternar.
+ */
+const handleClass = (el, className, action) => {
+  action === 'add'
+    ? el.classList.add(className)
+    : action === 'rem'
+    ? el.classList.remove(className)
+    : el.classList.toggle(className);
+};
+
+/**
+ * Verifica se um elemento DOM especificado contém a classe CSS especificada.
+ * @param {HTMLElement} el - O elemento DOM a ser verificado.
+ * @param {string} className - A classe CSS a ser verificada.
+ * @returns {boolean} - Verdadeiro se o elemento contiver a classe especificada, falso caso contrário.
+ */
+const hasClass = (el, className) => el.classList.contains(className);
+
+const typedTextSpan = selectElement('.typed-text'),
+  cursorSpan = selectElement('.cursor'),
+  home = selectElement('.home .container'),
+  avatar = selectElement('.avatar');
 
 const textArray = ['Programador', 'Front End'],
   typingDelay = 50,
@@ -14,21 +64,21 @@ let charIndex = 0;
 /* Data Words */
 type = () => {
   if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains('typing'))
-      cursorSpan.classList.add('typing');
+    if (!hasClass(cursorSpan, 'typing'))
+      handleClass(cursorSpan, 'typing', 'add');
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
     return;
   }
-  cursorSpan.classList.remove('typing');
+  handleClass(cursorSpan, 'typing', 'rem');
   setTimeout(erase, newTextDelay);
 };
 
 erase = () => {
   if (charIndex > 0) {
-    if (!cursorSpan.classList.contains('typing'))
-      cursorSpan.classList.add('typing');
+    if (!hasClass(cursorSpan, 'typing'))
+      handleClass(cursorSpan, 'typing', 'add');
     typedTextSpan.textContent = textArray[textArrayIndex].substring(
       0,
       charIndex - 1
@@ -37,24 +87,18 @@ erase = () => {
     setTimeout(erase, erasingDelay);
     return;
   }
-  cursorSpan.classList.remove('typing');
+  handleClass(cursorSpan, 'typing', 'rem');
   textArrayIndex++;
   if (textArrayIndex >= textArray.length) textArrayIndex = 0;
   setTimeout(type, typingDelay + 1100);
 };
 
-setAttributesHelper = (el, attrs) => {
-  for (let attr in attrs) {
-    el.setAttribute(attr, attrs[attr]);
-  }
-};
-
 // Fix  Lightbox Uncrawlable Links
 displayContent = () => {
-  const lightBoxCancel = document.querySelector('.lb-cancel'),
-    lightBoxPrev = document.querySelector('.lb-prev'),
-    lightBoxNext = document.querySelector('.lb-next'),
-    lightBoxClose = document.querySelector('.lb-close');
+  const lightBoxCancel = selectElement('.lb-cancel'),
+    lightBoxPrev = selectElement('.lb-prev'),
+    lightBoxNext = selectElement('.lb-next'),
+    lightBoxClose = selectElement('.lb-close');
 
   if (
     !document.body.contains(
@@ -71,8 +115,8 @@ displayContent = () => {
 window.onload = displayContent;
 
 /* Add warning when the user tries to access mail.php by URL */
-let buttonMailAlert = document.querySelector('#warningMail_button'),
-  mailAlert = document.querySelector('#warningMail');
+let buttonMailAlert = selectElement('#warningMail_button'),
+  mailAlert = selectElement('#warningMail');
 
 if (mailAlert != null) {
   /* Avoid null variable error when the user doesn't try to access by URL */
@@ -82,43 +126,44 @@ if (mailAlert != null) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  let loader = document.querySelector('.wrapperLoader'),
-    navBar = document.querySelector('.nav-bar'),
-    header = document.querySelector('#header');
+  let loader = selectElement('.wrapperLoader'),
+    navBar = selectElement('.nav-bar'),
+    header = selectElement('#header');
 
   loader.style.display = 'none';
   /* Tooltip Alert */
-  document
-    .querySelectorAll('[data-toggle="tooltip"]')
-    .forEach((el) => new bootstrap.Tooltip(el));
+  selectElement('[data-toggle="tooltip"]', true).forEach(
+    (el) => new bootstrap.Tooltip(el)
+  );
 
   if (loader.style.display === 'none') {
-    navBar.classList.add('nav-bar-animation');
-    home.classList.add('infoAnimation');
-    avatar.classList.add('infoAnimation');
+    handleClass(navBar, 'nav-bar-animation', 'add');
+    handleClass(home, 'infoAnimation', 'add');
+    handleClass(avatar, 'infoAnimation', 'add');
+
     textArray.length && setTimeout(type, newTextDelay + 250);
-  } else {
-    header.style.display = 'none';
+    return;
   }
+  header.style.display = 'none';
 });
 
-const menu = document.querySelector('.header .nav-bar .nav-list .menu'),
-  mobile_menu = document.querySelector('.header .nav-bar .nav-list ul'),
-  menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a'),
-  hamburger = document.querySelector('#hamburger'),
-  header = document.querySelector('.header.container');
+const menu = selectElement('.header .nav-bar .nav-list .menu'),
+  mobile_menu = selectElement('.header .nav-bar .nav-list ul'),
+  menu_item = selectElement('.header .nav-bar .nav-list ul li a', true),
+  hamburger = selectElement('#hamburger'),
+  header = selectElement('.header.container');
 
-const scrollToTop = document.querySelector('#smoothScroll'),
-  social = document.querySelector('.social'),
-  rightArrow = document.querySelector('.rightArrow'),
-  themeIcon = document.querySelector('#theme-toggle');
+const scrollToTop = selectElement('#smoothScroll'),
+  social = selectElement('.social'),
+  rightArrow = selectElement('.rightArrow'),
+  themeIcon = selectElement('#theme-toggle');
 
 menu.addEventListener('click', () => {
-  menu.classList.toggle('active');
-  mobile_menu.classList.toggle('active');
+  handleClass(menu, 'active', 'toggle');
+  handleClass(mobile_menu, 'active', 'toggle');
 
   // Improving accessibility for visually impaired people
-  if (mobile_menu.classList.contains('active')) {
+  if (hasClass(mobile_menu, 'active')) {
     setAttributesHelper(menu, {
       'aria-expanded': 'true',
       'aria-label': 'Fechar Menu',
@@ -135,39 +180,44 @@ document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
 
   if (!navigator.userAgent.match(/Mobile/) && scroll_position < 100) {
-    menu_item.forEach((item) => item.classList.add('underline'));
+    menu_item.forEach((item) => handleClass(item, 'underline', 'add'));
   } else if (navigator.userAgent.match(/Mobile/)) {
-    menu_item.forEach((item) => item.classList.remove('underline'));
-    iconLink.classList.remove('underline');
+    menu_item.forEach((item) => handleClass(item, 'underline', 'rem'));
+    handleClass(iconLink, 'underline', 'rem');
   } else {
-    menu_item.forEach((item) => item.classList.remove('underline'));
+    menu_item.forEach((item) => handleClass(item, 'underline', 'rem'));
   }
 
-  const logo = document.querySelector('.logo');
-  const menubar = document.querySelectorAll('.bar');
+  const logo = selectElement('.logo');
+  const menubar = selectElement('.bar', true);
 
   if (scroll_position < 100) {
-    header.classList.remove('menu-default');
-    header.classList.add('menu-transparent');
-    menu_item.forEach((item) =>
-      item.classList.remove('menuLinks-2', 'scale95')
-    );
-    themeIcon.classList.remove('menuLinks-2');
+    handleClass(header, 'menu-default', 'rem');
+    handleClass(header, 'menu-transparent', 'add');
+    menu_item.forEach((item) => {
+      handleClass(item, 'menuLinks-2', 'rem');
+      handleClass(item, 'scale95', 'rem');
+    });
+    handleClass(themeIcon, 'menuLinks-2', 'rem');
     logo.style.cssText = 'filter: none';
     menubar.forEach((item) => (item.style.cssText = 'filter: invert(1)'));
     return;
   }
-  header.classList.remove('menu-transparent');
-  header.classList.add('menu-default');
-  menu_item.forEach((item) => item.classList.add('menuLinks-2', 'scale95'));
-  themeIcon.classList.add('menuLinks-2');
+  handleClass(header, 'menu-transparent', 'rem');
+  handleClass(header, 'menu-default', 'add');
+  menu_item.forEach((item) => {
+    handleClass(item, 'menuLinks-2', 'add');
+    handleClass(item, 'scale95', 'add');
+  });
+  handleClass(themeIcon, 'menuLinks-2', 'add');
   logo.style.cssText = 'filter: invert(1)';
   menubar.forEach((item) => (item.style.cssText = 'filter: none'));
 
   if (navigator.userAgent.match(/Mobile/)) {
-    menu_item.forEach((item) =>
-      item.classList.remove('menuLinks-2', 'scale95')
-    );
+    menu_item.forEach((item) => {
+      handleClass(item, 'menuLinks-2', 'rem');
+      handleClass(item, 'scale95', 'rem');
+    });
   }
 
   if (scroll_position < 600) {
@@ -186,11 +236,11 @@ document.addEventListener('scroll', () => {
 // Close menu after link is clicked
 menu_item.forEach((item) => {
   item.addEventListener('click', () => {
-    menu.classList.toggle('active');
+    handleClass(menu, 'active', 'toggle');
     setTimeout(() => {
-      mobile_menu.classList.toggle('active');
+      handleClass(menu, 'active', 'toggle');
       // Animate menu icon when link is clicked
-      if (!mobile_menu.classList.contains('active')) {
+      if (!hasClass(mobile_menu, 'active')) {
         hamburger.checked = false;
         return;
       }
@@ -199,8 +249,12 @@ menu_item.forEach((item) => {
   });
 });
 
-const textArea = document.querySelector('#mensagem');
-const count = document.querySelector('.count');
+const textArea = selectElement('#mensagem');
+const count = selectElement('.count');
+const charLimit = selectElement('.charLimit');
+const CHAR_LIMIT = 1500;
+
+charLimit.innerHTML = `Limite de ${CHAR_LIMIT} caracteres`;
 
 textArea.addEventListener('keyup', (e) => {
   textArea.style.height = 'auto';
@@ -213,19 +267,19 @@ countLetters = () => {
   const textLength = textArea.value.length;
   count.innerText = `${textLength}`;
 
-  textLength >= 1500
-    ? count.classList.add('error')
-    : count.classList.remove('error');
+  textLength >= CHAR_LIMIT
+    ? handleClass(count, 'error', 'add')
+    : handleClass(count, 'error', 'rem');
 };
 
-const certificate = document.querySelector('.certificate');
+const certificate = selectElement('.certificate');
 
 certificate.addEventListener('wheel', (e) => {
   e.preventDefault();
   certificate.scrollLeft += e.deltaY;
 });
 
-const certificateScroll = document.querySelector('.certificate-scroll');
+const certificateScroll = selectElement('.certificate-scroll');
 
 const isMobile = /Mobile/.test(navigator.userAgent);
 
@@ -237,43 +291,44 @@ menu_item.forEach((item) =>
   item.classList[isMobile ? 'remove' : 'add']('underline')
 );
 
-const htmlEl = document.querySelector('html');
+const htmlEl = selectElement('html');
 
-htmlEl.onmouseover = () => htmlEl.classList.add('showScrollbar');
-htmlEl.onmouseleave = () => htmlEl.classList.remove('showScrollbar');
+htmlEl.onmouseover = () => handleClass(htmlEl, 'showScrollbar', 'add');
+htmlEl.onmouseleave = () => handleClass(htmlEl, 'showScrollbar', 'rem');
 
-const images = document.querySelectorAll('img');
+const images = selectElement('img', true);
 
 images.forEach((img) =>
   img.addEventListener('contextmenu', (e) => e.preventDefault())
 );
 
 document.addEventListener('DOMContentLoaded', () => {
-  const boxInfo = document.querySelector('.boxInfo');
+  const boxInfo = selectElement('.boxInfo');
 
   boxInfo.addEventListener('click', (e) => {
     if (e.target.matches('li img')) {
       const tabsId = e.target.parentNode.id;
 
-      e.target.parentNode.classList.toggle('active');
+      handleClass(e.target.parentNode, 'active', 'toggle');
 
       const siblings = [...boxInfo.querySelectorAll(`li[id=${tabsId}]`)].filter(
         (el) => el !== e.target.parentNode
       );
 
-      siblings.forEach((sibling) => sibling.classList.remove('activeTabs'));
+      siblings.forEach((sibling) => handleClass(sibling, 'activeTabs', 'rem'));
 
-      const activeTabs = document.querySelector(`#${tabsId}-content-box`);
-      activeTabs.classList.toggle('activeTabs');
+      const activeTabs = selectElement(`#${tabsId}-content-box`);
+      handleClass(activeTabs, 'activeTabs', 'toggle');
+
       activeTabs
         .querySelectorAll('p, hr')
-        .forEach((el) => el.classList.toggle('fadeInUp'));
+        .forEach((el) => handleClass(el, 'fadeInUp', 'toggle'));
     }
   });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const favicon = document.querySelector('#favicon');
+  const favicon = selectElement('#favicon');
   const pageTitle = document.title;
   const attentionMessage = 'Volte para a página...';
 
@@ -292,11 +347,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 });
 
-const copy = document.querySelector('.copy');
+const copy = selectElement('.copy');
 
 copy.innerHTML = `Copyright &copy 2021 - ${new Date().getFullYear()} - Silas Rodrigues. Todos os direitos reservados`;
 
-const progressBar = document.querySelector('.progress-bar');
+const progressBar = selectElement('.progress-bar');
 
 document.addEventListener('scroll', () => {
   let width =
@@ -309,7 +364,7 @@ document.addEventListener('scroll', () => {
 
 const currentDate = new Date();
 const myBirthDate = new Date('1999-04-22');
-const age = document.querySelector('.age');
+const age = selectElement('.age');
 let currentAge = currentDate.getFullYear() - myBirthDate.getFullYear();
 
 if (currentDate.getMonth() < myBirthDate.getMonth()) {
