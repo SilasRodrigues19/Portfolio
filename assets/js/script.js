@@ -15,13 +15,15 @@ const setAttributesHelper = (el, attrs) => {
 /**
  * Seleciona um ou vários elementos do DOM através do seletor
  * @param {string|HTMLElement} el - Uma string de seletores CSS ou o próprio elemento do DOM.
- * @param {boolean} [isAll=false] - Uma flag que indica se deve retornar um ou vários elementos do DOM.
+ * @param {boolean} [shouldSelectAll=false] - Uma flag que indica se deve retornar um ou vários elementos do DOM.
  * @returns {HTMLElement|NodeListOf<HTMLElement>} - O elemento DOM correspondente ou uma lista de elementos DOM correspondentes.
  */
 
-const selectElement = (el, isAll = false) => {
+const selectElement = (el, shouldSelectAll = false) => {
   if (typeof el === 'string') {
-    return isAll ? document.querySelectorAll(el) : document.querySelector(el);
+    return shouldSelectAll
+      ? document.querySelectorAll(el)
+      : document.querySelector(el);
   }
   return el;
 };
