@@ -67,7 +67,18 @@
 
 ### Mail Message View
 
-###### NOTE: Due to the site being hosted on GitHub and deployed at Vercel, the function adopted with PHP mailer for sending e-mails does not work, but I kept the settings for future use. The files are located in the [Portfolio/src/](https://github.com/SilasRodrigues19/Portfolio/tree/main/src) folder
+###### NOTE: Due to the site being hosted on GitHub and deployed at Vercel, the function adopted with PHP mailer for sending e-mails does not work, but I kept the settings for future use. The files are located in the [Portfolio/src/](https://github.com/SilasRodrigues19/Portfolio/tree/main/src) folder.
+
+###### Just make some adjustments in the `mail.php` file, informing the `$mail->Username` and `$mail->Password`, change the `action` of the form and change it from `index.html` to `index.php`
+
+```php
+  // Rename index.html -> index.php
+  $mail->Username = 'your-email@gmail.com';
+  $mail->Password = '1e4c964f1026621f'; // Generate this hash the following URL -> https://myaccount.google.com/apppasswords
+
+  // index.php file
+  <form action="src/mail.php" method="POST" id="formContact">
+```
 
 ###### Expanding and collapsing the items below, you can see how it looks in the implementation with PHPMailer and how it looks with GetForm
 

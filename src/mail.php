@@ -51,13 +51,16 @@
 			$mail->isSMTP(); // To use SMTP
 			$mail->Host = 'smtp.gmail.com'; // Change if u don't use Gmail
 			$mail->SMTPAuth = true; // Authentication
-			$mail->Username = 'email@domain.com'; // Your domain e-mail
-			$mail->Password = 'password'; // Your pass
-			$mail->Port = 587; // Gmail default port
+			$mail->Username = 'example@gmail.com'; // Your e-mail address
+			$mail->Password = '1e4c964f1026621f'; // Your pass - Generate this acessing the following URL -> https://myaccount.google.com/apppasswords
+			$mail->Port = 587; // Gmail default port (TLS Encryption) or $mail->Port = 587; $mail->SMTPSecure = 'ssl'; (SSL Encryption)
 
 			// Recipients
 			$mail->setFrom('silasrodrigues.fatec@gmail.com'); // Name optional example ('example@gmail.com', 'Your Name');
 			$mail->addAddress('silasrodrigues.fatec@gmail.com'); // Name optional example ('example@gmail.com', 'Your Name');
+			$mail->addAddress('otherAdress.@domain.com'); // Name optional example ('example@domain.com', 'Your Name');
+
+			// Access the following link to more information -> https://gist.github.com/SilasRodrigues19/95ffd9e355d723c857501faf2ee99b9c
 
 
 			// Content
