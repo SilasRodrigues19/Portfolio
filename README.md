@@ -72,11 +72,12 @@
 ###### Just make some adjustments in the `mail.php` file, informing the `$mail->Username` and `$mail->Password`, change the `action` of the form and change it from `index.html` to `index.php`
 
 ```php
-  // Rename index.html -> index.php
+
+  // src/mail.php
   $mail->Username = 'your-email@gmail.com';
   $mail->Password = '1e4c964f1026621f'; // Generate this hash the following URL -> https://myaccount.google.com/apppasswords
 
-  // index.php file
+  // Rename index.html to index.php and change action in the form
   <form action="src/mail.php" method="POST" id="formContact">
 ```
 
