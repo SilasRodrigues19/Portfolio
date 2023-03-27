@@ -93,7 +93,7 @@
 			<script>
 				Swal.fire({
 					title: 'Seu e-mail não foi enviado!',
-					icon: 'info',
+					icon: 'error',
 					text: 'Erro de autenticação, contate um administrador',
 					showClass: {
 						popup: 'animate__animated animate__fadeInDown'
