@@ -138,6 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
     (el) => new bootstrap.Tooltip(el)
   );
 
+  if (!localStorage.lgpd && loader.style.display === 'none') {
+    setTimeout(() => {
+      cookie.classList.remove('hideDown');
+    }, 2000);
+  }
+
   if (loader.style.display === 'none') {
     handleClass(navBar, 'nav-bar-animation', 'add');
     handleClass(home, 'infoAnimation', 'add');
@@ -379,3 +385,52 @@ if (currentDate.getMonth() < myBirthDate.getMonth()) {
 }
 
 age.innerHTML = `${currentAge} anos`;
+
+
+const cookie = selectElement('.cookies');
+const acceptPolicy = selectElement('.accept-policy');
+const hotjarButton = selectElement(
+  '._hj-G09L+__MinimizedWidgetMiddle__container._hj-v4Fsu__MinimizedWidgetMiddle__right'
+);
+const formElements = selectElement('#formContact input, #formContact textarea, #formContact button', true);
+
+if(!localStorage.lgpd) {
+  cookie.classList.remove('hide');
+
+  if (document.body.contains(hotjarButton)) {
+    hotjarButton.style.display = 'none';
+  }
+
+  formElements.forEach((el) => (el.disabled = true));
+}
+
+const acceptCookies = () => {
+  const cookieOptions = [
+    {
+      name: 'analytics',
+      accepted: 'true',
+    },
+    {
+      name: 'hotjar-feedback',
+      accepted: 'true',
+    },
+  ];
+
+  localStorage.setItem('lgpd-concent', 'true');
+  localStorage.setItem('lgpd', JSON.stringify(cookieOptions));
+
+  cookie.classList.add('hideDown');
+  
+  setTimeout(() => {
+    cookie.classList.add('hide');
+  }, 2000);
+
+  if (document.body.contains(hotjarButton)) {
+    hotjarButton.style.display = 'block';
+  }
+  
+  formElements.forEach((el) => (el.disabled = false));
+
+};
+
+acceptPolicy.addEventListener('click', acceptCookies)
