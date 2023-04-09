@@ -390,7 +390,7 @@ age.innerHTML = `${currentAge} anos`;
 const cookie = selectElement('.cookies');
 const acceptPolicy = selectElement('.accept-policy');
 const hotjarButton = selectElement(
-  '._hj-G09L+__MinimizedWidgetMiddle__container._hj-v4Fsu__MinimizedWidgetMiddle__right'
+  '._hj_feedback_container ._hj-G09L\\+__MinimizedWidgetMiddle__container._hj-v4Fsu__MinimizedWidgetMiddle__right'
 );
 const formElements = selectElement('#formContact input, #formContact textarea, #formContact button', true);
 
