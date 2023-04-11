@@ -437,4 +437,16 @@ const acceptCookies = () => {
 
 };
 
+document.addEventListener('DOMContentLoaded', () => {
+
+  if (localStorage.lgpd && document.body.contains(hotjarContainer)) {
+    hotjarContainer.style.display = 'none';
+  }
+
+  if (!localStorage.lgpd) {
+    hotjarContainer.style.display = 'block';
+  }
+
+});
+
 acceptPolicy.addEventListener('click', acceptCookies)
