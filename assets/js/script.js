@@ -395,9 +395,8 @@ const formElements = selectElement('#formContact input, #formContact textarea, #
 if(!localStorage.lgpd) {
   cookie.classList.remove('hide');
 
-  if (document.body.contains(hotjarContainer)) {
-    hotjarContainer.style.display = 'none';
-  }
+  hotjarContainer.style.display = 'none';
+  
 
   formElements.forEach((el) => {
     setAttributesHelper(el, { disabled: true, title: 'Desabilitado enquanto os temos de política de privacidade não forem aceitos' });
@@ -426,9 +425,8 @@ const acceptCookies = () => {
     cookie.classList.add('hide');
   }, 2000);
 
-  if (document.body.contains(hotjarContainer)) {
-    hotjarContainer.style.display = 'block';
-  }
+  hotjarContainer.style.display = 'block';
+  
 
   formElements.forEach((el) => {
     el.disabled = false;
