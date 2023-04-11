@@ -389,13 +389,15 @@ age.innerHTML = `${currentAge} anos`;
 
 const cookie = selectElement('.cookies');
 const acceptPolicy = selectElement('.accept-policy');
-const hotjarContainer = selectElement('#widget-422283');
+const hotjarContainer = selectElement(
+  '._hj_feedback_container ._hj-G09L\\+__MinimizedWidgetMiddle__container._hj-v4Fsu__MinimizedWidgetMiddle__right'
+);
 const formElements = selectElement('#formContact input, #formContact textarea, #formContact button', true);
 
 if(!localStorage.lgpd) {
   cookie.classList.remove('hide');
 
-  hotjarContainer.style.display = 'none';
+  if (document.body.contains(hotjarContainer)) hotjarContainer.style.display = 'none';
   
 
   formElements.forEach((el) => {
@@ -425,7 +427,7 @@ const acceptCookies = () => {
     cookie.classList.add('hide');
   }, 2000);
 
-  hotjarContainer.style.display = 'block';
+  if (document.body.contains(hotjarContainer)) hotjarContainer.style.display = 'block';
   
 
   formElements.forEach((el) => {
