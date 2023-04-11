@@ -389,19 +389,22 @@ age.innerHTML = `${currentAge} anos`;
 
 const cookie = selectElement('.cookies');
 const acceptPolicy = selectElement('.accept-policy');
-const hotjarButton = selectElement(
-  '._hj_feedback_container ._hj-G09L\\+__MinimizedWidgetMiddle__container._hj-v4Fsu__MinimizedWidgetMiddle__right'
+const hotjarContainer = selectElement(
+  '._hj_feedback_container'
 );
 const formElements = selectElement('#formContact input, #formContact textarea, #formContact button', true);
 
 if(!localStorage.lgpd) {
   cookie.classList.remove('hide');
 
-  if (document.body.contains(hotjarButton)) {
-    hotjarButton.style.display = 'none';
+  if (document.body.contains(hotjarContainer)) {
+    hotjarContainer.style.display = 'none';
   }
 
-  formElements.forEach((el) => (el.disabled = true));
+  formElements.forEach((el) => {
+    setAttributesHelper(el, { disabled: true, title: 'Desabilitado enquanto os temos de política de privacidade não forem aceitos' });
+  });
+
 }
 
 const acceptCookies = () => {
@@ -425,11 +428,14 @@ const acceptCookies = () => {
     cookie.classList.add('hide');
   }, 2000);
 
-  if (document.body.contains(hotjarButton)) {
-    hotjarButton.style.display = 'block';
+  if (document.body.contains(hotjarContainer)) {
+    hotjarContainer.style.display = 'block';
   }
-  
-  formElements.forEach((el) => (el.disabled = false));
+
+  formElements.forEach((el) => {
+    el.disabled = false;
+    el.removeAttribute('title')
+  });
 
 };
 
