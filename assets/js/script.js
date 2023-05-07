@@ -372,7 +372,7 @@ document.addEventListener('scroll', () => {
 
 const currentDate = new Date();
 const myBirthDate = new Date('1999-04-22');
-const age = selectElement('.age');
+const age = selectElement('.age', true);
 let currentAge = currentDate.getFullYear() - myBirthDate.getFullYear();
 
 if (currentDate.getMonth() < myBirthDate.getMonth()) {
@@ -384,7 +384,7 @@ if (currentDate.getMonth() < myBirthDate.getMonth()) {
   currentAge--;
 }
 
-age.innerHTML = `${currentAge} anos`;
+age.forEach((item) => item.innerHTML = `${currentAge} anos`);
 
 
 const cookie = selectElement('.cookies');
