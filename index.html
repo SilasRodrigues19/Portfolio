@@ -99,7 +99,7 @@
 
 <body ondragstart="false" class="body-theme">
     <!-- Header -->
-    <header id="header">
+    <header id="header" aria-label="Cabeçalho do site">
         <div class="header container">
             <div class="nav-bar">
                 <div class="brand">
@@ -117,25 +117,25 @@
                             <div class="bar bar3"></div>
                         </div>
                     </label>
-                    <ul id="mobileExpanded">
+                    <ul id="mobileExpanded" role="menubar" aria-label="Menu Mobile">
                         <li>
-                            <a class="scroll" href="#about" data-after="About">Sobre</a>
+                            <a class="scroll" href="#about" data-after="About" role="menuitem">Sobre</a>
                         </li>
                         <li>
-                            <a class="scroll" href="#skills" data-after="Skills">Habilidades</a>
+                            <a class="scroll" href="#skills" data-after="Skills" role="menuitem">Habilidades</a>
                         </li>
                         <li>
-                            <a class="scroll" href="#projects" data-after="Projects">Projetos</a>
+                            <a class="scroll" href="#projects" data-after="Projects" role="menuitem">Projetos</a>
                         </li>
                         <li>
-                            <a class="scroll" href="#certificates" data-after="Courses">Cursos</a>
+                            <a class="scroll" href="#certificates" data-after="Courses" role="menuitem">Cursos</a>
                         </li>
                         <li>
-                            <a class="scroll" href="#form" data-after="Contact">Contato</a>
+                            <a class="scroll" href="#form" data-after="Contact" role="menuitem">Contato</a>
                         </li>
                         <li>
                             <a href="#theme-toggle" rel="noreferrer" aria-label="Mudar tema do site" data-after="Theme"
-                                class="iconLink">
+                                class="iconLink" role="menuitem">
                                 <i accesskey="x" class="bi bi-cloud-moon" id="theme-toggle"></i>
                             </a>
                         </li>
@@ -147,7 +147,7 @@
     <!-- End Header -->
 
     <!-- Home Section -->
-    <section id="home">
+    <section id="home" role="region" aria-label="Página inicial">
         <div class="wrapperLoader">
             <div id="loader">
                 <span></span>
@@ -160,7 +160,7 @@
                 <h1 class="infoText">Olá,</h1>
                 <h1 class="infoText">Seja bem-vindo(a)</h1>
                 <h1 class="infoText">Conheça meu</h1>
-                <a href="#projects" type="button" class="cta scroll">
+                <a href="#projects" type="button" class="cta scroll" aria-label="Veja os meus projetos">
                     <span class="iconify portfolioIcon" data-icon="line-md:arrow-down"></span> Portfólio
                 </a>
                 <h2 class="arrayText">Eu sou <span class="typed-text"></span><span class="cursor typing">&nbsp;</span>
@@ -168,7 +168,7 @@
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <a href="resume.pdf" target="_blank" aria-label="Currículo PDF">
+                    <a href="resume.pdf" target="_blank" aria-label="Veja o PDF do meu currículo">
                         <img class="avatar" src="./assets/img/silas.webp" alt="Foto de Silas Rodrigues" loading="lazy">
                     </a>
                 </div>
@@ -184,7 +184,7 @@
             <div class="rightArrow">
                 <span class="iconify" data-icon="flat-color-icons:down-right"></span>
             </div>
-            <aside class="social">
+            <aside class="social" role="complementary" aria-label="Redes Sociais">
                 <span class="socialBtn">
                     <span class="socialText">Sociais</span>
                 </span>
@@ -226,41 +226,41 @@
     <!-- End Home Section -->
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" role="region" aria-labelledby="region-heading">
         <div class="about container">
             <div class="section-title">
                 <img data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200"
                     data-aos-easing="ease" src="./assets/img/about.svg" alt="Imagem de Sobre" width="180" height="100">
-                <h1 data-aos="fade-down"><span>Sobre</span> mim</h1>
+                <h1 data-aos="fade-down" id="region-heading"><span>Sobre</span> mim</h1>
                 <hr data-aos="fade-down">
                 <p data-aos="fade-up">Para saber um pouco mais a meu respeito, clique nas imagens abaixo.
                 </p>
             </div>
             <div class="boxInfo" data-aos="fade-up" data-aos-duration="900">
-                <ul>
-                    <li id="tab-one">
+                <ul role="tablist" aria-label="Lista de itens com informações sobre mim">
+                    <li id="tab-one" role="presentation">
                         <img src="./assets/img/education.svg" alt="Imagem representando graduação" width="100"
                             height="100">
                         <h4>Educação</h4>
                     </li>
-                    <li id="tab-two">
+                    <li id="tab-two" role="presentation">
                         <img src="./assets/img/about_me.svg" alt="Imagem representando sobre mim" width="100"
                             height="100">
                         <h4>Sobre</h4>
                     </li>
-                    <li id="tab-three">
+                    <li id="tab-three" role="presentation">
                         <img src="./assets/img/experience.svg" alt="Imagem representando experiência" width="100"
                             height="100">
                         <h4>Experiência</h4>
                     </li>
-                    <li id="tab-four">
+                    <li id="tab-four" role="presentation">
                         <img src="./assets/img/plans.svg" alt="Imagem representando planos futuros" width="100"
                             height="100">
                         <h4>Planos</h4>
                     </li>
                 </ul>
                 <div class="tabs-content">
-                    <div id="tab-one-content-box" class="hideTabs">
+                    <div id="tab-one-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-one">
                         <p>Graduado em Análise e Desenvolvimento de Sistemas pela
                             <a href="http://fatec.edu.br" target="_blank" rel="noreferrer"
                                 aria-label="Site da Faculdade Fatec">Fatec</a> - 2017/2021 e desde então sempre buscando
@@ -268,12 +268,12 @@
                         </p>
                         <hr>
                     </div>
-                    <div id="tab-two-content-box" class="hideTabs">
+                    <div id="tab-two-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-two">
                         <p>Meu nome é Silas, tenho <span class="age"></span> e estudo Desenvolvimento Web de maneira autodidata. Possuo
                             maiores aptidões para Desenvolvimento Front End, mas também já tive contato com Desenvolvimento Back End.</p>
                         <hr>
                     </div>
-                    <div id="tab-three-content-box" class="hideTabs">
+                    <div id="tab-three-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-three">
                         <div class="experience hideOnMobile">
                             <p>Atualmente estou apenas mantendo meus projetos pessoais de estudo e aprendendo coisas novas diariamente, essa
                                 jornada é compartilhada através do GitHub onde mantenho repositórios públicos e privados, onde cada repositório
@@ -314,7 +314,7 @@
                         </div>
                         <hr>
                     </div>
-                    <div id="tab-four-content-box" class="hideTabs">
+                    <div id="tab-four-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-four">
                         <p>Busco ser uma pessoa hábil em Desenvolvimento Web como um todo, atualmente, aprendendo Back
                             End cada vez mais e praticando para aprimorar minhas habilidades em Front End para
                             futuramente me tornar um profissional Full Stack.</p>
@@ -326,9 +326,9 @@
     </section>
 
     <!-- Service Section -->
-    <section id="skills">
+    <section id="skills" role="region" aria-labelledby="skills-heading">
         <div class="section-title">
-            <h1 data-aos="fade-down">Conhecimentos</h1>
+            <h1 data-aos="fade-down" id="skills-heading">Conhecimentos</h1>
             <p data-aos="fade-up">Abaixo estão as principais ferramentas e tecnologias que eu utilizo nos meus projetos.
             </p>
             <hr data-aos="fade-down">
@@ -456,10 +456,10 @@
     <!-- End Service Section -->
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" role="region" aria-labelledby="projects-heading">
         <div class="projects container">
             <div class="projects-header">
-                <h1 class="section-title">
+                <h1 class="section-title" id="projects-heading">
                     <div data-aos="fade-down"><span>Projetos</span> pessoais</div>
                     <hr data-aos="fade-down">
                     <p data-aos="fade-right">Os projetos abaixo não possuem nenhum vínculo empregatício</p>
@@ -680,10 +680,10 @@
     <!-- End Projects Section -->
 
     <!-- Certificate Section -->
-    <section id="certificates">
+    <section id="certificates" role="region" aria-labelledby="certificates-heading">
         <div class="certificates container">
             <div class="certificate-header">
-                <h1 class="section-title" data-aos="fade-down">Certificados</h1>
+                <h1 class="section-title" data-aos="fade-down" id="certificates-heading">Certificados</h1>
                 <hr data-aos="fade-down">
                 <p class="certificate-scroll" data-aos="fade-right"></p>
             </div>
@@ -744,15 +744,15 @@
     </section>
     <!-- End Certificate Section -->
 
-    <section class="progress-wrapper">
+    <section class="progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <span class="progress-bar"></span>
     </section>
 
     <!-- Form Section -->
-    <section id="form">
+    <section id="form" role="region" aria-labelledby="form-heading">
         <div class="form container">
             <div class="form-header">
-                <h1 class="section-title">
+                <h1 class="section-title" id="form-heading">
                     <div data-aos="fade-down"><span>Contato</span> pessoal</div>
                     <hr data-aos="fade-down">
                     <p data-aos="fade-left">Utilize o formulário abaixo para me enviar um e-mail para contato</p>
@@ -839,7 +839,7 @@
     </section>
     <!-- End Form Section -->
 
-    <section id="cookies" class="cookies hide hideDown">
+    <section id="cookies" class="cookies hide hideDown" role="region" aria-label="Sessão que informa a respeito dos Cookies">
         <div class="lgpd-information">
             <p>
                 Esse site utiliza cookies para garantir que você obtenha melhor experiência
@@ -852,7 +852,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <div class="footer container">
             <div class="brand" data-aos="fade-down">
                 <h1>Silas <span>Rodrigues</span></h1>
