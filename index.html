@@ -998,16 +998,21 @@
             closeOnVerticalDrag: false,
         });
         
-        if(location.hostname.includes('.vercel.app')) {
-            const feedbackWidget = document.querySelector('#widget-422283');
-            lightbox.on('beforeOpen', () => {
-                feedbackWidget.style.display = 'none';
-            })
-            
-            lightbox.on('close', () => {
-                feedbackWidget.style.display = 'block';
-            })
-        }
+        if (location.hostname.includes('.vercel.app')) {
+                const feedbackWidget = document.querySelector('#widget-422283');
+
+                if (document.body.contains(feedbackWidget)) {
+                    if (!feedbackWidget.classList.contains('d-none')) {
+                        lightbox.on('beforeOpen', () => {
+                            feedbackWidget.classList.add('d-none');
+                        });
+                    } else {
+                        lightbox.on('close', () => {
+                            feedbackWidget.style.display = 'block';
+                        });
+                    }
+                }
+            }
 
 
         lightbox.on('uiRegister', () => {
