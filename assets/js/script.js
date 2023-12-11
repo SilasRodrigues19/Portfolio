@@ -95,26 +95,6 @@ erase = () => {
   setTimeout(type, typingDelay + 1100);
 };
 
-// Fix  Lightbox Uncrawlable Links
-displayContent = () => {
-  const lightBoxCancel = selectElement('.lb-cancel'),
-    lightBoxPrev = selectElement('.lb-prev'),
-    lightBoxNext = selectElement('.lb-next'),
-    lightBoxClose = selectElement('.lb-close');
-
-  if (
-    !document.body.contains(
-      lightBoxCancel && lightBoxPrev && lightBoxNext && lightBoxClose
-    )
-  ) {
-    setAttributesHelper(lightBoxCancel, { rel: 'nofollow', href: '#' });
-    setAttributesHelper(lightBoxPrev, { rel: 'nofollow', href: '#' });
-    setAttributesHelper(lightBoxNext, { rel: 'nofollow', href: '#' });
-    setAttributesHelper(lightBoxClose, { rel: 'nofollow', href: '#' });
-  }
-};
-
-window.onload = displayContent;
 
 /* Add warning when the user tries to access mail.php by URL */
 let buttonMailAlert = selectElement('#warningMail_button'),
